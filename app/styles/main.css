@@ -1,0 +1,170 @@
+@font-face {
+font-family: Miso;
+src: url(/styles/fonts/miso-regular.otf) format('opentype');
+}
+
+@font-face {
+font-family: Miso;
+font-weight: bold;
+src: url(/styles/fonts/miso-bold.otf) format('opentype');
+}
+
+.rzl-content h1, .rzl-content h2, .rzl-content h3 {
+font-family: 'Miso';
+}
+
+.rzl-body {
+}
+
+.rzl-nav {
+background-color: #fff;
+font-weight: 400;
+font-size: 25px;
+font-family: 'Miso';
+box-shadow: 0 0 3px rgba(153,153,153,0.75);
+height: 22px;
+}
+
+.rzl-status a {
+height: 50px;
+}
+
+.icon-bar {
+background-color: #aaa;
+}
+
+.rzl-nav ul {
+margin: 0;
+background-color: #fff;
+}
+
+@media(max-width:980px) {
+.rzl-nav .container {
+width: 100%;
+}
+}
+
+.jumbotron {
+background-image: url('/images/rzl-jumbotron.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+padding-top: 80px;
+margin-bottom: 0;
+}
+
+.jumbotron h1, .jumbotron p {
+text-shadow: 1px 1px 2px rgba(0,0,0,0.25),
+    1px 1px 2px rgba(0,0,0,0.25),
+    1px 1px 2px rgba(0,0,0,0.25),
+    1px 1px 2px rgba(0,0,0,0.25);
+text-align: center;
+font-family: 'Miso';
+color: #fff;
+}
+
+#rzl-logo {
+height: 39px;
+margin-top: -9px;
+}
+
+.rzl-spacer {
+background-color: rgba(239, 239, 239, 0.57);
+padding-top: 30px;
+}
+
+.rzl-content {
+color: #000;
+padding: 15px;
+background-color: #fff;
+border: 1px solid #e6e6e6;
+margin-bottom: 25px;
+}
+
+.rzl-content {
+text-align: justify;
+}
+
+.rzl-blogpost {
+}
+
+.rzl-blogpost-date {
+color: #8a8a8a;
+font-style: italic;
+margin-top: -10px;
+}
+
+.rzl-blogpost-meta {
+text-align: center;
+margin-top: 40px;
+}
+
+.rzl-avatar {
+width: 100px;
+height: 100px;
+margin: 0 auto;
+margin-bottom: 10px;
+border-radius: 150px;
+-webkit-border-radius: 150px;
+-moz-border-radius: 150px;
+}
+
+.rzl-avatar~p {
+font-family: 'Miso';
+font-size: 20px;
+}
+
+.rzl-separator {
+margin: 0 10px;
+}
+
+.rzl-blogpost-factbox {
+color: red;
+box-shadow: 0 0 3px rgba(153,153,153,0.75);
+margin: 0 auto;
+padding: 0;
+}
+
+.rzl-blogpost-facts {
+color: #999;
+text-align: left;
+list-style: none;
+white-space: nowrap;
+}
+
+.rzl-pagination {
+width: 100%;
+}
+
+.rzl-page-next {
+text-align: right;
+}
+
+.rzl-page-info {
+text-align: center;
+}
+
+.rzl-footer {
+background-color: #fff;
+border-top: 1px solid rgba(230,230,230,0.75);
+width: 100%;
+padding-bottom: 20px;
+}
+
+.footer-group {
+width: auto;
+float: left;
+margin-right: 15%;
+font-size: 14px;
+}
+
+.footer-group h4 {
+text-transform: uppercase;
+color: #999;
+font-size: 12px;
+}
+
+.footer-group ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}

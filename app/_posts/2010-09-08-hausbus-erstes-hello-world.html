@@ -1,0 +1,25 @@
+---
+layout: post
+title: 'Hausbus: Erstes Hello World'
+date: 2010-09-08 13:25:00.000000000 +02:00
+categories: []
+tags:
+- Hausbus
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: inte
+  email: inte@oqlt.de
+  display_name: Inte
+  first_name: ''
+  last_name: ''
+---
+<div class="postentry">
+<p>Wer in letzter Zeit mal im RZL war, hat bestimmt mitbekommen,  dass wir an einem Hausbus basteln. Mittel der Wahl sind dazu  Mikrokontroller (derzeit ATmega168, ATmega644P) und RS485.</p>
+<p>Heute Abend haben wir es dann geschafft, die erste Nachricht zu  übertragen. Streng genommen war das kein „Hello World“, sondern ein  „hausbus recv“ – ein ECMD-Befehl, den das Etherrape mit  Ethersex-Firmware auf der anderen Seite dann mit einem freudigen  „Hausbus YAAAAY“ quittiert (Siehe Bild).</p>
+<p>Damit haben wir den wichtigsten Schritt schonmal geschafft:  funktionierende Hardware. Die nächsten Schritte sind dann eine saubere  Platine zu entwerfen, davon ein paar aufzubauen, ein Protokoll entwerfen  und letztendlich den Busmaster via Ethernet mit dem Rest der Welt (oder  zumindest unseren Rechnern) sprechen zu lassen.</p>
+<p> <a href="http://t.zekjur.net/d/20100907_001.jpg"><img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/20100907_001.thumb_.jpg" alt="Hausbus-Bastelsetup" border="0" width="400" /></a><br /> 
+<p>Mit dem Bus wollen wir, sobald er denn fertig ist, den Türstatus  ordentlich übertragen, das Pinpad mit der Benutzerdatenbank verbinden,  das Licht steuern, Sensoren auslesen, …</p>
+</div>

@@ -1,0 +1,27 @@
+<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 rzl-blogpost">
+    <h2><a href="{{ include.blogpost.url }}">{{ include.blogpost.title }}</a></h2>
+    <p class="rzl-blogpost-date">veröffentlicht am {{ include.blogpost.date | date: "%b %-d, %Y" }}</p>
+    <p>{{ include.blogpost.content }}</p>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 rzl-blogpost-meta">
+    <img src="/images/rzl-jumbotron.jpg" class="rzl-avatar"/>
+    <p>{% if include.blogpost.author %}{{ include.blogpost.author.display_name }}{% else %}Bernd Lauert{% endif %}</p>
+    {% if include.blogpost.facts %}
+    <div class="rzl-blogpost-factbox">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 rzl-blogpost-facts">
+        <ul class="rzl-blogpost-facts">
+            {% for fact in include.blogpost.facts %}
+            <li>{{ fact[0] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+        <ul class="rzl-blogpost-facts" style="color: #000;">
+            {% for fact in include.blogpost.facts %}
+            <li>{{ fact[1] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+    {% endif %}
+</div>

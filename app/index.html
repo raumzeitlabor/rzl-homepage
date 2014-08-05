@@ -1,0 +1,30 @@
+---
+layout: default
+title: Neuigkeiten
+---
+
+<div class="row">
+    <div class="col-lg-12"><h1>Neuigkeiten</h1></div>
+</div>
+{% for post in paginator.posts %}
+{% include blogpost.html blogpost=post %}
+<div class="row rzl-separator">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+</div>
+{% endfor %}
+
+<div class="row rzl-pagination">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 rzl-page-prev">
+    {% if paginator.previous_page %}
+        <a href="/blog/page/{{ paginator.previous_page }}" class="previous">Vorherige</a>
+    {% endif %}
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 rzl-page-info">
+        <span class="page_number ">Seite: {{ paginator.page }} von {{ paginator.total_pages }}</span>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 rzl-page-next">
+    {% if paginator.next_page %}
+        <a href="/blog/page/{{ paginator.next_page }}" class="next">Nächste</a>
+    {% endif %}
+    </div>
+</div>

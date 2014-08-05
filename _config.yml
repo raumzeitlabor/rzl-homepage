@@ -1,0 +1,13 @@
+# Site settings
+title: RaumZeitLabor | Digitalkultur im Rhein-Neckar-Dreieck
+email: info@raumzeitlabor.de
+baseurl: ""
+url: "http://yourdomain.com"
+
+paginate: 5
+
+exclude: ['node_modules']
+paginate_path: /blog/page/:num
+permalink: /blog/:title
+
+markdown: kramdown

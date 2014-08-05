@@ -1,0 +1,10 @@
+node_modules
+dist
+cache
+.tmp
+.layouts
+.jekyll
+.sass-cache
+app/bower_components
+test/bower_components
+.*.sw[po]
