@@ -281,7 +281,7 @@ module.exports = function (grunt) {
                     dot: false,
                     cwd: '<%= config.app %>',
                     dest: '<%= config.jekyll %>',
-                    src: ['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*']
+                    src: ['**/*.html']
                 }]
             },
             dist: {
@@ -302,11 +302,25 @@ module.exports = function (grunt) {
                 }]
             },
             build: {
-                expand: true,
-                dot: false,
-                cwd: '.tmp/jekyll',
-                dest: '<%= config.dist %>',
-                src: '**/*.html'
+                files: [{
+                    expand: true,
+                    dot: false,
+                    cwd: '.tmp/jekyll',
+                    dest: '<%= config.dist %>',
+                    src: '**/*.html'
+                }, {
+                    expand: true,
+                    dot: false,
+                    cwd: '.tmp/jekyll',
+                    dest: '<%= config.dist %>/blog',
+                    src: 'index.html'
+                }, {
+                    expand: true,
+                    dot: false,
+                    cwd: '.tmp/jekyll',
+                    dest: '<%= config.dist %>/blog/page/1',
+                    src: 'index.html'
+                }]
             },
             styles: {
                 expand: true,
