@@ -52,6 +52,10 @@ module.exports = function (grunt) {
                 files: ['<%= config.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
+            jekyll: {
+                files: ['<%= config.app %>/**/*.html'],
+                tasks: ['clean:dist', 'copy:jekyll', 'autoprefixer', 'jekyll:dist', 'copy:build'],
+            },
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
@@ -67,16 +71,17 @@ module.exports = function (grunt) {
         // The actual grunt server settings
         connect: {
             options: {
-                port: 9000,
+                port: 8000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
                 hostname: 'localhost'
             },
             livereload: {
                 options: {
-                    open: true,
+                    open: false,
                     base: [
                         '.tmp',
+                        '<%= config.dist %>',
                         '<%= config.app %>'
                     ]
                 }
@@ -93,7 +98,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    open: true,
+                    open: false,
                     base: '<%= config.dist %>',
                     livereload: false
                 }
@@ -241,7 +246,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.dist %>',
-                    src: '*.html',
+                    src: '**/*.html',
                     dest: '<%= config.dist %>'
                 }]
             }
@@ -359,7 +364,8 @@ module.exports = function (grunt) {
             },
             serve: {
                 options: {
-                    dest: '.jekyll',
+                    dest: '<%= config.dist %>',
+                    config: '_config.yml',
                     drafts: true
                 }
             }
@@ -375,7 +381,13 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+
+            'clean:dist',
+            'copy:jekyll',
             'autoprefixer',
+            'jekyll:dist',
+            'copy:build',
+
             'connect:livereload',
             'watch'
         ]);
