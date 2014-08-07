@@ -18,7 +18,7 @@
         <!-- build:css(app) /styles/main.css -->
         <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
-        {{ page.header }}
+        {{ page.htmlheader }}
     </head>
     <body class="rzl-body">
         <!--[if lt IE 10]>
@@ -88,6 +88,9 @@
         <div class="rzl-spacer">
         <div class="container" class="rzl-content">
             <div class="rzl-content">
+                <div class="row">
+                    <div class="col-lg-12"><h1>{{ page.title }}</h1></div>
+                </div>
                 {{ content }}
             </div>
         </div>
