@@ -5,6 +5,11 @@
     sudo apt-get install nodejs jekyll
     sudo npm install -g grunt-cli bower
 
+## Setup
+
+    npm install
+    bower install
+
 ## Hacking
 
     grunt serve
@@ -12,6 +17,4 @@
 
 ## Building
 
-    npm install
-    bower install
-    (grunt && cd dist && python -m SimpleHTTPServer)
+    grunt
