@@ -1,0 +1,53 @@
+---
+layout: default
+title: Impressum
+---
+{% capture c %}
+Diese Webseite und alle weitere Angebote unter der Domain raumzeitlabor.de
+werden betrieben vom RaumZeitLabor e.V. Der RaumZeitLabor e.V. ist im
+Vereinsregister Mannheim unter der Vereinsregisternummer VR 700404 eingetragen.
+
+Vertretungsberechtigt im Sinne des § 5 Abschnitt 1 TMG und des § 26 BGB ist der
+Vorstand.
+
+### Vorstand
+
+1\. Vorsitzender
+: Fabian Koch
+
+2\. Vorsitzender
+: Nicola von Thadden
+
+Kassenwart
+: Jens Jasper
+
+### Kontakt
+
+Anschrift
+: RaumZeitLabor e.V.\\
+Boveristraße 22-24\\
+68309 Mannheim
+
+E-Mail
+: [vorstand@raumzeitlabor.de](mailto:vorstand@raumzeitlabor.de)
+: [info@raumzeitlabor.de](mailto:info@raumzeitlabor.de)
+
+Telefon
+: [+49 621 76 23 13 70](tel://4962176231370)
+
+SIP
+: [4795@hg.eventphone.de](sip://4795@hg.eventphone.de)
+
+IRC
+: [irc.hackint.eu / #raumzeitlabor](ircs://irc.hackint.eu:9999/raumzeitlabor)
+
+Inhalte (Text, Bilder, Dateien, fremdeingebundene Inhalte und Links auf fremde
+Webangebote) im Blog, im Wiki und im Archiv der Mailinglisten können nach
+Anmeldung durch jedermann frei erstellt oder verändert werden und stellen eine
+persönliche Meinung der jeweiligen Autoren dar. Eine Vorabprüfung der Inhalte
+vor Veröffentlichung (redaktionelle Freischaltung) findet nicht statt.
+Rechtlich bedenkliche (z.B. Urheberrecht, jugendgefährdende Inhalte) werden
+nach schriftlicher Aufforderung an den Betreiber nach Prüfung gelöscht oder
+verändert werden.
+{% endcapture %}
+{{ c | markdownify | replace: '<dl>', '<dl class="dl-horizontal">' }}
