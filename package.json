@@ -25,7 +25,8 @@
     "load-grunt-tasks": "~0.2.0",
     "time-grunt": "~0.2.0",
     "jshint-stylish": "~0.1.3",
-    "grunt-jekyll": "~0.4.2"
+    "grunt-jekyll": "~0.4.2",
+    "grunt-connect-proxy": "~0.1.10"
   },
   "engines": {
     "node": ">=0.8.0"
