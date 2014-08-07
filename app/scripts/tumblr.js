@@ -21,7 +21,6 @@ $(document).ready(function() {
                     return;
                 }
     
-                console.log(loData);
                 loData.posts.forEach(function(p) {
                     $('#tumblr p').remove();
                     if (p.photos && p.photos.length === 0 && p.hasOwnProperty('photo-url-250')) {
