@@ -131,18 +131,6 @@ list-style: none;
 white-space: nowrap;
 }
 
-.rzl-pagination {
-width: 100%;
-}
-
-.rzl-page-next {
-text-align: right;
-}
-
-.rzl-page-info {
-text-align: center;
-}
-
 .rzl-footer {
 background-color: #fff;
 border-top: 1px solid rgba(230,230,230,0.75);
