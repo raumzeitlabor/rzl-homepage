@@ -1,0 +1,52 @@
+---
+layout: default
+title: Beitragsordnung
+---
+
+<style>
+ol {
+padding-left: 10px;
+counter-reset: item 0;
+list-style-type: none;
+}
+ol > li:before { 
+content: "(" counter(item) ") "; 
+counter-increment: item 
+}
+ol > li > ol { 
+padding-left: 40px;
+list-style-type: decimal;
+}
+ol > li > ol > li:before { 
+content: none; 
+}
+</style>
+{% capture c %}
+### §1 Höhe der Beiträge
+1. Der Mitgliedsbeitrag beträgt 20 Euro pro Monat / entsprechend 240 Euro pro
+Jahr.
+2. Der Mitgliedsbeitrag für Personen unter 18 Jahren beträgt 10 Euro pro Monat
+/ entsprechend 120 Euro pro Jahr.
+3. In begründeten Härtefällen können individuelle Absprachen mit dem Vorstand
+getroffen werden.
+
+### §2 Fälligkeit
+1. Der Mitgliedsbeitrag wird jeweils zum 1. des Monats bzw. mit der Annahme
+des Aufnahmeantrags fällig.
+
+### §3 Zahlungsweise
+1. Die Zahlung des Beitrages erfolgt monatlich im Lastschriftverfahren. Bei
+nicht ausreichender Deckung des Kontos sind die entstehenden Gebühren vom
+Mitglied zu begleichen.
+2. Alternativ zu Absatz 1 kann auch eine Barzahlung an den Kassenwart
+erfolgen, sofern dieser zum entsprechenden Zeitpunkt dazu bereit ist.
+
+### §4 Aufnahmegebühren
+1. Aufnahmegebühren werden nicht erhoben.
+
+### §5 Erstattungen
+1. Eine Erstattung von Mitgliedsbeiträgen findet nicht statt.
+
+*Stand: 26.10.2011*
+{% endcapture %}
+{{ c | markdownify }}
