@@ -4,12 +4,18 @@ title: Bilder
 ---
 
 <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-4 col-sx-6" id="tumblr-tmpl" style="display:none; padding: 5px;">
-    </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12" id="tumblr" style="text-align:center;">
-        <p style="text-align:left;">Einen Augenblick…</p>
+        <p style="text-align:left;"></p>
+    </div>
+    <div id="loading">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
     </div>
 </div>
 <!-- build:js(app) /scripts/tumblr.js -->
 <script src="/scripts/tumblr.js"></script>
+<script src="/bower_components/jquery-waypoints/waypoints.js"></script>
 <!-- endbuild -->
