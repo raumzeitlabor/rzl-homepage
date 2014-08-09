@@ -1,17 +1,22 @@
 ---
 layout: default
 title: Anfahrt
+notitle: true
 htmlheader: <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 ---
 
 <div class="row">
     <div class="col-lg-3 col-md-2 col-sm-12 col-sx-12">
-        <div style="text-align:center;"><img src="/images/rzl-jumbotron.jpg" class="rzl-avatar"/></div>
+        <div style="text-align:center;">
+            <h1>Anfahrt</h1>
+            <img src="/images/rzl-jumbotron.jpg" class="rzl-avatar"/>
+        </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
         <div class="stepdescr" id="step1">
             <p><em>Schön, dass Du uns besuchen möchtest!</em></p>
             <p>Hier ist eine Wegbeschreibung, mit der Du uns einfach finden solltest.</p>
             <p>Bevor Du dich auf den Weg machst solltest Du dir sicher sein, dass jemand vor Ort ist. Am schnellsten geht das übers <a href="tel:+4962176231370">Telefon</a>.</p>
+            <p id="rzl-status" style="display: none;">Es scheint so, als wäre momentan jemand da.</p>
             <p>Wenn Du dir an einem Punkt nicht sicher bist oder dich nicht zurecht findest, ruf doch einfach an.</p>
             <ul class="pager">
                 <li class="next"><a href="#step2">weiter &rarr;</a></li>
