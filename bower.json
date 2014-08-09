@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~3.0.3",
-    "jquery": "~1.11.0"
-  },
-  "devDependencies": {}
+    "jquery": "~1.11.0",
+    "jquery-waypoints": "~2.0.5"
+  }
 }
