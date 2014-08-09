@@ -10,9 +10,10 @@
         console.log('Lat, Lon: ' + e.latlng.lat + ', ' + e.latlng.lng);
     });
 
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: 'Kartenmaterial',
-        maxZoom: 17
+    var osmAttr = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: osmAttr,
+        maxZoom: 17,
     }).addTo(map);
 
     var marker = L.marker([49.50526, 8.502]).addTo(map);
