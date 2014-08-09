@@ -157,6 +157,32 @@ margin: 0;
 padding: 0;
 }
 
+/* Legacy WP classes */
+.alignleft {
+float:left;
+margin:15px;
+}
+
+.alignright {
+float:right;
+margin:15px;
+}
+
+.image, .alignnone {
+display:block;
+text-align:center;
+margin:10px auto;
+}
+
+.image > .image_meta {
+color: rgba(120, 120, 120, 1);
+}
+
+.imagecache {
+margin:0 auto;
+display:block;
+}
+
 /* SpinKit */
 
 .spinner {
