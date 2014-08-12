@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    $.getJSON('http://s.rzl.so/api/simple.json', function(d) {
+    $.getJSON('//s.rzl.so/api/simple.json', function(d) {
         if (d === 1) {
             $('#rzl-status').show();
             $('.raumstatus').removeClass('label-warning label-danger').addClass('label-success').empty().append('offen');
