@@ -103,8 +103,8 @@ $(document).ready(function() {
 
                     return p.photos.map(function(d) {
                         return {
-                            'thumb': d['photo-url-400'],
-                            'url': d['photo-url-1280'],
+                            'thumb': d['photo-url-400'].replace(/^http:/, ''),
+                            'url': d['photo-url-1280'].replace(/^http:/, ''),
                             'width': d.width,
                             'height': d.height,
                             'caption': d['photo-caption'] ? $(d['photo-caption']).text() : ''
