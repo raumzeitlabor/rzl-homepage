@@ -1,0 +1,23 @@
+---
+layout: default
+title: Spenden
+---
+{% capture c %}
+### Bankverbindung
+
+Empfänger
+: RaumZeitLabor e.V.
+
+Institut
+: Sparkasse Rhein Neckar Nord
+
+BIC
+: MANSDE66XXX
+
+IBAN
+: DE91670505050039061040
+
+Verwendungszweck
+: Spende
+{% endcapture %}
+{{ c | markdownify | replace: '<dl>', '<dl class="dl-horizontal">' }}
