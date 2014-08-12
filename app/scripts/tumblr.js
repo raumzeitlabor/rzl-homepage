@@ -103,8 +103,14 @@ $(document).ready(function() {
 
                     return p.photos.map(function(d) {
                         return {
-                            'thumb': d['photo-url-400'].replace(/^http:/, ''),
-                            'url': d['photo-url-1280'].replace(/^http:/, ''),
+                            'thumb': d['photo-url-400'].replace(/^http:/, '')
+                                // interestingly, only some of tumblr's asset
+                                // servers have valid SSL certs
+                                .replace(/\d+\.media/, '23.media'),
+                            'url': d['photo-url-1280'].replace(/^http:/, '')
+                                // interestingly, only some of tumblr's asset
+                                // servers have valid SSL certs
+                                .replace(/\d+\.media/, '23.media'),
                             'width': d.width,
                             'height': d.height,
                             'caption': d['photo-caption'] ? $(d['photo-caption']).text() : ''
