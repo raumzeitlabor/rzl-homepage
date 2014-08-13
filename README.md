@@ -12,8 +12,8 @@ a few seconds (depending on your Internet connection).*
 ## Contribution Policy
 
 To contribute content or code please create a pull request, so that we can have a look
-at it and discuss your changes. We plan to integrate with Travis CI so that we can easily
-see if your pull request breaks our build and thus cannot be merged.
+at it and discuss your changes. We integrate with Travis CI so that we can easily see
+if your pull request breaks our build and thus cannot be merged.
 
 When contributing blog posts you may of course automatically merge your pull request as
 soon as Travis approves.
