@@ -1,7 +1,7 @@
 # rzl-homepage
 
-To try out the new version, visit the test installation at new.raumzeitlabor.de
-(updated automatically with each commit).
+To try out the new version, visit the [test installation](https://new.raumzeitlabor.de)
+(updated automatically with each commit, checked every minute).
 
 ## Requirements
 
