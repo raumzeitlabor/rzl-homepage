@@ -1,4 +1,4 @@
-# rzl-homepage
+# rzl-homepage  [![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
 
 To try out the new version, visit the [test installation](https://new.raumzeitlabor.de)
 (updated automatically with each commit, checked every minute).
