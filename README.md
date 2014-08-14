@@ -16,13 +16,15 @@ at it and discuss your changes. We integrate with Travis CI so that we can easil
 if your pull request breaks our build and thus cannot be merged.
 
 When contributing blog posts you may of course automatically merge your pull request as
-soon as Travis approves.
+soon as Travis approves, if you follow our guidelines:
 
-*Please use HTML on content pages sparingly. Blog posts should always be written in
-Markdown if no special HTML content is required. Please set your editor to break after
-85 characters and use spaces instead of tabs.*
+* Please provide a descriptive, short commit message. If more information is required,
+put it into the body of the commit message. We speak English in our commit messages.
+* Please use HTML on content pages sparingly. Blog posts should always be written in
+Markdown if no special HTML content is required.
+* Please set your editor to break after 85 characters and use spaces instead of tabs.
 
-We will provide temples for creating blog posts. You will be able to add blog posts
+We will provide templates for creating blog posts. You will be able to add blog posts
 consisting of text only on Github.
 
 In case of questions, please talk to Else.
