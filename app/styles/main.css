@@ -1,12 +1,12 @@
 @font-face {
 font-family: Miso;
-src: url(/styles/fonts/miso-regular.otf) format('opentype');
+src: url(/fonts/miso-regular.otf) format('opentype');
 }
 
 @font-face {
 font-family: Miso;
 font-weight: bold;
-src: url(/styles/fonts/miso-bold.otf) format('opentype');
+src: url(/fonts/miso-bold.otf) format('opentype');
 }
 
 .rzl-content h1, .rzl-content h2, .rzl-content h3 {

@@ -212,7 +212,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/*.{ico,png}',
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
+                        '<%= config.dist %>/fonts/{,*/}*.*',
                     ]
                 }
             }
@@ -234,7 +234,7 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/fonts'],
             },
             html: [
                 '<%= config.jekyll %>/**/*.html',
@@ -336,8 +336,17 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         'assets/**/*.*',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap/dist/fonts/*.*',
                         '!**/_*{,/**}'
+                    ]
+                }, {
+                    expand: true,
+                    flatten: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>/fonts',
+                    src: [
+                        'styles/fonts/{,*/}*.*',
+                        'bower_components/bootstrap/dist/fonts/*.*',
+                        'bower_components/font-awesome/fonts/*.*',
                     ]
                 }]
             },
