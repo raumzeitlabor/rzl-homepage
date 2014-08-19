@@ -335,7 +335,6 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         'assets/**/*.*',
-                        'styles/fonts/{,*/}*.*',
                         '!**/_*{,/**}'
                     ]
                 }, {
@@ -369,6 +368,16 @@ module.exports = function (grunt) {
                     cwd: '.tmp/jekyll',
                     dest: '<%= config.dist %>/blog/page/1',
                     src: 'index.html'
+                }, {
+                    expand: true,
+                    flatten: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>/fonts',
+                    src: [
+                        'styles/fonts/{,*/}*.*',
+                        'bower_components/bootstrap/dist/fonts/*.*',
+                        'bower_components/font-awesome/fonts/*.*',
+                    ]
                 }]
             },
             styles: {
