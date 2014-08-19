@@ -9,7 +9,7 @@ To try out the new version, visit the [test installation](https://new.raumzeitla
 everything (including images) is included. The initial cloning therefore takes
 a few seconds (depending on your Internet connection).*
 
-## Contribution Policy
+## Contributing
 
 To contribute content or code please create a pull request, so that we can have a look
 at it and discuss your changes. We integrate with Travis CI so that we can easily see
@@ -29,14 +29,14 @@ consisting of text only on Github.
 
 In case of questions, please talk to Else.
 
-## Contributing
+## Setup
 
 ### Requirements
 
     sudo apt-get install nodejs jekyll
     sudo npm install -g grunt-cli bower
 
-### Setup
+### Dependencies
 
     npm install
     bower install
@@ -49,3 +49,24 @@ In case of questions, please talk to Else.
 ### Building
 
     grunt
+
+### Deploying
+
+The quick and dirty solution is to add a `post-merge` git hook:
+
+    #!/bin/bash -l
+    set -e
+    time npm update \
+        && bower update \
+        && ./node_modules/grunt-cli/bin/grunt \
+        && rsync -vrP --checksum --delete dist/ dist.current
+
+Note that the process of copying the files into the destination directory is
+obviously not atomic. However, files are synced only if really necessary (based
+on checksum). Deploying atomatically is anyways not possible due to AJAX
+requests happening. Checking for new commits is done using crontab:
+
+    */5 * * * * git pull origin master
+
+A better solution would be to use Github web hooks. The effort of setting that
+up is way higher though.
