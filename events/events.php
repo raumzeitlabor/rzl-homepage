@@ -48,9 +48,9 @@ if ($c->DoRequest() !== false) {
             $d[] = array(
                 'name' => (string)$v->SUMMARY,
                 'timeBegin' => (string)$v->DTSTART->getDateTime()
-                    ->format(\DateTime::W3C),
+                    ->format(\DateTime::ISO8601),
                 'timeEnd'   => (string)$v->DTEND->getDateTime()
-                    ->format(\DateTime::W3C),
+                    ->format(\DateTime::ISO8601),
                 'description' => (string)$v->DESCRIPTION,
                 'recurring' => ($v->{'RECURRENCE-ID'}) ? true : false
             );
@@ -67,6 +67,7 @@ if ($c->DoRequest() !== false) {
 }
 
 print json_encode(array(
-    status => $status,
-    data => $d,
+    'status' => $status,
+    'month' => (new DateTime())->format('m/Y'),
+    'data' => $d,
 ), JSON_PRETTY_PRINT);
