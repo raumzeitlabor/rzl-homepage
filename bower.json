@@ -5,6 +5,7 @@
     "bootstrap": "~3.0.3",
     "jquery": "~1.11.0",
     "jquery-waypoints": "~2.0.5",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.1.0",
+    "leaflet": "~0.7.3"
   }
 }

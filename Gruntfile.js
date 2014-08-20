@@ -213,6 +213,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/fonts/{,*/}*.*',
+                        '<%= config.dist %>/bower_components/leaflet/dist/leaflet.*',
                     ]
                 }
             }
@@ -335,6 +336,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         'assets/**/*.*',
+                        'bower_components/leaflet/dist/leaflet.*',
+                        'bower_components/leaflet/dist/images/*.*',
                         '!**/_*{,/**}'
                     ]
                 }, {
