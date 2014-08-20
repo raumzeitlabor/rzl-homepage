@@ -1,5 +1,5 @@
 # rzl-homepage
-[![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
+[![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg?branch=master)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
 [![DevDependency Updates](https://david-dm.org/raumzeitlabor/rzl-homepage/dev-status.svg)](https://david-dm.org/raumzeitlabor/rzl-homepage#info=devDependencies&view=table)
 
 To try out the new version, visit the [test installation](https://new.raumzeitlabor.de)
