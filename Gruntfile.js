@@ -54,7 +54,7 @@ module.exports = function (grunt) {
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             jekyll: {
-                files: ['<%= config.app %>/**/*.html'],
+                files: ['<%= config.app %>/**/*.html', '_config.yml'],
                 tasks: ['clean:dist', 'copy:jekyll', 'autoprefixer', 'jekyll:dist', 'copy:build'],
             },
             livereload: {
