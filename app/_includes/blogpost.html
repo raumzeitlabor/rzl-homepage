@@ -5,7 +5,7 @@
 </div>
 {% capture loginname %}{{ include.blogpost.author.login | downcase }}{% endcapture %}
 <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 rzl-blogpost-meta">
-    <div class="rzl-avatar" style="background-image: url('/assets/avatars/{% if site.user.[loginname].avatar %}{{ site.user.[loginname].avatar }}{% else %}{{ site.user.default.avatar }}{% endif %}')"/>&nbsp;</div>
+    <div class="rzl-avatar" style="background-image: url('/assets/avatars/{% if site.user.[loginname].avatar %}{{ site.user.[loginname].avatar }}{% else %}{{ site.user.default.avatar }}{% endif %}')">&nbsp;</div>
     <p class="rzl-user">{% if include.blogpost.author %}{{ include.blogpost.author.display_name }}{% else %}Bernd Lauert{% endif %}</p>
     {% if include.blogpost.author.function %}<p class="rzl-function">{{ include.blogpost.author.function }}</p>{% else %}{% if site.user.[loginname].function %}<p class="rzl-function">{{ site.user.[loginname].function }}</p>{% endif %}{% endif %}
     {% if include.blogpost.facts %}
