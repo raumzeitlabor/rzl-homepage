@@ -106,11 +106,21 @@ margin-bottom: 10px;
 border-radius: 150px;
 -webkit-border-radius: 150px;
 -moz-border-radius: 150px;
+overflow:hidden;
+box-shadow: 0 0 10px rgba(153,153,153,0.75);
+background-repeat: no-repeat;
+background-size: cover !important;
 }
 
-.rzl-avatar~p {
+.rzl-user {
 font-family: 'Miso';
 font-size: 20px;
+}
+
+.rzl-function {
+margin-top: -10px;
+font-size: 13px;
+color: #b3b3b3;
 }
 
 .rzl-separator {
