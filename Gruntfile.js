@@ -17,6 +17,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-connect-proxy');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
