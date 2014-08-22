@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }} - {{ site.title }}{% if page.title %}{% endif %}</title>
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
