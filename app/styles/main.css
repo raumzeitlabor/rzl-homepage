@@ -81,8 +81,8 @@ margin-bottom: 25px;
 text-align: justify;
 }
 
-.rzl-content img {
-    max-width: 100%;
+.rzl-content img, .rzl-content object, .rzl-content iframe {
+max-width: 100%;
 }
 
 .rzl-blogpost {
