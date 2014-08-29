@@ -48,7 +48,7 @@ if ($c->DoRequest() !== false) {
         }
 
         foreach ($vc->VEVENT as $v) {
-            if (empty(trim($v->SUMMARY))) {
+            if (trim($v->SUMMARY) == false) {
                 continue;
             }
             $d[] = array(
