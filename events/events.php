@@ -48,6 +48,9 @@ if ($c->DoRequest() !== false) {
         }
 
         foreach ($vc->VEVENT as $v) {
+            if (empty(trim($v->SUMMARY))) {
+                continue;
+            }
             $d[] = array(
                 'name' => (string)$v->SUMMARY,
                 'timeBegin' => (string)$v->DTSTART->getDateTime()
