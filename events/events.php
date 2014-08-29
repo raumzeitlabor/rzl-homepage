@@ -38,10 +38,13 @@ if ($c->DoRequest() !== false) {
 
     foreach ($events as $ev) {
         $vc = VObject\Reader::read($ev['data']);
-        $vc->expand(new DateTime($first_dom), new DateTime($last_dom));
 
         if (! is_object($vc->VEVENT)) {
             continue;
+        }
+
+        if (is_object($vc->VEVENT->RRULE)) {
+            $vc->expand(new DateTime($first_dom), new DateTime($last_dom));
         }
 
         foreach ($vc->VEVENT as $v) {
