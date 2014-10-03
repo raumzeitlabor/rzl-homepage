@@ -33,7 +33,7 @@ In case of questions, please talk to Else.
 
 ### Requirements
 
-    sudo apt-get install nodejs jekyll
+    sudo apt-get install nodejs npm jekyll
     sudo npm install -g grunt-cli bower
 
 ### Dependencies
