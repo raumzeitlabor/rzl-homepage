@@ -31,22 +31,30 @@ In case of questions, please talk to Else.
 
 ## Setup
 
-### Requirements
+### Docker
+
+    cd docker && docker build -t rzl-homepage .
+    docker run --privileged=true -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev rzl-homepage
+
+### Plain
+
+#### Requirements
 
     sudo apt-get install nodejs npm jekyll
     sudo npm install -g grunt-cli bower
 
-### Dependencies
+#### Dependencies
 
     npm install
+    export PATH=$PATH:$(npm bin)
     bower install
 
-### Hacking
+#### Hacking
 
     grunt serve
     vi app/$file
 
-### Building
+#### Building
 
     grunt
 
