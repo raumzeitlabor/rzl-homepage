@@ -6,7 +6,18 @@
 
     moment.locale('de');
 
+    function errout() {
+        $('#rzl-events').empty().append('<p>' + errmsg + '</p>');
+    }
+
+    var firstRun = true;
     var loadEvents; loadEvents = function() {
+        if (firstRun) {
+            firstRun = !firstRun;
+        } else {
+            $('#rzl-events').css('opacity', '0.3');
+        }
+
         var month = moment().startOf('month');
         if (/\#\d{4}-\d{2}/.test(document.location.hash)) {
             var split = document.location.hash.substr(1).split('-');
@@ -30,11 +41,13 @@
                 }
                 vevents = d[2];
             } catch(e) {
-                $('#rzl-events').empty().append('<h2>Fehler</h2><p>' + errmsg + '</p>');
+                errout();
                 return;
             }
 
-            $('#rzl-events').empty().prepend('<h1>' + month.format('MMMM YYYY') + '</h1>');
+            $('#rzl-events').empty();
+            $('#rzl-events').append('<h2>' + month.format('MMMM YYYY') + '</h2>');
+            $($('#rzl-events-pager-tmpl').html()).appendTo('#rzl-events');
 
             var prevDate = null;
             var currentSide = 'right';
@@ -92,12 +105,15 @@
                 prevDate = currDate;
             }
 
+            $($('#rzl-events-pager-tmpl').html()).appendTo('#rzl-events');
             $('.pager .previous a').attr('href', '#' + prevMonth);
             $('.pager .next a').attr('href', '#' + nextMonth);
 
         }).fail(function() {
-            $('#rzl-events').empty().append('<h2>Fehler</h2><p>' + errmsg + '</p>');
+            errout();
             return;
+        }).always(function() {
+            $('#rzl-events').css('opacity', '1');
         });
     };
 

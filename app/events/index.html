@@ -2,6 +2,16 @@
 layout: default
 title: Events
 ---
+<script type="text/html" id="rzl-events-pager-tmpl">
+<ul class="pager">
+    <li class="previous">
+        <a href="">&larr; vorheriger Monat</a>
+    </li>
+    <li class="next">
+        <a href="">nächster Monat &rarr;</a>
+    </li>
+</ul>
+</script>
 <script type="text/html" id="rzl-event-tmpl">
 <div class="row">
     <div style="position: absolute; left: 50%;">
@@ -21,15 +31,9 @@ title: Events
     </div>
 </div>
 </script>
-<div id="rzl-events"></div>
-<ul class="pager">
-    <li class="previous">
-        <a href="">&larr; vorheriger Monat</a>
-    </li>
-    <li class="next">
-        <a href="">nächster Monat &rarr;</a>
-    </li>
-</ul>
+<div id="rzl-events">
+<p>Einen Augenblick, wir suchen unseren Terminkalender…</p>
+</div>
 <!-- build:js(app) /scripts/evplugins.js -->
 <script src="/bower_components/marked/lib/marked.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
