@@ -1,4 +1,5 @@
 # robotstxt.org/
 
 User-agent: *
-Disallow: /
+Disallow: /impressum/*
+Disallow: /verein/spenden/*
