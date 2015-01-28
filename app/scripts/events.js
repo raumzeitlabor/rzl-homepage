@@ -37,7 +37,7 @@
             $('#rzl-events').empty().prepend('<h1>' + month.format('MMMM YYYY') + '</h1>');
 
             var prevDate = null;
-            var currentSide = 'left';
+            var currentSide = 'right';
 
             // see https://tools.ietf.org/html/draft-ietf-jcardcal-jcal-10
             var orderMap = {};
