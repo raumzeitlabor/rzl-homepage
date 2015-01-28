@@ -6,7 +6,7 @@ ENV LANG en_US.UTF-8
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 CMD ["/sbin/my_init"]
 
-RUN echo 'Acquire::http::Proxy "http://10.42.23.55:3142";' > /etc/apt/apt.conf.d/90-apt-cacher.conf
+#RUN echo 'Acquire::http::Proxy "http://10.42.23.55:3142";' > /etc/apt/apt.conf.d/90-apt-cacher.conf
 
 RUN \
     echo "APT::Install-Recommends \"true\";\nAPT::Install-Suggests \"false\";" > /etc/apt/apt.conf ;\
