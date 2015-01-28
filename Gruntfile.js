@@ -85,11 +85,20 @@ module.exports = function (grunt) {
                     port: 80,
                     https: false,
                     xforward: false,
-                    headers: {
-                        'host': 'log.raumzeitlabor.de'
-                    },
+                    changeOrigin: true,
                     rewrite: {
                         '^/_tumblr': ''
+                    }
+                },
+                {
+                    context: '/events/ical',
+                    host: 'p.fruux.com',
+                    port: 443,
+                    https: true,
+                    xforward: false,
+                    changeOrigin: true,
+                    rewrite: {
+                        '^/events/ical': '/c/a3298259302/81bae0fb-601c-47ee-ba92-460866466d90.ics'
                     }
                 }
             ],
