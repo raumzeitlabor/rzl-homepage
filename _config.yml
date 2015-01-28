@@ -11,3 +11,42 @@ paginate_path: /blog/page/:num
 permalink: /blog/:title
 
 markdown: kramdown
+
+user:
+  default:    
+    function: 'Laborant'
+    avatar:   'bernd.png'
+  silsha:
+    function: 'Social Media Expert'
+    avatar:   'silsha.jpeg'
+  abrock:
+    function: 'Abrock School of Engineering'
+    avatar:   'abrock.jpeg'
+  tabascoeye:
+    avatar:   'tabascoeye.jpeg'
+  else:
+    avatar:   'else.png'
+  zwetschgo:
+    avatar:   'zwetschgo.jpeg'
+  rami:
+    avatar:   'rami.jpeg'
+  xandy:
+    avatar:   'xandy.jpeg'
+  inte:
+    avatar:   'inte.png'
+  don:
+    avatar:   'don.png'
+  thinkjd:
+    avatar:   'jd.png'
+  cheatha:
+    avatar:   'cheatha.jpeg'
+  jiska:
+    avatar:   'jiska.jpeg'
+  secure:
+    avatar:   'secure.jpeg'
+  blabber:
+    avatar:   'blabber.jpeg'
+  unicorn:
+    avatar:   'unicorn.jpeg'
+  tiefpunkt:
+    avatar:   'tiefpunkt.jpeg'

@@ -2,14 +2,14 @@
 layout: default
 title: Anfahrt
 notitle: true
-htmlheader: <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+htmlheader: <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
 ---
 
 <div class="row">
     <div class="col-lg-3 col-md-2 col-sm-12 col-sx-12">
         <div style="text-align:center;">
             <h1>Anfahrt</h1>
-            <img src="/images/rzl-jumbotron.jpg" class="rzl-avatar"/>
+            <div class="rzl-avatar" style="background-image: url('/assets/avatars/{{ site.user.default.avatar }}')"/>&nbsp;</div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
         <div class="stepdescr" id="step1">
@@ -76,7 +76,7 @@ htmlheader: <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leafle
         <div id="rzl-map" style="height:600px"></div>
     </div>
 </div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+<script src="/bower_components/leaflet/dist/leaflet.js"></script>
 <!-- build:js(app) /scripts/anfahrt.js -->
 <script src="/scripts/anfahrt.js"></script>
 <!-- endbuild -->

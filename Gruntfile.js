@@ -17,6 +17,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-connect-proxy');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -31,10 +32,10 @@ module.exports = function (grunt) {
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
-            bower: {
-                files: ['bower.json'],
-                tasks: ['bowerInstall']
-            },
+            //bower: {
+            //    files: ['bower.json'],
+            //    tasks: ['bowerInstall']
+            //},
             js: {
                 files: ['<%= config.app %>/scripts/{,*/}*.js'],
                 tasks: ['jshint'],
@@ -54,7 +55,7 @@ module.exports = function (grunt) {
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             jekyll: {
-                files: ['<%= config.app %>/**/*.html'],
+                files: ['<%= config.app %>/**/*.html', '_config.yml'],
                 tasks: ['clean:dist', 'copy:jekyll', 'autoprefixer', 'jekyll:dist', 'copy:build'],
             },
             livereload: {
@@ -75,7 +76,7 @@ module.exports = function (grunt) {
                 port: 8000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             proxies: [
                 {
@@ -84,11 +85,20 @@ module.exports = function (grunt) {
                     port: 80,
                     https: false,
                     xforward: false,
-                    headers: {
-                        'host': 'log.raumzeitlabor.de'
-                    },
+                    changeOrigin: true,
                     rewrite: {
                         '^/_tumblr': ''
+                    }
+                },
+                {
+                    context: '/events/ical',
+                    host: 'p.fruux.com',
+                    port: 443,
+                    https: true,
+                    xforward: false,
+                    changeOrigin: true,
+                    rewrite: {
+                        '^/events/ical': '/c/a3298259302/81bae0fb-601c-47ee-ba92-460866466d90.ics'
                     }
                 }
             ],
@@ -196,12 +206,12 @@ module.exports = function (grunt) {
         },
 
         // Automatically inject Bower components into the HTML file
-        bowerInstall: {
-            app: {
-                src: ['<%= config.app %>/index.html'],
-                ignorePath: '<%= config.app %>/'
-            }
-        },
+        //bowerInstall: {
+        //    app: {
+        //        src: ['<%= config.app %>/index.html'],
+        //        ignorePath: '<%= config.app %>/'
+        //    }
+        //},
 
         // Renames files for browser caching purposes
         rev: {
@@ -212,7 +222,8 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/*.{ico,png}',
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
+                        '<%= config.dist %>/fonts/{,*/}*.*',
+                        '<%= config.dist %>/bower_components/leaflet/dist/leaflet.*',
                     ]
                 }
             }
@@ -234,7 +245,7 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/fonts'],
             },
             html: [
                 '<%= config.jekyll %>/**/*.html',
@@ -335,9 +346,19 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         'assets/**/*.*',
+                        'bower_components/leaflet/dist/leaflet.*',
+                        'bower_components/leaflet/dist/images/*.*',
+                        '!**/_*{,/**}'
+                    ]
+                }, {
+                    expand: true,
+                    flatten: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>/fonts',
+                    src: [
                         'styles/fonts/{,*/}*.*',
                         'bower_components/bootstrap/dist/fonts/*.*',
-                        '!**/_*{,/**}'
+                        'bower_components/font-awesome/fonts/*.*',
                     ]
                 }]
             },
@@ -360,6 +381,16 @@ module.exports = function (grunt) {
                     cwd: '.tmp/jekyll',
                     dest: '<%= config.dist %>/blog/page/1',
                     src: 'index.html'
+                }, {
+                    expand: true,
+                    flatten: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>/fonts',
+                    src: [
+                        'styles/fonts/{,*/}*.*',
+                        'bower_components/bootstrap/dist/fonts/*.*',
+                        'bower_components/font-awesome/fonts/*.*',
+                    ]
                 }]
             },
             styles: {

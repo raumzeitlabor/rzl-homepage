@@ -1,5 +1,5 @@
 # rzl-homepage
-[![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
+[![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg?branch=master)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
 [![DevDependency Updates](https://david-dm.org/raumzeitlabor/rzl-homepage/dev-status.svg)](https://david-dm.org/raumzeitlabor/rzl-homepage#info=devDependencies&view=table)
 
 To try out the new version, visit the [test installation](https://new.raumzeitlabor.de)
@@ -9,7 +9,7 @@ To try out the new version, visit the [test installation](https://new.raumzeitla
 everything (including images) is included. The initial cloning therefore takes
 a few seconds (depending on your Internet connection).*
 
-## Contribution Policy
+## Contributing
 
 To contribute content or code please create a pull request, so that we can have a look
 at it and discuss your changes. We integrate with Travis CI so that we can easily see
@@ -29,23 +29,52 @@ consisting of text only on Github.
 
 In case of questions, please talk to Else.
 
-## Contributing
+## Setup
 
-### Requirements
+### Docker
 
-    sudo apt-get install nodejs jekyll
+    cd docker && docker build -t rzl-homepage .
+    docker run --privileged=true -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev rzl-homepage
+
+### Plain
+
+#### Requirements
+
+    sudo apt-get install nodejs npm jekyll
     sudo npm install -g grunt-cli bower
 
-### Setup
+#### Dependencies
 
     npm install
+    export PATH=$PATH:$(npm bin)
     bower install
 
-### Hacking
+#### Hacking
 
     grunt serve
     vi app/$file
 
-### Building
+#### Building
 
     grunt
+
+### Deploying
+
+The quick and dirty solution is to add a `post-merge` git hook:
+
+    #!/bin/bash -l
+    set -e
+    time npm update \
+        && bower update \
+        && ./node_modules/grunt-cli/bin/grunt \
+        && rsync -vrP --checksum --delete dist/ dist.current
+
+Note that the process of copying the files into the destination directory is
+obviously not atomic. However, files are synced only if really necessary (based
+on checksum). Deploying atomatically is anyways not possible due to AJAX
+requests happening. Checking for new commits is done using crontab:
+
+    */5 * * * * git pull origin master
+
+A better solution would be to use Github web hooks. The effort of setting that
+up is way higher though.

@@ -17,7 +17,7 @@ title: Neuigkeiten
         <li class="previous {% unless paginator.previous_page %}disabled{% endunless %}">
             <a href="{% if paginator.previous_page %}/blog/page/{{ paginator.previous_page }}{% else %}#paginator{% endif %}">&larr; neuer</a>
         </li>
-        <li><span class="page_number" style="border:0;">Seite {{ paginator.page }} von {{ paginator.total_pages }}</li>
+        <li><span class="page_number" style="border:0;">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span></li>
         <li class="next {% unless paginator.next_page %}disabled{% endunless %}">
             <a href="{% if paginator.next_page %}/blog/page/{{ paginator.next_page }}{% else %}#paginator{% endif %}">älter &rarr;</a>
         </li>
