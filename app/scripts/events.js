@@ -79,7 +79,7 @@
                 if (moment().subtract(1, 'days') > moment(ev.dtstart)) {
                     c.find('.rzl-event-fromnow').append(moment(ev.dtstart).fromNow());
                 } else {
-                    c.find('.rzl-event-fromnow').append(moment(ev.dtstart).format('dddd, Do MMMM [ab] hh:mm [Uhr]'));
+                    c.find('.rzl-event-fromnow').append(moment(ev.dtstart).format('dddd, Do MMMM [ab] HH:mm [Uhr]'));
                 }
 
                 c.find('.rzl-event-name').append(ev.summary);
