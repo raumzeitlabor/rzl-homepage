@@ -297,3 +297,9 @@ display:block;
 margin-top:-27%;
 }
 
+/* Disable text-align: justify for YouTube video archive descriptions as
+ * they're usually rather short text snippets which look weird justified */
+.rzl-content #youtube-archive {
+        text-align: left; /* Internet Explorer */
+        text-align: start;
+}
