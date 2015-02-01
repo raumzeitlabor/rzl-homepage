@@ -1,6 +1,6 @@
 <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 rzl-blogpost">
     <h2><a href="{{ include.blogpost.url }}">{{ include.blogpost.title }}</a></h2>
-    <p class="rzl-blogpost-date">veröffentlicht am {{ include.blogpost.date | date: "%b %-d, %Y" }}</p>
+    <p class="rzl-blogpost-date">veröffentlicht am {{ include.blogpost.date | date: "%-d." }} {% assign m = include.blogpost.date | date: "%-m" %}{% case m %}{% when '1' %}Januar {% when '2' %}Februar {% when '3' %}M&auml;rz {% when '4' %}April {% when '5' %}Mai {% when '6' %}Juni {% when '7' %}Juli {% when '8' %}August {% when '9' %}September {% when '10' %}Oktober {% when '11' %}November {% when '12' %}Dezember {% endcase %}{{ include.blogpost.date | date: "%Y" }}</p>
     <p>{{ include.blogpost.content }}</p>
 </div>
 {% capture loginname %}{{ include.blogpost.author.login | downcase }}{% endcapture %}
