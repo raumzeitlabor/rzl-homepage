@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             jekyll: {
-                files: ['<%= config.app %>/**/*.html', '_config.yml'],
+                files: ['<%= config.app %>/**/*.html', '<%= config.app %>/feed.xml', '_config.yml'],
                 tasks: ['clean:dist', 'copy:jekyll', 'autoprefixer', 'jekyll:dist', 'copy:build'],
             },
             livereload: {
@@ -332,7 +332,7 @@ module.exports = function (grunt) {
                     dot: false,
                     cwd: '<%= config.app %>',
                     dest: '<%= config.jekyll %>',
-                    src: ['**/*.html']
+                    src: ['**/*.html', 'feed.xml']
                 }]
             },
             dist: {
@@ -368,7 +368,7 @@ module.exports = function (grunt) {
                     dot: false,
                     cwd: '.tmp/jekyll',
                     dest: '<%= config.dist %>',
-                    src: '**/*.html'
+                    src: ['**/*.html', 'feed.xml']
                 }, {
                     expand: true,
                     dot: false,
