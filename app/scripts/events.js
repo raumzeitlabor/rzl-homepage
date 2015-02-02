@@ -81,7 +81,7 @@
             var sortedEvs = Object.keys(orderMap).sort();
             for (i = 0; i < sortedEvs.length; i++) {
                 ev = orderMap[sortedEvs[i]];
-                var currDate = moment(ev.dtstart);
+                var currDate = moment(ev.dtstart).format("YYYY-MM-DD");
 
                 var c = $($('#rzl-event-tmpl').html());
                 if(currDate !== prevDate){
