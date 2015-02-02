@@ -92,6 +92,8 @@
                     c.find('.rzl-event-fromnow').append(moment(ev.dtstart).format('dddd, Do MMMM [ab] HH:mm [Uhr]'));
                 }
 
+                c.find('.rzl-event-location').append(ev.location);
+
                 c.find('.rzl-event-name').append(ev.summary);
                 c.find('.rzl-event-descr').append(marked(ev.description.replace(/#/g, '###')));
                 currentSide = (currentSide === 'left') ? 'right' : 'left';
