@@ -84,7 +84,7 @@
                 var currDate = moment(ev.dtstart);
 
                 var c = $($('#rzl-event-tmpl').html());
-                if(currDate != prevDate){
+                if(currDate !== prevDate){
                     c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
                 }
 
