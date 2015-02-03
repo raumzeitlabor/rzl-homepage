@@ -11,6 +11,8 @@ src: url(/fonts/miso-bold.otf) format('opentype');
 
 .rzl-content h1, .rzl-content h2, .rzl-content h3 {
 font-family: 'Miso';
+text-align: left; /* Internet Explorer */
+text-align: start;
 }
 
 .rzl-body {
