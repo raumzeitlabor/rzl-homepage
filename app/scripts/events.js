@@ -84,7 +84,9 @@
                 var currDate = moment(ev.dtstart).format("YYYY-MM-DD");
 
                 var c = $($('#rzl-event-tmpl').html());
-                c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
+                if(currDate !== prevDate){
+                    c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
+                }
 
                 if (moment().subtract(1, 'days') > moment(ev.dtstart)) {
                     c.find('.rzl-event-fromnow').append(moment(ev.dtstart).fromNow());
