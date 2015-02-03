@@ -81,10 +81,14 @@
             var sortedEvs = Object.keys(orderMap).sort();
             for (i = 0; i < sortedEvs.length; i++) {
                 ev = orderMap[sortedEvs[i]];
-                var currDate = moment(ev.dtstart).format("YYYY-MM-DD");
+                var currDate = moment(ev.dtstart).format('YYYY-MM-DD');
 
                 var c = $($('#rzl-event-tmpl').html());
-                c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
+                if (currDate !== prevDate){
+                    c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
+                } else {
+                    c.find('.rzl-event-date').remove();
+                }
 
                 if (moment().subtract(1, 'days') > moment(ev.dtstart)) {
                     c.find('.rzl-event-fromnow').append(moment(ev.dtstart).fromNow());
@@ -96,7 +100,9 @@
 
                 c.find('.rzl-event-name').append(ev.summary);
                 c.find('.rzl-event-descr').append(marked(ev.description.replace(/#/g, '###')));
-                currentSide = (currentSide === 'left') ? 'right' : 'left';
+                if (currDate !== prevDate){
+                    currentSide = (currentSide === 'left') ? 'right' : 'left';
+                }
 
                 c.find('.rzl-event-' + currentSide).show();
                 $('#rzl-events').append(c);
