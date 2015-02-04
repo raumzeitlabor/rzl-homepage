@@ -2,7 +2,9 @@ language: node_js
 before_install: 
  - gem install jekyll
  - npm install -g grunt-cli bower
-install: npm install
+install:
+ - npm install
+ - bower install
 script: grunt build
 
 addons:
