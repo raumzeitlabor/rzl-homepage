@@ -29,7 +29,10 @@ consisting of text only on Github.
 
 In case of questions, please talk to Else.
 
-## Setup
+## Development Setup
+
+We have a Docker build container 'cause it's hip, but you may also roll your
+own environment. Choose as you like.
 
 ### Docker
 
@@ -58,23 +61,36 @@ In case of questions, please talk to Else.
 
     grunt
 
-### Deploying
+## Deployment
 
-The quick and dirty solution is to add a `post-merge` git hook:
+This homepage is auto-deployed by Travis if the following requirements are met:
 
-    #!/bin/bash -l
-    set -e
-    time npm update \
-        && bower update \
-        && ./node_modules/grunt-cli/bin/grunt \
-        && rsync -vrP --checksum --delete dist/ dist.current
+* we're on the master branch
+* the build is green (grunt exited with status 0)
 
-Note that the process of copying the files into the destination directory is
-obviously not atomic. However, files are synced only if really necessary (based
-on checksum). Deploying atomatically is anyways not possible due to AJAX
-requests happening. Checking for new commits is done using crontab:
+Travis will rsync the contents of the dist directory to premium (this is really
+fast). Please note that it may take a few minutes until Travis is able to
+complete a build.
 
-    */5 * * * * git pull origin master
+## Internals
 
-A better solution would be to use Github web hooks. The effort of setting that
-up is way higher though.
+The data flow is as follows:
+
+                                 app
+                                  |
+                                  v
+                   .layouts -> jekyll -> dist
+
+The Gruntfile we're using was initially generated using the yeoman webapp
+generator. While it allows for really nice development setups, it is a bit
+complicated to understand. Here's some information on how the homepage is
+built (rough sketch):
+
+    1. All JS code is linted. If you don't meet our style, you're out.
+    2. The target directory is cleaned up.
+    3. CSS is auto-prefixed (see e.g. http://scottriley.im/autoprefix).
+    4. All files relevant for Jekyll (especially HTML) is copied to .tmp
+    5. CSS and JS files are minified, concatenated and revved.
+    6. Images are optimized and revved.
+    7. Jekyll is run to generate the contents.
+    8. All HTML files are minified (e.g. templates, static pages).
