@@ -8,3 +8,6 @@ cache
 app/bower_components
 test/bower_components
 .*.sw[po]
+
+deploy_key
+deploy_key.pub

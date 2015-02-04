@@ -4,3 +4,13 @@ before_install:
  - npm install -g grunt-cli bower
 install: npm install
 script: grunt build
+
+addons:
+  ssh_known_hosts: premium.raumzeitlabor.de
+after_success:
+  - ./deploy.sh
+
+env:
+  global:
+    - ENCRYPTION_LABEL="906c0d008fb2"
+    - DEPLOY_BRANCH="master"
