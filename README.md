@@ -2,9 +2,6 @@
 [![Build Status](https://travis-ci.org/raumzeitlabor/rzl-homepage.svg?branch=master)](https://travis-ci.org/raumzeitlabor/rzl-homepage)
 [![DevDependency Updates](https://david-dm.org/raumzeitlabor/rzl-homepage/dev-status.svg)](https://david-dm.org/raumzeitlabor/rzl-homepage#info=devDependencies&view=table)
 
-To try out the new version, visit the [test installation](https://new.raumzeitlabor.de)
-(updated automatically with each commit, checked every minute).
-
 *This repository is rather large (about 200MB at the time of writing) because
 everything (including images) is included. The initial cloning therefore takes
 a few seconds (depending on your Internet connection).*
@@ -77,10 +74,11 @@ complete a build.
 The data flow is as follows:
 
                                  app
-                                  |
-                                  v
-                   .layouts -> jekyll -> dist
-
+                 app/_layouts     |
+                        |         v
+                        v      +--------+
+                   .layouts -> | jekyll | -> .tmp -> dist
+                               +--------+
 The Gruntfile we're using was initially generated using the yeoman webapp
 generator. While it allows for really nice development setups, it is a bit
 complicated to understand. Here's some information on how the homepage is
