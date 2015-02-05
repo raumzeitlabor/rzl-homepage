@@ -84,11 +84,10 @@ generator. While it allows for really nice development setups, it is a bit
 complicated to understand. Here's some information on how the homepage is
 built (rough sketch):
 
-    1. All JS code is linted. If you don't meet our style, you're out.
-    2. The target directory is cleaned up.
-    3. CSS is auto-prefixed (see e.g. http://scottriley.im/autoprefix).
-    4. All files relevant for Jekyll (especially HTML) is copied to .tmp
-    5. CSS and JS files are minified, concatenated and revved.
-    6. Images are optimized and revved.
-    7. Jekyll is run to generate the contents.
-    8. All HTML files are minified (e.g. templates, static pages).
+1. All JS code is linted. If you don't meet our style, you're out.
+2. The target directory is cleaned up.
+3. CSS is auto-prefixed (see e.g. http://scottriley.im/autoprefix).
+4. All files relevant for Jekyll (especially HTML) is copied to .tmp
+5. CSS and JS files are minified, concatenated and revved.
+6. Images are optimized and revved.
+7. Jekyll is run to generate the contents.8. All HTML files are minified (e.g. templates, static pages).
