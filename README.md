@@ -90,4 +90,5 @@ built (rough sketch):
 4. All files relevant for Jekyll (especially HTML) is copied to .tmp
 5. CSS and JS files are minified, concatenated and revved.
 6. Images are optimized and revved.
-7. Jekyll is run to generate the contents.8. All HTML files are minified (e.g. templates, static pages).
+7. Jekyll is run to generate the contents.
+8. All HTML files are minified (e.g. templates, static pages).
