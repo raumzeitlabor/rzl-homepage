@@ -34,7 +34,7 @@ own environment. Choose as you like.
 ### Docker
 
     cd docker && docker build -t rzl-homepage .
-    docker run --privileged=true -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev rzl-homepage grunt serve
+    docker run --privileged=true -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev rzl-homepage
 
 ### Plain
 

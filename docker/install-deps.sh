@@ -10,4 +10,5 @@ sudo -u dev -s -- <<EOF
 npm install
 export PATH=./node_modules/.bin:$PATH
 bower install
+grunt serve
 EOF
