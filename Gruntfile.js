@@ -105,6 +105,9 @@ module.exports = function (grunt) {
                     changeOrigin: true,
                     rewrite: {
                         '^/_tumblr': ''
+                    },
+                    headers: {
+                        'Host': ''
                     }
                 },
                 {
