@@ -40,7 +40,7 @@ module.exports = function (grunt) {
             //},
             js: {
                 files: ['<%= config.app %>/scripts/{,*/}*.js'],
-                tasks: ['jshint'],
+                tasks: ['jshint', 'copy:js'],
                 options: {
                     livereload: true
                 }
@@ -353,6 +353,15 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.jekyll %>',
                     src: ['**/*.html', '**/*.md', 'feed.xml', 'sitemap.xml']
+                }]
+            },
+            js: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: '<%= config.app %>/scripts/{,*/}*.js'
                 }]
             },
             dist: {
