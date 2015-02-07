@@ -18,6 +18,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-connect-proxy');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-git-describe');
+    grunt.loadNpmTasks('grunt-text-replace');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -61,7 +63,15 @@ module.exports = function (grunt) {
                     '<%= config.app %>/sitemap.xml',
                     '_config.yml'
                 ],
-                tasks: ['clean:dist', 'copy:jekyll', 'autoprefixer', 'jekyll:dist', 'copy:build'],
+                tasks: [
+                    'clean:dist',
+                    'jshint',
+                    'copy:jekyll',
+                    'saveRevision',
+                    'autoprefixer',
+                    'jekyll:dist',
+                    'copy:build'
+                ],
             },
             livereload: {
                 options: {
@@ -440,9 +450,33 @@ module.exports = function (grunt) {
                     drafts: true
                 }
             }
+        },
+
+        'git-describe': {
+            'full': {
+            }
+        },
+
+        replace: {
+          gitversion: {
+            src: ['<%= config.jekyll %>/_layouts/default.html'],
+            overwrite: true,
+            replacements: [{
+                from: 'GIT_VERSION_INFO',
+                to: function() {
+                    return grunt.option('gitRevision');
+                }
+            }]
+          }
         }
     });
 
+    grunt.registerTask('saveRevision', function() {
+        grunt.event.once('git-describe', function (rev) {
+            grunt.option('gitRevision', rev);
+        });
+        grunt.task.run(['git-describe', 'replace']);
+    });
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -454,7 +488,9 @@ module.exports = function (grunt) {
             'concurrent:server',
 
             'clean:dist',
+            'jshint',
             'copy:jekyll',
+            'saveRevision',
             'autoprefixer',
             'jekyll:dist',
             'copy:build',
@@ -488,6 +524,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'copy:jekyll',
+        'saveRevision',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
