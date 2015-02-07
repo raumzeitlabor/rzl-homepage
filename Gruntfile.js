@@ -68,10 +68,10 @@ module.exports = function (grunt) {
                     'clean:dist',
                     'jshint',
                     'copy:jekyll',
-                    'saveRevision',
                     'autoprefixer',
                     'jekyll:dist',
-                    'copy:build'
+                    'copy:build',
+                    'saveRevision'
                 ],
             },
             livereload: {
@@ -420,6 +420,12 @@ module.exports = function (grunt) {
                         'bower_components/bootstrap/dist/fonts/*.*',
                         'bower_components/font-awesome/fonts/*.*',
                     ]
+                }, {
+                    expand: true,
+                    flatten: false,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: 'CHANGELOG.json'
                 }]
             },
             styles: {
@@ -472,16 +478,16 @@ module.exports = function (grunt) {
         },
 
         replace: {
-          gitversion: {
-            src: ['<%= config.jekyll %>/_layouts/default.html'],
-            overwrite: true,
-            replacements: [{
-                from: 'GIT_VERSION_INFO',
-                to: function() {
-                    return grunt.option('gitRevision');
-                }
-            }]
-          }
+            gitversion: {
+                src: ['<%= config.dist %>/CHANGELOG.json'],
+                overwrite: true,
+                replacements: [{
+                    from: 'GIT_VERSION_INFO',
+                    to: function() {
+                        return grunt.option('gitRevision');
+                    }
+                }]
+            }
         }
     });
 
@@ -504,10 +510,10 @@ module.exports = function (grunt) {
             'clean:dist',
             'jshint',
             'copy:jekyll',
-            'saveRevision',
             'autoprefixer',
             'jekyll:dist',
             'copy:build',
+            'saveRevision',
 
             'configureProxies',
             'connect:livereload',
@@ -538,7 +544,6 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'copy:jekyll',
-        'saveRevision',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
@@ -550,6 +555,7 @@ module.exports = function (grunt) {
         'usemin',
         'jekyll:dist',
         'copy:build',
+        'saveRevision',
         'htmlmin'
     ]);
 
