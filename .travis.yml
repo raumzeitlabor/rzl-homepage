@@ -1,16 +1,24 @@
+sudo: false
+
 language: node_js
 before_install: 
- - gem install jekyll
- - npm install -g grunt-cli bower
+ - bundler install --path vendor/bundle
 install:
  - npm install
- - bower install
-script: grunt build
+ - node_modules/.bin/bower install
+script: node_modules/.bin/grunt build
 
 addons:
   ssh_known_hosts: premium.raumzeitlabor.de
 after_success:
   - ./deploy.sh
+
+cache:
+  bundler: true
+  directories:
+    - node_modules
+    - vendor/bundle
+    - app/bower_components
 
 env:
   global:

@@ -436,7 +436,7 @@ module.exports = function (grunt) {
 
         jekyll: {
             options: {
-                bundleExec: false,
+                bundleExec: true,
                 src : '<%= config.jekyll %>',
             },
             dist: {
