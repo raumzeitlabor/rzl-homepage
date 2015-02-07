@@ -59,6 +59,7 @@ module.exports = function (grunt) {
             jekyll: {
                 files: [
                     '<%= config.app %>/**/*.html',
+                    '<%= config.app %>/**/*.md',
                     '<%= config.app %>/feed.xml',
                     '<%= config.app %>/sitemap.xml',
                     '_config.yml'
@@ -79,6 +80,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= config.app %>/{,*/}*.html',
+                    '<%= config.app %>/{,*/}*.md',
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/images/{,*/}*'
                 ]
@@ -347,7 +349,7 @@ module.exports = function (grunt) {
                     dot: false,
                     cwd: '<%= config.app %>',
                     dest: '<%= config.jekyll %>',
-                    src: ['**/*.html', 'feed.xml', 'sitemap.xml']
+                    src: ['**/*.html', '**/*.md', 'feed.xml', 'sitemap.xml']
                 }]
             },
             dist: {
@@ -383,7 +385,7 @@ module.exports = function (grunt) {
                     dot: false,
                     cwd: '.tmp/jekyll',
                     dest: '<%= config.dist %>',
-                    src: ['**/*.html', 'feed.xml', 'sitemap.xml']
+                    src: ['**/*.html', '**./*.md', 'feed.xml', 'sitemap.xml']
                 }, {
                     expand: true,
                     dot: false,
