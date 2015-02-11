@@ -40,7 +40,7 @@ own environment. Choose as you like.
 
 #### Requirements
 
-    sudo apt-get install nodejs npm jekyll
+    sudo apt-get install nodejs npm jekyll bundler
     sudo npm install -g grunt-cli bower
 
 #### Dependencies
