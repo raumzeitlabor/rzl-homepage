@@ -41,9 +41,15 @@
                 marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 17);
-                $('#step5-prev').attr('href', '#step3');
+		$('#step7-prev').attr('href', '#step3');
                 break;
             case 'step4':
+                marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
+                polyline.setLatLngs([ ]);
+                map.setView(marker.getLatLng(), 17);
+		$('#step7-prev').attr('href', '#step4');
+                break;
+            case 'step5':
                 marker.setLatLng([49.50810816393884, 8.500746488571167]).update();
                 polyline.setLatLngs([
                     [49.50734182456017, 8.499072790145874],
@@ -53,9 +59,8 @@
                     [49.50810816393884, 8.500746488571167]
                 ]);
                 map.fitBounds(polyline.getBounds());
-                $('#step5-prev').attr('href', '#step4');
                 break;
-            case 'step5':
+            case 'step6':
                 marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
                 polyline.setLatLngs([
                     [49.50810816393884, 8.500746488571167],
@@ -67,7 +72,7 @@
                 ]);
                 map.fitBounds(polyline.getBounds());
                 break;
-            case 'step6':
+            case 'step7':
                 marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
                 polyline.setLatLngs([
                     [49.507293, 8.499185],
