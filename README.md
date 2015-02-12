@@ -40,13 +40,14 @@ own environment. Choose as you like.
 
 #### Requirements
 
-    sudo apt-get install nodejs npm jekyll bundler
+    sudo apt-get install nodejs npm bundler
     sudo npm install -g grunt-cli bower
 
 #### Dependencies
 
     npm install
     export PATH=$PATH:$(npm bin)
+    bundler install --path vendor/bundle
     bower install
 
 #### Hacking
