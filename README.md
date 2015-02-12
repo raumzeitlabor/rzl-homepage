@@ -40,13 +40,23 @@ own environment. Choose as you like.
 
 #### Requirements
 
-    sudo apt-get install nodejs npm jekyll
+##### Debian
+
+    sudo apt-get install nodejs npm bundler
     sudo npm install -g grunt-cli bower
+
+##### FreeBSD
+
+    sudo pkg install node npm rubygem-bundler nasm
+    sudo npm install -g grunt-cli bower
+
+*Note: nasm(1) is needed to compile some node packages from source.*
 
 #### Dependencies
 
     npm install
     export PATH=$PATH:$(npm bin)
+    bundler install --path vendor/bundle
     bower install
 
 #### Hacking
