@@ -41,13 +41,13 @@
                 marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 17);
-		$('#step7-prev').attr('href', '#step3');
+                $('#step7-prev').attr('href', '#step3');
                 break;
             case 'step4':
                 marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 17);
-		$('#step7-prev').attr('href', '#step4');
+                $('#step7-prev').attr('href', '#step4');
                 break;
             case 'step5':
                 marker.setLatLng([49.50810816393884, 8.500746488571167]).update();
