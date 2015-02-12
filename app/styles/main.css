@@ -284,6 +284,16 @@ text-align:center;
 text-transform:uppercase;
 }
 
+@media(max-width:980px) {
+.rzl-event-wrap {
+margin-bottom:55px;
+}
+
+.rzl-event-date {
+margin-top:-50px;
+}
+}
+
 .rzl-event-name {
 margin:0.25em 0;
 }
