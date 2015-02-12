@@ -8,6 +8,9 @@ cache
 app/bower_components
 test/bower_components
 .*.sw[po]
+.bundle/
+Gemfile.lock
+vendor/
 
 deploy_key
 deploy_key.pub
