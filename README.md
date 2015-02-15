@@ -52,6 +52,14 @@ own environment. Choose as you like.
 
 *Note: nasm(1) is needed to compile some node packages from source.*
 
+##### OSX
+
+Needs [Homebrew](http://brew.sh/).
+
+    brew install node
+    sudo gem install bundler
+    sudo npm install -g grunt-cli bower
+
 #### Dependencies
 
     npm install
