@@ -7,6 +7,12 @@ tags: []
 status: publish
 type: post
 published: true
+facts:
+  Was?: Aschermettwoch 2015
+  Wann?: 18. Februar 2015, 19 Uhr
+  Wo?: RaumZeitLabor
+  Eintritt: Selbstkosten
+  Anmeldung: Erwünscht
 author:
   login: abrock
   email: a.brock@hhv-rheinklang.de
