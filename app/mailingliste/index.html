@@ -1,0 +1,23 @@
+---
+layout: default
+title: Mailingliste
+---
+{% capture c %}
+Das Vereinsleben findet neben dem Raum hauptsächlich auf der Mailingliste statt.
+Hier kannst du dich direkt auf die Mailingliste anmelden.
+
+## Anmeldung
+
+<form method="post" action="https://lists.raumzeitlabor.de/subscribe/raumzeitlabor">
+	<p><input name="email" placeholder="Deine Mailadresse"></p>
+	<p><input name="fullname" placeholder="Dein Name (optional)"></p>
+	<p><input type="submit" name="email-button" value="Anmelden"></p>
+</form>
+
+## Unsere Mailinglisten
+Oben meldest du dich für unsere allgemeine Mailingliste 
+(raumzeitlabor@raumzeitlabor.de) an. [Hier](https://lists.raumzeitlabor.de/listinfo)
+findest du unsere anderen Listen.
+
+{% endcapture %}
+{{ c | markdownify | replace: '<dl>', '<dl class="dl-horizontal">' }}
