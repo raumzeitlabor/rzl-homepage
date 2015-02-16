@@ -52,6 +52,7 @@ own environment. Choose as you like.
 #### Building
 
     grunt
+    
 uses the default task in the [Gruntfile](Gruntfile.js) to build the whole site.
 You can also run
 
@@ -64,10 +65,12 @@ and
 
     grunt serve
     $EDITOR app/$file
+    
 to check the final result use
 
     grunt serve:dist
-which will rebuild the whole project and serve nthe "dist" folder.
+    
+which will rebuild the whole project and serve the "dist" folder.
 Check out all possibilities in the [Gruntfile](Gruntfile.js).
 
 ## Deployment
