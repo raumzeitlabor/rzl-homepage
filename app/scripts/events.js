@@ -97,13 +97,41 @@
                     // provides no corresponding checks. Work around this by checking
                     // the length of the date string.
                     var hasStartTime = ev.dtstart.length > 10;
+                    var hasEndTime = ev.dtend.length > 10;
 
                     var start = moment(ev.dtstart);
-                    if (hasStartTime) {
-                        c.find('.rzl-event-fromnow').append(start.format('dddd, Do MMMM [ab] HH:mm [Uhr]'));
-                    } else {
-                        c.find('.rzl-event-fromnow').append(start.format('dddd, Do MMMM [ganztägig]'));
+                    var end = moment(ev.dtend);
+                    if (!hasEndTime) {
+                        end.subtract(1, 'days');
+                    }
 
+                    var isMultiday = (start.day() !== end.day()) ||
+                        (start.month() !== end.month()) ||
+                        (start.year() !== end.year());
+
+                    c.find('.rzl-event-fromnow').append(start.format('dddd, Do MMMM '));
+                    if (isMultiday) {
+                        if (hasStartTime) {
+                            c.find('.rzl-event-fromnow').append(start.format(' HH:mm [Uhr] '));
+                        } else {
+                            c.find('.rzl-event-fromnow').append('ganztägig ');
+                        }
+                        c.find('.rzl-event-fromnow').append(end.format('[bis] dddd, Do MMMM '));
+                        if (hasEndTime) {
+                            c.find('.rzl-event-fromnow').append(end.format('HH:mm [Uhr]'));
+                        } else {
+                            c.find('.rzl-event-fromnow').append('ganztägig');
+                        }
+                    } else {
+                        if (hasStartTime && hasEndTime) {
+                            c.find('.rzl-event-fromnow').append(start.format('[von] HH:mm [Uhr] '));
+                            c.find('.rzl-event-fromnow').append(end.format('[bis] HH:mm [Uhr]'));
+                        } else if (hasStartTime) {
+                            c.find('.rzl-event-fromnow').append(start.format('[ab] HH:mm [Uhr]'));
+                        } else {
+                            c.find('.rzl-event-fromnow').append('ganztägig');
+                        }
+                        c.find('.rzl-event-tillthen').remove();
                     }
                 }
 
