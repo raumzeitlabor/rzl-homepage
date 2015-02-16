@@ -70,11 +70,29 @@ Needs [Homebrew](http://brew.sh/).
 #### Hacking
 
     grunt serve
-    vi app/$file
+    $EDITOR app/$file
 
 #### Building
 
     grunt
+
+uses the default task in the [Gruntfile](Gruntfile.js) to build the whole site
+(targets `test` and `build`). This is what Travis does on new commits (see
+[.travis.yml](.travis.yml)).
+
+You can also run individual Grunt targets, e.g.
+
+    grunt build
+    grunt test
+
+To check the result use
+
+    grunt serve:dist
+
+which rebuilds the whole project and serves the "dist" folder on port `8080`.
+The editing of files then triggers a new build.
+
+You can read about all targets in the [Gruntfile](Gruntfile.js).
 
 ## Deployment
 
