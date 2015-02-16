@@ -128,5 +128,6 @@
 
     $(window).on('hashchange', function() {
         loadEvents();
+        $('html,body').animate({scrollTop: $('#rzl-events').offset().top},'slow');
     });
 })();
