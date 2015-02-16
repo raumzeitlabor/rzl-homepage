@@ -1,0 +1,56 @@
+---
+layout: post
+title: DEIN_TITEL
+facts:
+  Was?: Event_name
+  Wann?: Datum und Uhrzeit in Plaintext
+  Wo?: RaumZeitLabor
+  Eintritt: Selbstkosten
+  Anmeldung: Erwünscht
+author:
+  login: USERNAME
+  email: email
+  display_name: DISPLAYNAME
+---
+
+Dieses Template kann für einen neuen blogpost auf der RZL Seite genutzt werden.
+Lege eine kopie dieser Datei an und benenne sie so:
+
+"<year>-<month>-<day>-<title-with-hyphens-instead-of-spaces>.md"
+
+Der obere Block enthält die metadaten.
+Hier musst du "title:" befüllen.
+Der "facts:" Block ist sinnvoll bei Events.
+Generelle Blogposts brauchen den Block nicht.
+Außerdem muss der "author:" Block befüllt werden, damit der Post richtig zugeordnet werden kann.
+
+Den Post selbst bitte in Markdown verfassen. Es gibt:
+
+#### Überschriften (entspricht HTML H4)
+
+> Blockquotes
+
+* Listen
+* Item 1
+* Item 2
+
+Links:
+[an example](http://example.com/ "Title")
+[an example](http://example.com/)
+
+**Fett** und *kursiv*
+
+Außerdem `code formattierung` und solche mit quotes: `` `foo` "foo" ``
+
+Wenn du Bilder hinzufügen möchtest, lade sie in den "assets" Ordner und referenziere sie so:
+
+![27C3 Logo](https://raumzeitlabor.de/assets/27c3.jpg)
+
+
+Weitere Infos gibt es hier:
+http://jekyllrb.com/docs/posts/
+oder hier:
+http://daringfireball.net/projects/markdown/
+
+
+
