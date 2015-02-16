@@ -26,6 +26,23 @@ consisting of text only on Github.
 
 In case of questions, please talk to Else.
 
+### Merging Changes
+
+Here's how we usually proceed to merge changes. To simplify interaction with
+Github you should add the following underneath the `remote "origin"` section to
+your git configuration of the cloned repository (`.git/config`):
+
+    fetch = +refs/pull/*/head:refs/pull/upstream/*
+
+This then allows you to fetch pull requests using `git fetch --all` without
+being required to add the forked repository itself as a remote.
+
+We usually cherry-pick or rebase changes on top of master to keep a linear
+history if possible. If a change has several well-made commits and it makes
+sense to keep them, you can do a non-fast-forward merge (e.g. using the Github
+UI). If someone needs to edit their pull request, please ask them to squash
+their changes into a single commit if feasible. 
+
 ## Development Setup
 
 We have a Docker build container 'cause it's hip, but you may also roll your
