@@ -35,7 +35,9 @@ your git configuration of the cloned repository (`.git/config`):
     fetch = +refs/pull/*/head:refs/pull/upstream/*
 
 This then allows you to fetch pull requests using `git fetch --all` without
-being required to add the forked repository itself as a remote.
+being required to add the forked repository itself as a remote. You can also
+check out a single pull request using e.g. `git checkout refs/pull/upstream/78`
+(for pullrequest #78) to test the change.
 
 We usually cherry-pick or rebase changes on top of master to keep a linear
 history if possible. If a change has several well-made commits and it makes
