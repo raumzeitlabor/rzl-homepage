@@ -20,26 +20,29 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>
 Am Anfang schuf der Vorstand Boden und Decke.  Der Boden aber war wüst und
-wirr, Finsternis lag über dem Mett.  Der Vorstand sprach: <blockquote>Es werde
-Licht.</blockquote>
+wirr, Finsternis lag über dem Mett.
 
-Und die Elektriker verkabelten die Leuchten.  Dann sprach der Vorstand:
-<blockquote>Eine Küche entstehe mitten im Mett und scheide Mett von
-Mett.</blockquote>
+Der Vorstand sprach:
 
-Und so geschah es. Und der Vorstand sah, dass es gut war.  Dann sprach der
-Vorstand: <blockquote>Lass uns Mett formen als unser Abbild, uns
-ähnlich</blockquote>
-</p>
+> Es werde Licht.
 
-<img style="width:40%" src="/assets/rarity-mett.jpg" alt="Mett-Pony">
+Und die Elektriker verkabelten die Leuchten.
 
-<p>
-Und er sah, dass es gut war.  2048 Jahre später treffen wir uns wie immer am
-Aschermettwoch um 19 Uhr im RaumZeitLabor um
-(Mett|Zwiebel|Sushi)-(Brötchen|Röllchen(?)|Mett) zu verzehren.  Wenn ihr
-mitessen wollt, so <a href="mailto:info@raumzeitlabor.de">antwortet jetzt "Ich
-will"</a>.
-</p>
+Dann sprach der Vorstand:
+
+> Eine Küche entstehe mitten im Mett und scheide Mett von Mett.
+
+Und so geschah es. Und der Vorstand sah, dass es gut war. 
+
+Dann sprach der Vorstand:
+
+> Lass uns Mett formen als unser Abbild, uns ähnlich.
+
+![Mett-Pony](/assets/rarity-mett.jpg)
+
+Und er sah, dass es gut war.
+
+2048 Jahre später treffen wir uns wie immer am Aschermettwoch um 19 Uhr im
+RaumZeitLabor um (Mett|Zwiebel|Sushi)-(Brötchen|Röllchen(?)|Mett) zu verzehren.
+Wenn ihr mitessen wollt, so [antwortet jetzt "Ich will"](mailto:anmeldung@raumzeitlabor.de).
