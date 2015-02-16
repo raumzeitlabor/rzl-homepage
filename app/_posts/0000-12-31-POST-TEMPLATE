@@ -1,11 +1,6 @@
 ---
 layout: post
 title: DEIN_TITEL
-categories: []
-tags: []
-status: publish
-type: post
-published: true
 facts:
   Was?: Event_name
   Wann?: Datum und Uhrzeit in Plaintext
@@ -24,8 +19,9 @@ Lege eine kopie dieser Datei an und benenne sie so:
 "<year>-<month>-<day>-<title-with-hyphens-instead-of-spaces>.md"
 
 Der obere Block enthält die metadaten.
-Hier musst du "title:" befüllen, "tags" kannst du nutzen, aber derzeit fängt unser blog nicht viel damit an.
-Der "facts:" Block ist sinnvoll bei Events. Generelle Blogposts brauchen ihn nicht.
+Hier musst du "title:" befüllen.
+Der "facts:" Block ist sinnvoll bei Events.
+Generelle Blogposts brauchen den Block nicht.
 Außerdem muss der "author:" Block befüllt werden, damit der Post richtig zugeordnet werden kann.
 
 Den Post selbst bitte in Markdown verfassen. Es gibt:
