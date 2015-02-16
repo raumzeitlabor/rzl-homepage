@@ -93,7 +93,18 @@
                 if (moment().subtract(1, 'days') > moment(ev.dtstart)) {
                     c.find('.rzl-event-fromnow').append(moment(ev.dtstart).fromNow());
                 } else {
-                    c.find('.rzl-event-fromnow').append(moment(ev.dtstart).format('dddd, Do MMMM [ab] HH:mm [Uhr]'));
+                    // moment.js doesn't support moments without times and therefore
+                    // provides no corresponding checks. Work around this by checking
+                    // the length of the date string.
+                    var hasStartTime = ev.dtstart.length > 10;
+
+                    var start = moment(ev.dtstart);
+                    if (hasStartTime) {
+                        c.find('.rzl-event-fromnow').append(start.format('dddd, Do MMMM [ab] HH:mm [Uhr]'));
+                    } else {
+                        c.find('.rzl-event-fromnow').append(start.format('dddd, Do MMMM [ganztägig]'));
+
+                    }
                 }
 
                 c.find('.rzl-event-location').append(ev.location);
