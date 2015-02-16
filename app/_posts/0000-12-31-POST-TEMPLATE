@@ -1,0 +1,68 @@
+---
+layout: post
+title: DEIN_TITEL
+facts:
+  Was?: Event_name
+  Wann?: Datum und Uhrzeit in Plaintext
+  Wo?: RaumZeitLabor
+  Eintritt: Selbstkosten
+  Anmeldung: Erwünscht
+author:
+  login: USERNAME
+  email: email
+  display_name: DISPLAYNAME
+---
+
+Dieses Template kann für einen neuen Blogpost auf der RZL Seite genutzt werden.
+Lege eine Kopie dieser Datei an und benenne sie so:
+
+"<year>-<month>-<day>-<title-with-hyphens-instead-of-spaces>.md"
+
+Bitte achte darauf, dass deine Datei komplett kleingeschrieben ist.
+
+Der obere Block enthält die Metadaten. Hier musst du "title:" befüllen.
+
+Der "facts:" Block ist sinnvoll bei Events, die Keys sind beliebig wählbar,
+sollten aber nicht zu lang sein. "Normale" Blogposts brauchen den Block nicht.
+
+Außerdem muss der "author:" Block befüllt werden, damit der Post dir richtig
+zugeordnet werden kann. Wenn Du möchtest, kannst Du dir noch einen Avatar
+hinterlegen und einen Titel zuweisen. Dies machst Du in der allgemeinen Jekyll
+Config (config.yml).
+
+Den Post selbst bitte in Markdown (und nicht: HTML) verfassen, sofern möglich.
+Es gibt:
+
+#### Überschriften (entspricht HTML H4)
+
+> Blockquotes
+
+* Listen
+* Item 1
+* Item 2
+
+Links:
+[an example](http://example.com/ "Title")
+[an example](http://example.com/)
+
+**Fett** und *kursiv*
+
+Außerdem `Code Formattierung` und solche mit Quotes: `` `foo` "foo" ``
+
+Längere Codeblöcke rückst Du mit vier Spaces ein:
+
+    #!/bin/sh
+    set -e
+    …
+
+Wenn du Bilder hinzufügen möchtest, lade sie in den "assets" Ordner und
+referenziere sie so:
+
+![27C3 Logo](https://raumzeitlabor.de/assets/27c3.jpg)
+
+*Bitte achte unbedingt darauf, dass dein Bild < 800x600 ist und wenig Speicher
+verbraucht, da es mit in das Repository eingecheckt und verewigt wird!*
+
+Weitere Infos gibt es hier: http://jekyllrb.com/docs/posts/
+oder hier: http://daringfireball.net/projects/markdown/
+oder hier: https://wiki.raumzeitlabor.de/wiki/Homepage
