@@ -98,7 +98,7 @@ module.exports = function (grunt) {
             proxies: [
                 {
                     context: '/_tumblr',
-                    host: 'log.raumzeitlabor.de',
+                    host: 'api.tumblr.com',
                     port: 80,
                     https: false,
                     xforward: false,

@@ -79,42 +79,32 @@ $(document).ready(function() {
 
     function getImages() {
         $('#loading').show();
-        $.ajax('/_tumblr/api/read/json?num=' + numberOfImages + '&type=photo&start=' + offset)
+        $.ajax('/_tumblr/v2/blog/log.raumzeitlabor.de/posts/photo?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&limit=' + numberOfImages + '&offset=' + offset)
             .fail(function() {
                 $('#tumblr p').empty().html(lsErr).addClass('bg-danger').show();
             })
-            .done(function(d) {
-                // remove var tumblr_api = … and semicolon at end
-                var lsHack = d.replace(/var \w+\s*=\s*/, '')
-                    .replace(/;\s*$/, '');
-
-                var data;
-                try {
-                    data = JSON.parse(lsHack);
-                } catch(e) {
-                    $('#tumblr > p').empty().html(lsErr).addClass('bg-danger').show();
-                    return;
-                }
-
-                data = $.map(data.posts, function(p) {
-                    if (p.photos && p.photos.length === 0 && p.hasOwnProperty('photo-url-250')) {
-                        p.photos[0] = p;
+            .done(function(data) {
+                data = $.map(data.response.posts, function(p) {
+                    if (p.tags.indexOf('\x6d\u006c\x70') !== -1) {
+                        return;
                     }
 
                     return p.photos.map(function(d) {
+                        /* jshint camelcase: false */
                         return {
-                            'thumb': d['photo-url-400'].replace(/^http:/, '')
+                            'thumb': d.alt_sizes[1].url.replace(/^http:/, '')
                                 // interestingly, only some of tumblr's asset
                                 // servers have valid SSL certs
                                 .replace(/\d+\.media/, '23.media'),
-                            'url': d['photo-url-1280'].replace(/^http:/, '')
+                            'url': d.alt_sizes[0].url.replace(/^http:/, '')
                                 // interestingly, only some of tumblr's asset
                                 // servers have valid SSL certs
                                 .replace(/\d+\.media/, '23.media'),
-                            'width': d.width,
-                            'height': d.height,
-                            'caption': d['photo-caption'] ? $(d['photo-caption']).text() : ''
+                            'width': d.original_size.width,
+                            'height': d.original_size.height,
+                            'caption': d.caption ? $(d.caption).text() : ''
                         };
+                        /* jshint camelcase: false */
                     });
                 });
 
