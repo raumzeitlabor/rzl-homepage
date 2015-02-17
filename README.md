@@ -76,7 +76,6 @@ own environment. Choose as you like.
 Needs [Homebrew](http://brew.sh/).
 
     brew install node ruby
-    sudo gem install jekyll
     sudo gem install bundler
     sudo npm install -g grunt-cli bower
 
