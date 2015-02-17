@@ -129,7 +129,6 @@
             errout();
             return;
         }).always(function() {
-            $('html,body').animate({scrollTop: $('#rzl-events').offset().top},'slow');
             $('#rzl-events').css('opacity', '1');
         });
     };
