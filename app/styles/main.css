@@ -138,11 +138,13 @@ margin: 0 auto;
 padding: 0;
 }
 
-.rzl-blogpost-facts {
-color: #999;
-text-align: left;
-list-style: none;
-white-space: nowrap;
+.rzl-blogpost-facts dt {
+  color: #838383;
+  margin-left: 6px;
+}
+
+.rzl-blogpost-facts dd {
+  margin-left: 18px;
 }
 
 .rzl-footer {
@@ -319,3 +321,5 @@ margin-top:-27%;
         text-align: left; /* Internet Explorer */
         text-align: start;
 }
+
+
