@@ -85,10 +85,6 @@ $(document).ready(function() {
             })
             .done(function(data) {
                 data = $.map(data.response.posts, function(p) {
-                    if (p.tags.indexOf('\x6d\u006c\x70') !== -1) {
-                        return;
-                    }
-
                     return p.photos.map(function(d) {
                         /* jshint camelcase: false */
                         return {
