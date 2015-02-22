@@ -131,7 +131,6 @@
                         } else {
                             c.find('.rzl-event-fromnow').append('ganztägig');
                         }
-                        c.find('.rzl-event-tillthen').remove();
                     }
                 }
 
