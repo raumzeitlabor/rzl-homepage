@@ -9,12 +9,12 @@ type: post
 published: true
 facts:
   Was?: Bericht Stickwochenende
-  Wann?: 21. Februar 2015, 4:00 Uhr Uhr bis 22. Februar 2015, 23:42 Uhr
+  Wann?: Sa. 4:00 Uhr Uhr bis So. 23:42 Uhr
   Wo?: RaumZeitLabor
   Eintritt: Selbstkosten
-  Anmeldung: Erwünscht
+  Anmeldung: Vergangenheit
 author:
-  login: Alexander
+  login: abrock
   email: alexander@lunar-orbit.de
   display_name: Alexander
   first_name: ''
@@ -53,13 +53,21 @@ Zu Gast war auch eine Familie mit knapp 2-jähriger Tochter,
 daher gab es diverse denkwürdige Gespräche, etwa folgendes:
 
 >> Was möchtest du haben?
+
 > Ja.
+
 >> Möchtest du den Hasen haben?
+
 > Ja.
+
 >> Möchtest du das Malzbier haben?
+
 >Ja.
+
 >> Möchtest du einen Schuss Katzenblut dazu?
+
 > Ja.
+
 >> Du hast aber einen merkwürdigen Geschmack
 
 Für die Kleine mussten es dann natürlich Ponies sein:
