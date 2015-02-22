@@ -12,8 +12,8 @@ To contribute content or code please create a pull request, so that we can have 
 at it and discuss your changes. We integrate with Travis CI so that we can easily see
 if your pull request breaks our build and thus cannot be merged.
 
-When contributing blog posts you may of course automatically merge your pull request as
-soon as Travis approves, if you follow our guidelines:
+Please allow for someone else to review and merge your pull request. This is 
+considered best practice and helps avoiding common mistakes.
 
 * Please provide a descriptive, short commit message. If more information is required,
 put it into the body of the commit message. We speak English in our commit messages.
