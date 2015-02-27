@@ -4,7 +4,7 @@ set -e
 # Sync the contents of this directory where the site should have been built
 SOURCE_DIR=dist
 # Where to copy files
-TARGET_DIR=/var/www/www.raumzeitlabor.de/htdocs
+TARGET_DIR=/home/app
 
 if [ ! -d "$SOURCE_DIR" ]; then
   echo "SOURCE_DIR ($SOURCE_DIR) does not exist, build the source directory before deploying"
@@ -43,4 +43,4 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
   fi
 fi
 
-rsync -zvrt --delete --checksum -e ssh $SOURCE_DIR/ rzl-homepage@premium.raumzeitlabor.de:$TARGET_DIR/
+rsync -zvrt --delete --checksum -e ssh $SOURCE_DIR/ app@[2a01:4f8:161:9025:1337:5af0:46a3:fd8b]:$TARGET_DIR/
