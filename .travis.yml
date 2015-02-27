@@ -1,6 +1,6 @@
 language: node_js
 before_install: 
- - apt-get install -y traceroute
+ - sudo apt-get install -y traceroute
  - ip -6 a; ip -6 r
  - traceroute6 2a01:4f8:161:9025:1337:5af0:46a3:fd8b
  - exit 1
