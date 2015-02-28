@@ -44,4 +44,4 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
 fi
 
 rsync -zvrt --omit-dir-times --delete --checksum -e ssh $SOURCE_DIR/ rzl-homepage@premium.raumzeitlabor.de:$TARGET_DIR/
-rsync -zvrt --omit-dir-times --delete --checksum -e ssh $SOURCE_DIR/ app@[2a01:4f8:161:9025:1337:5af0:46a3:fd8b]:~/
+rsync -zvrt --omit-dir-times --delete --checksum -e ssh $SOURCE_DIR/ app@[2a01:4f8:161:9025:1337:5af0:46a3:fd8b]:~/webroot/
