@@ -32,7 +32,7 @@ $(document).ready(function() {
         }
     }
 
-    $.ajax('https://gdata.youtube.com/feeds/api/users/raumzeitlabor/uploads?v=2&alt=jsonc&max-results=11')
+    $.ajax('//gdata.youtube.com/feeds/api/users/raumzeitlabor/uploads?v=2&alt=jsonc&max-results=11')
         .always(function() {
             $('#loading').hide();
         })
