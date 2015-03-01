@@ -97,20 +97,6 @@ module.exports = function (grunt) {
             },
             proxies: [
                 {
-                    context: '/_tumblr',
-                    host: 'api.tumblr.com',
-                    port: 80,
-                    https: false,
-                    xforward: false,
-                    changeOrigin: true,
-                    rewrite: {
-                        '^/_tumblr': ''
-                    },
-                    headers: {
-                        'Host': ''
-                    }
-                },
-                {
                     context: '/events/ical',
                     host: 'p.fruux.com',
                     port: 443,

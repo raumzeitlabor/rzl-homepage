@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     function getImages() {
         $('#loading').show();
-        $.ajax('/_tumblr/v2/blog/log.raumzeitlabor.de/posts/photo?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&limit=' + numberOfImages + '&offset=' + offset)
+        $.getJSON('//api.tumblr.com/v2/blog/log.raumzeitlabor.de/posts/photo?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&callback=?&limit=' + numberOfImages + '&offset=' + offset)
             .fail(function() {
                 $('#tumblr p').empty().html(lsErr).addClass('bg-danger').show();
             })
