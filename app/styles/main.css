@@ -132,10 +132,10 @@ margin: 0 10px;
 }
 
 .rzl-blogpost-factbox {
-color: red;
 box-shadow: 0 0 3px rgba(153,153,153,0.75);
 margin: 0 auto;
 padding: 0;
+background-color: #fff;
 }
 
 .rzl-blogpost-facts {
@@ -143,6 +143,7 @@ color: #999;
 text-align: left;
 list-style: none;
 white-space: nowrap;
+font-size: 12px;
 }
 
 .rzl-footer {
