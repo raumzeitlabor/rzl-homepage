@@ -320,3 +320,7 @@ margin-top:-27%;
         text-align: left; /* Internet Explorer */
         text-align: start;
 }
+
+dd{
+  margin-bottom: 1em;
+}
