@@ -7,12 +7,6 @@ tags: []
 status: publish
 type: post
 published: true
-facts:
-  Was?: Bericht Stickwochenende
-  Wann?: Sa. 4:00 Uhr Uhr bis So. 23:42 Uhr
-  Wo?: RaumZeitLabor
-  Eintritt: Selbstkosten
-  Anmeldung: Vergangenheit
 author:
   login: abrock
   email: alexander@lunar-orbit.de
