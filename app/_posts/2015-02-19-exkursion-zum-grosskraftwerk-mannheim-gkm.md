@@ -3,8 +3,8 @@ layout: post
 title: Exkursion zum Grosskraftwerk Mannheim (GKM)
 facts:
   Was?: Exkursion
-  Wann?: 25. März 2013, 13:50 Uhr
-  Wo?: GKM-Infocenter
+  Wann?: 25. März 2013, 14:00 Uhr
+  Wo?: GKM, Verwaltungspforte
   Eintritt: kostenfrei
   Anmeldung: erforderlich
 author:
@@ -43,10 +43,10 @@ können.
 Die maximale Teilnehmerzahl ist beschränkt, daher ist eine verbindliche Anmeldung
 erforderlich. Um euch anzumelden sprecht entweder blabber direkt an oder schreibt
 eine Mail mit dem Betreff "GKM Exkursion" an
-[info@raumzeitlabor.de][2]. Die Anmeldung muss die bürgerlichen Namen und Adressen
-der Teilnehmer enthalten, da das GKM nur Personen reinlässt die vorher über eine
-entsprechende Teilnehmerliste gemeldet werden. Die Anmeldungen müssen bis zum 17.
-März eingegangen sein.
+[info@raumzeitlabor.de][2]. Die Anmeldung muss die bürgerlichen Namen, Adressen und
+Geburtsdaten der Teilnehmer enthalten, da das GKM nur Personen reinlässt die vorher
+über eine entsprechende Teilnehmerliste gemeldet werden. Die Anmeldungen müssen bis
+zum 17.  März eingegangen sein.
 
 Die Teilnehmer an der Exkursion sollten sich, wie immer, untereinander abstimmen und
 möglichst Fahrgemeinschaften o.Ä. bilden. Weitere Informationen zur Exkursion gehen
