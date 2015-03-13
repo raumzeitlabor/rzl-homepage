@@ -1,5 +1,7 @@
 ---
+layout: post
 title: RaumZeitLabor App für iOS
+date: 2015-03-13 13:37:23.420000000 +01:00
 author:
   login: silsha
   email: hallo@silsha.me
