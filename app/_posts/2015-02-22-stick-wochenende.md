@@ -24,6 +24,8 @@ darunter die [Drachenkurve](https://en.wikipedia.org/wiki/Dragon_curve).
 Die wurde erstmal RaumZeitLabor-kompatibel auf 15 Iterationen aufgebohrt
 und mit 32.771 Stichen auf ein T-Shirt gestickt:
 
+<!--more-->
+
 ![Drachenkurve](/assets/stick-we-drachenkurve.jpg)
 
 Ein Versuch, mit einem Dreifachstich und 98.307 Stichen ein dichteres Ergebnis
