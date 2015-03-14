@@ -83,9 +83,16 @@ This homepage is auto-deployed by Travis if the following requirements are met:
 * we're on the master branch
 * the build is green (grunt exited with status 0)
 
-Travis will rsync the contents of the dist directory to premium (this is really
-fast). Please note that it may take a few minutes until Travis is able to
-complete a build.
+Travis will rsync the contents of the dist directory to citizenfour (this is
+really fast). Please note that it may take a few minutes until Travis is able
+to complete a build. We originally used Travis' new container-based
+infrastructure; due to lack of IPv6 (we deploy via IPv6) we had to switch back
+to the standard virtualized boxes, leading to a much slower build.
+
+The homepage is served by the
+[rzl-homepage-docker](https://github.com/raumzeitlabor/rzl-homepage-docker)
+container. Anything related to webserver setup should be filed against that
+repository.
 
 ## Internals
 
