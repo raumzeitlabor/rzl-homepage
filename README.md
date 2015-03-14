@@ -15,8 +15,9 @@ own environment. Choose as you like.
 
 ### Docker
 
-    cd docker && docker build -t rzl-homepage .
-    docker run --privileged=true -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev rzl-homepage
+**experimental**
+
+    docker run --rm=true -e DEVUID=$(id -u) -p 127.0.0.1:8000:8000 -v $(pwd):/home/dev raumzeitlabor/rzl-homepage-dev-docker
 
 ### Plain
 
