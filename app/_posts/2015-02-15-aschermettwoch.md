@@ -39,6 +39,8 @@ Dann sprach der Vorstand:
 
 > Lass uns Mett formen als unser Abbild, uns ähnlich.
 
+<!--more-->
+
 ![Mett-Pony](/assets/rarity-mett.jpg)
 
 Und er sah, dass es gut war.

@@ -29,6 +29,8 @@ Vergleich zum Loscher Produkt. Möglicherweise eine Alternative dazu?
 Am Donnerstag, 27. Oktober gab es dann im RaumZeitLabor während des donnerstäglichen
 oqlt-Treffs eine Verkostung von Top Mate. Hier das Protokoll aus dem Pad kopiert:
 
+<!--more-->
+
 *Die Testexemplare wurden uns dankenswerterweise von
 [www.top-mate.de](http://www.top-mate.de) zur Verfügung gestellt.*
 

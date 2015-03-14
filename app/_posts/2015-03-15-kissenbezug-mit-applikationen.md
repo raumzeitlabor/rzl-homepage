@@ -26,6 +26,8 @@ Wir nehmen das folgende Motiv:
 
 ![Dornröschen](/assets/kissenbezug-mit-applikationen/motiv.png)
 
+<!--more-->
+
 Wir wollen selbstverständlich den größten verfügbaren Rahmen voll ausreizen,
 das Motiv wird also 492mm breit und 330mm hoch.
 Dabei kommt uns entgegen, dass das Motiv zufälligerweise&#8482;

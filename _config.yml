@@ -12,6 +12,8 @@ permalink: /blog/:title
 
 markdown: kramdown
 
+excerpt_separator: <!--more-->
+
 user:
   default:    
     function: 'Laborant'
