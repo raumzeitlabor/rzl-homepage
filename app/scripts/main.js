@@ -26,8 +26,10 @@ $(document).ready(function() {
             })
             .always(function() {
                 msg = msg.split('-');
-                if (msg.length > 0) {
+                if (msg.length > 1) {
                     msg[1] = '-' + msg[1];
+                } else {
+                    msg.push('');
                 }
                 $('#git-rev').empty().append('<a style="color:inherit;text-decoration:none" href="' + msg[0] + '">' + msg[0] + '</a>' + msg[1]);
             });
