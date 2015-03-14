@@ -25,5 +25,5 @@ Barcodes bezahlen.
 
 Den Code findet ihr auf <a href="https://github.com/silsha/raumzeitlabor-ios/">Github</a>.
 Dort könnt ihr auch <a href="https://github.com/silsha/raumzeitlabor-ios/issues">Verbesserungsvorschläge</a>
-und <a href="https://github.com/silsha/raumzeitlabor-ios/pull">Pull-Requests</a>
+und <a href="https://github.com/silsha/raumzeitlabor-ios/pulls">Pull-Requests</a>
 erstellen.
