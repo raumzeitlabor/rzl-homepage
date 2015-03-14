@@ -18,6 +18,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-connect-proxy');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-git-describe');
+    grunt.loadNpmTasks('grunt-text-replace');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -69,6 +71,7 @@ module.exports = function (grunt) {
                     'autoprefixer',
                     'jekyll:dist',
                     'copy:build',
+                    'saveRevision'
                 ],
             },
             livereload: {
@@ -454,6 +457,35 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        'git-describe': {
+            'options': {
+                'template': '{%=object%}{%=dirty%}',
+                'failOnError': true,
+            },
+            'full': {
+            }
+        },
+
+        replace: {
+            gitversion: {
+                src: ['<%= config.dist %>/CHANGELOG.json'],
+                overwrite: true,
+                replacements: [{
+                    from: 'GIT_VERSION_INFO',
+                    to: function() {
+                        return grunt.option('gitRevision');
+                    }
+                }]
+            }
+        }
+    });
+
+    grunt.registerTask('saveRevision', function() {
+        grunt.event.once('git-describe', function (rev) {
+            grunt.option('gitRevision', rev);
+        });
+        grunt.task.run(['git-describe', 'replace']);
     });
 
     grunt.registerTask('serve', function (target) {
@@ -471,6 +503,7 @@ module.exports = function (grunt) {
             'autoprefixer',
             'jekyll:dist',
             'copy:build',
+            'saveRevision',
 
             'configureProxies',
             'connect:livereload',
@@ -512,6 +545,7 @@ module.exports = function (grunt) {
         'usemin',
         'jekyll:dist',
         'copy:build',
+        'saveRevision',
         'htmlmin'
     ]);
 
