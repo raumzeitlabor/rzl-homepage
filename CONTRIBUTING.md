@@ -18,6 +18,14 @@ consisting of text only on Github.
 
 In case of questions, please talk to Else.
 
+### Previewing Pull Requests
+
+It is possible to preview pull requests on http://pr-PRNUMBER.rzl-homepage.raumzeitlabor.org.
+This only works if you have created the pull request from a local branch on the
+main repository (due to security requirements). Pull request previews are
+deleted after 14 days. Please make sure you delete the branch in the repository
+if it becomes obsolete, so that our repository does not mess up.
+
 ### Merging Changes
 
 Here's how we usually proceed to merge changes. To simplify interaction with
