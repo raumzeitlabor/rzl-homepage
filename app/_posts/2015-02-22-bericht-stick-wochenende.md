@@ -43,7 +43,7 @@ der großen Flächen:
 ![Drachenkurve mit Effektgarn ausgestickt, Teilansicht](/assets/stick-we-drachenkurve-ombre-zoom.jpg)
 
 Wer mehr über die Sticksoftware erfahren möchte, die dieses Motiv erzeugt hat
-kann sich an [habo](habo@dingfabrik.de) wenden.
+kann sich an [habo](mailto:habo@dingfabrik.de) wenden.
 
 Zu Gast war auch eine Familie mit knapp 2-jähriger Tochter,
 daher gab es diverse denkwürdige Gespräche, etwa folgendes:
