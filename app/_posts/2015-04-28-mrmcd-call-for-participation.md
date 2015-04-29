@@ -15,7 +15,7 @@ author:
 
 Für die diesjährigen MRMCD suchen wir wieder interessante Beiträge. Themen die auf den MRMCD häufig vertreten sind sind z.B. Open Source, Kryptographie, Soziale Netzwerke, Eingebettete Systeme, Programmiersprachen, Anonymität und daraus resultierende gesellschaftliche Fragen.
 
-Entsprechend dem Motto dieses Jahr freuen wir uns auch auf Themen an der Schnittstelle zwischen Körper und Technik, sei es Forschungen und Entwicklungen unter dem Stichwort Self Quantization oder interessanten Technologien aus dem Sportbereich.
+Entsprechend dem Motto dieses Jahr freuen wir uns auch auf Themen an der Schnittstelle zwischen Körper und Technik, sei es Forschungen und Entwicklungen unter dem Stichwort Quantified Self oder interessanten Technologien aus dem Sportbereich.
 
 Diese Liste ist aber keinesfalls abschließend. Die MRMCD sind bekannt dafür, ein breites, interessantes Themenspektrum zu besitzen. Unsere Besucher sind stets daran interessiert auch scheinbar fachfremdes Wissen kennen und beherrschen zu lernen.
 
