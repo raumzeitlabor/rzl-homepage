@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MRMCD 2015: Call for Participation
+title: 'MRMCD 2015: Call for Participation'
 facts:
   Was?: MRMCD
   Wann?: 04.-06.09.2015
