@@ -19,7 +19,7 @@ Entsprechend dem Motto dieses Jahr freuen wir uns auch auf Themen an der Schnitt
 
 Diese Liste ist aber keinesfalls abschließend. Die MRMCD sind bekannt dafür, ein breites, interessantes Themenspektrum zu besitzen. Unsere Besucher sind stets daran interessiert auch scheinbar fachfremdes Wissen kennen und beherrschen zu lernen.
 
-Entsprechend dem diesjährigen Thema planen wir Wettbewerbe für die Gäste auf der Veranstaltung. Solltest du eine Idee für einen Wettbewerb haben und vielleicht sogar Interesse besitzen, einen Wettbewerb zu organisieren, freuen wir uns über eine [E-Mail](wettkampfleitung@mrmcd.net).
+Entsprechend dem diesjährigen Thema planen wir Wettbewerbe für die Gäste auf der Veranstaltung. Solltest du eine Idee für einen Wettbewerb haben und vielleicht sogar Interesse besitzen, einen Wettbewerb zu organisieren, freuen wir uns über eine [E-Mail](mailto:wettkampfleitung@mrmcd.net).
 
 Du hast eine Idee für einen Vortrag auf den MRMCD15?
 
@@ -33,4 +33,4 @@ Wir freuen uns, wenn du dabei bist.
 
 Mit sportlichen Grüßen,
 
-die [Wettkampfleitung der MRMCD15](wettkampfleitung@mrmcd.net)
+die [Wettkampfleitung der MRMCD15](mailto:wettkampfleitung@mrmcd.net)
