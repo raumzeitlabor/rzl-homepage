@@ -13,7 +13,7 @@ author:
 
 ![MRMCD 2015 Plakat](/assets/2015-mrmcd/plakat.png)
 
-Für die diesjährigen MRMCD suchen wir wieder interessante Beiträge. Themen die auf den MRMCD häufig vertreten sind sind z.B. Open Source, Kryptographie, Soziale Netzwerke, Eingebettete Systeme, Programmiersprachen, Anonymität und daraus resultierende gesellschaftliche Fragen.
+Für die [diesjährigen MRMCD](https://mrmcd.net/2015/) suchen wir wieder interessante Beiträge. Themen die auf den MRMCD häufig vertreten sind sind z.B. Open Source, Kryptographie, Soziale Netzwerke, Eingebettete Systeme, Programmiersprachen, Anonymität und daraus resultierende gesellschaftliche Fragen.
 
 Entsprechend dem Motto dieses Jahr freuen wir uns auch auf Themen an der Schnittstelle zwischen Körper und Technik, sei es Forschungen und Entwicklungen unter dem Stichwort Quantified Self oder interessanten Technologien aus dem Sportbereich.
 
@@ -28,6 +28,7 @@ Wir freuen uns, von dir zu hören! Ihr könnt euch auch gerne mit Themenideen me
 Übrigens: Speaker auf den MRMCD15 sind die besten Menschen der Welt und wir kümmern uns natürlich ganz besonders um sie. Speaker sind automatisch zutrittsberechtigt zur VIP-Lounge.
 
 Einreichungen zu Workshops und Vorträgen nehmen wir über unser [Konferenzorganisationstool frab](https://frab.cccv.de/de/MRMCD15/cfp/session/new) entgegen.
+Auf [media.ccc.de](http://media.ccc.de/browse/conferences/mrmcd/index.html) findet ihr die Video-Aufzeichnungen vergangener MRMCDs.
 
 Wir freuen uns, wenn du dabei bist.
 
