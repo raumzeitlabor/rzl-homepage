@@ -21,3 +21,8 @@ Wir werden das Turnier in den Disziplinen Super Mario Kart (Super Nintendo) und 
 
 Als kleines Warm-Up hier das komplette letzte Mario Kart 64-Turnier:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2z4OzpyQNR0" frameborder="0" allowfullscreen></iframe>
+<!--more-->
+Auch das Super Mario Kart Turnier haben wir aufgezeichnet:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3kRaC0FyUTY" frameborder="0" allowfullscreen></iframe>
+
+Leider fehlen dort, aus technischen Gründen, einige Rennen. Wir bitten das zu entschuldigen. Auch dieses Mal werden wir wieder versuchen das Turnier aufzuzeichen.
