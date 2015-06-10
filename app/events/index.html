@@ -2,44 +2,15 @@
 layout: default
 title: Events
 ---
-<script type="text/html" id="rzl-events-pager-tmpl">
-<ul class="pager">
-    <li class="previous">
-        <a href="">&larr; vorheriger Monat</a>
-    </li>
-    <li class="next">
-        <a href="">nächster Monat &rarr;</a>
-    </li>
+
+<ul>
+<li>13.06., 15-24 Uhr: <a href="http://gnoblau.ch/">GnoblauchProgrammierNacht</a></li>
+<li>14.06., 11-20 Uhr: Agenda Diplom</li>
+<li>20.06., 19 Uhr: <a href="/blog/mario-kart-turnier-8/">Mario Kart Turnier 8</a></li>
+<li>27.06., 18 Uhr: <a href="/blog/barstone/">Hearthstone Turnier — BarStone #1</a></li>
+<li>12.07., 11-20 Uhr: Agenda Diplom</li>
+<li>25.-26.07.: <a href="/blog/stick-wochenende-2/">Stick-Wochenende 2</a></li>
+<li>01.08., 11-20 Uhr: Agenda Diplom</li>
+<li>29.08., 11-20 Uhr: Agenda Diplom</li>
+<li>19.09., 11-20 Uhr: Agenda Diplom</li>
 </ul>
-</script>
-<script type="text/html" id="rzl-event-tmpl">
-<div class="row">
-    <div style="position: absolute; left: 50%;">
-        <div style="position: relative; left: -50%;" class="rzl-event-date"><time></time></div>
-    </div>
-    <div class="rzl-event-right col-lg-6 col-md-6 col-sm-12 col-sx-12" style="display:none">
-    </div>
-    <div class="rzl-event col-lg-6 col-md-6 col-sm-12 col-sx-12">
-        <div class="rzl-event-wrap">
-            <h2 class="rzl-event-name"></h2>
-            <p class="rzl-event-fromnow" style="color:#8a8a8a;font-size:14px"><i class="glyphicon glyphicon-time"></i> </p>
-            <p class="rzl-event-location" style="color:#8a8a8a;font-size:14px"><i class="fa fa-location-arrow"></i> </p>
-            <hr style="margin: 0.5em 0">
-            <div class="rzl-event-descr"></div>
-        </div>
-    </div>
-    <div class="rzl-event-left col-lg-6 col-md-6 col-sm-12 col-sx-12" style="display:none">
-    </div>
-</div>
-</script>
-<div id="rzl-events">
-<p>Einen Augenblick, wir suchen unseren Terminkalender…</p>
-</div>
-<!-- build:js(app) /scripts/evplugins.js -->
-<script src="/bower_components/marked/lib/marked.js"></script>
-<script src="/bower_components/moment/moment.js"></script>
-<script src="/bower_components/moment/locale/de.js"></script>
-<!-- endbuild -->
-<!-- build:js(app) /scripts/events.js -->
-<script src="/scripts/events.js"></script>
-<!-- endbuild -->
