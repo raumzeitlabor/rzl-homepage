@@ -58,7 +58,7 @@ Längere Codeblöcke rückst Du mit vier Spaces ein:
 Wenn du Bilder hinzufügen möchtest, lade sie in den "assets" Ordner und
 referenziere sie so:
 
-![27C3 Logo](https://raumzeitlabor.de/assets/27c3.jpg)
+![27C3 Logo](/assets/27c3.jpg)
 
 *Bitte achte unbedingt darauf, dass dein Bild < 800x600 ist und wenig Speicher
 verbraucht, da es mit in das Repository eingecheckt und verewigt wird!*
