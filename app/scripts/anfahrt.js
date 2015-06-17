@@ -17,19 +17,22 @@
         maxZoom: 17,
     }).addTo(map);
 
-    var marker = L.marker([49.50526, 8.502]).addTo(map);
+    var marker = L.marker([49.50804546389515, 8.499341011047363]).addTo(map);
+    marker.bindPopup('<b>RaumZeitLabor</b><br>Boveristraße 22-24<br>68309 Mannheim').openPopup();
     var polyline = L.polyline([ ], {color: 'red'}).addTo(map);
     $(window).on('hashchange', function() {
         var stepHash = location.hash.replace('#', '');
         switch (stepHash) {
             default:
             case 'step1':
-                marker.setLatLng([49.505370187170236, 8.50215196609497]).update();
+                marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
+                marker.bindPopup('<b>RaumZeitLabor</b><br>Boveristraße 22-24<br>68309 Mannheim').openPopup();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 15);
                 break;
             case 'step2':
                 marker.setLatLng([49.505370187170236, 8.50215196609497]).update();
+                marker.bindPopup('Haltestelle Boveristraße').openPopup();
                 polyline.setLatLngs([
                     [49.505370187170236, 8.50215196609497],
                     [49.505121, 8.501657],
@@ -39,6 +42,7 @@
                 break;
             case 'step3':
                 marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
+                marker.bindPopup('Tor der Spedition Kübler<br>RaumZeitlabor Briefkasten').openPopup();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 17);
                 $('#step7-prev').attr('href', '#step3');
@@ -51,6 +55,7 @@
                 break;
             case 'step5':
                 marker.setLatLng([49.50810816393884, 8.500746488571167]).update();
+                marker.bindPopup('Alternativer Zugang Spedition Kübler').openPopup();
                 polyline.setLatLngs([
                     [49.50734182456017, 8.499072790145874],
                     [49.508662, 8.497355],
@@ -62,6 +67,7 @@
                 break;
             case 'step6':
                 marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
+                marker.bindPopup('RaumZeitLabor').openPopup();
                 polyline.setLatLngs([
                     [49.50810816393884, 8.500746488571167],
                     [49.507293, 8.499185],
@@ -74,6 +80,7 @@
                 break;
             case 'step7':
                 marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
+                marker.bindPopup('RaumZeitLabor').openPopup();
                 polyline.setLatLngs([
                     [49.507293, 8.499185],
                     [49.508028, 8.498257],
