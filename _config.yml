@@ -15,7 +15,7 @@ markdown: kramdown
 excerpt_separator: <!--more-->
 
 user:
-  default:    
+  default:
     function: 'Laborant'
     avatar:   'bernd.png'
   silsha:
@@ -52,3 +52,5 @@ user:
     avatar:   'unicorn.jpeg'
   tiefpunkt:
     avatar:   'tiefpunkt.jpeg'
+  hax404:
+    avatar:   'hax404.png'
