@@ -1,5 +1,7 @@
 language: node_js
+node_js: stable
 before_install: 
+ - rm -rf /home/travis/.npm/*
  - bundler install --path vendor/bundle
 install:
  - npm install
