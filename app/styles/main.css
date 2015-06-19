@@ -81,7 +81,6 @@ padding: 15px;
 background-color: #fff;
 border: 1px solid #e6e6e6;
 margin-bottom: 25px;
-text-align: justify;
 }
 
 .rzl-content img, .rzl-content object, .rzl-content iframe {
@@ -312,11 +311,4 @@ margin-top:-27%;
 
 .rzl-event-fromnow {
 	margin-bottom: 2px;
-}
-
-/* Disable text-align: justify for YouTube video archive descriptions as
- * they're usually rather short text snippets which look weird justified */
-.rzl-content #youtube-archive {
-        text-align: left; /* Internet Explorer */
-        text-align: start;
 }

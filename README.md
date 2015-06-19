@@ -28,6 +28,12 @@ own environment. Choose as you like.
     sudo apt-get install nodejs npm bundler
     sudo npm install -g grunt-cli bower
 
+##### Arch Linux
+
+    sudo pacman -S nodejs npm
+    gem install bundler
+    sudo npm install -g grunt-cli bower
+
 ##### FreeBSD
 
     sudo pkg install node npm rubygem-bundler nasm
