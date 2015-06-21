@@ -440,6 +440,7 @@ module.exports = function (grunt) {
 
         jekyll: {
             options: {
+                plugins: '<%= config.app %>/_plugins',
                 bundleExec: true,
                 src : '<%= config.jekyll %>',
             },
