@@ -92,14 +92,8 @@ $(document).ready(function() {
                     return p.photos.map(function(d) {
                         /* jshint camelcase: false */
                         return {
-                            'thumb': d.alt_sizes[1].url.replace(/^http:/, '')
-                                // interestingly, only some of tumblr's asset
-                                // servers have valid SSL certs
-                                .replace(/\d+\.media/, '23.media'),
-                            'url': d.alt_sizes[0].url.replace(/^http:/, '')
-                                // interestingly, only some of tumblr's asset
-                                // servers have valid SSL certs
-                                .replace(/\d+\.media/, '23.media'),
+                            'thumb': d.alt_sizes[1].url,
+                            'url': d.alt_sizes[0].url,
                             'width': d.original_size.width,
                             'height': d.original_size.height,
                             'caption': d.caption ? $(d.caption).text() : ''
