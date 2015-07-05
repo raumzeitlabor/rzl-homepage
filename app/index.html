@@ -1,77 +1,26 @@
 ---
 layout: default
-title: Willkommen im RaumZeitLabor
+title: Neuigkeiten
 ---
 
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-<p>Es gibt neben öffentlichen Bildungseinrichtungen nur wenige Orte, an
-denen sich interessierte Schüler, Studierende und Erwachsene kostengünstig
-weiterbilden können. Aus diesem Grund wurde das RaumZeitLabor gegründet.
-Wir fördern und praktizieren den verantwortungsbewussten und kreativen
-Umgang mit Technik.</p>
-
-<p>Lernen durch Lehren ist ein zentrales Element des RaumZeitLabors. Die
-Organisation und Durchführung von Workshops zu Themen wie Programmierung
-und Elektronik sind integraler Bestandteil des Fortbildungskonzepts. Dies
-wird unter anderem durch selbst organisierte Vorträge zu
-informationstechnischen und gesellschaftspolitischen Themen, sowie der
-Förderung eines interdisziplinären Dialogs ergänzt.</p>
-
-<p>Experten geben regelmäßig einen Einstieg in interessante Bereiche aus
-Wissenschaft und Technik. Gleichzeitig ist das RaumZeitLabor Arbeitsplatz
-und Begegnungsstätte für aufgeschlossene Netzbewohnende.</p>
-
-<p><em>Bürgerschaftliches Engagement war noch nie so wichtig und notwendig
-wie Heute!</em><p>
-
-<p>Getragen von einem gemeinnützigen <a href="/verein/satzung"
-title="Satzung des RaumZeitLabor e.V.">Verein</a> wird eine Infrastruktur
-angeboten, die ein Klima des gegenseitigen Weiterbildens fördert.
-Gemeinschaftliche Investitionen in ansonsten unerschwingliche
-Arbeitsmittel, ermöglichen allen Interessierten das gemeinsame Lernen.</p>
-
-<p>Dank <a href="/verein/spenden" title="Unterstütze das RaumZeitLabor">
-Spenden</a> und ehrenamtlicher Arbeit ist es uns möglich Vorträge und
-Workshops anzubieten und die Kreativität im Umgang mit moderner Technik zu
-fördern. Das RaumZeitLabor bietet ein stetig wachsendes
-Weiterbildungsprogramm an, das einzigartig im Rhein-Neckar-Raum ist.</p>
-
-<p>Wer sich unter den Begriffen Netzpolitik, Freie Software,
-Mikrocontroller und Netzwerktechnik etwas vorstellen kann oder wissen
-möchte was sich dahinter verbirgt, ist herzlich zu einem Rundgang
-eingeladen.</p>
-
-<p>Wir freuen uns schon auf Deinen ersten Besuch.</p>
-
-<p><em>Bis bald, im RaumZeitLabor!</em></p>
-
+{% for post in paginator.posts %}
+{% include blogpost.html blogpost=post %}
+<div class="row rzl-separator">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
 </div>
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+{% endfor %}
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/YvbVq81t8UU" frameborder="0"
-allowfullscreen></iframe>
-
-<h4>Du möchtest uns besuchen?</h4>
-
-<p>Das freut uns! Der beste Tag für deinen ersten Besuch im RaumZeitLabor
-ist Dienstags abends. Da findet die <em> <a
-href="https://wiki.raumzeitlabor.de/wiki/ORZL" target="_blank"
-title="Offene RaumZeitLaborierung im Wiki">Offene RaumZeitLaborierung</a>
-</em> statt und es sind zahlreiche Personen anwesend. Oft werden im Rahmen
-der <em>Offenen RaumZeitLaborierung</em> kurze Vorträge gehalten.</p>
-
-<p>Da das RaumZeitLabor nicht ganz einfach zu finden ist, solltet ihr auf
-jeden Fall einen genauen Blick auf die <a href="/kontakt/anfahrt"
-title="Anfahrt">Wegbeschreibung</a> werfen.</p>
-
-<p> Wenn du dann zu uns gefunden hast und das erste Mal im RaumZeitLabor
-bist ist es sinnvoll wenn du auf dich aufmerksam machst, neue Gesichter
-fallen nicht immer sofort auf. Sprich einen der Anwesenden an und lass dir
-eine Führung durch das RaumZeitLabor geben.</p> 
-
-<p><em>Viel Spaß!</em></p>
-
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <a name="paginate"></a>
+    <ul class="pager">
+        <li class="previous {% unless paginator.previous_page %}disabled{% endunless %}">
+            <a href="{% if paginator.previous_page %}/blog/page/{{ paginator.previous_page }}{% else %}#paginator{% endif %}">&larr; neuer</a>
+        </li>
+        <li><span class="page_number" style="border:0;">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span></li>
+        <li class="next {% unless paginator.next_page %}disabled{% endunless %}">
+            <a href="{% if paginator.next_page %}/blog/page/{{ paginator.next_page }}{% else %}#paginator{% endif %}">älter &rarr;</a>
+        </li>
+    </ul>
+    </div>
 </div>
