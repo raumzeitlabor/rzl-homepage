@@ -88,6 +88,10 @@ $(document).ready(function() {
             })
             .done(function(data) {
                 data = $.map(data.response.posts, function(p) {
+                    if (p.tags.indexOf('mlp') !== -1) {
+                        return;
+                    }
+
                     return p.photos.map(function(d) {
                         /* jshint camelcase: false */
                         return {
