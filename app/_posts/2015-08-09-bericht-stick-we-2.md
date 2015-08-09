@@ -33,7 +33,7 @@ darstellen lassen.
 Auch die Drachenkurve, die wir schon auf dem ersten Stick-Wochenende gestickt haben
 wurde zweimal ausgestickt:
 
-![Drachenkurve](/assets/stick-we-drachenkurve.jpg)
+[![Drachenkurve](/assets/stick-we-drachenkurve-ombre-zoom.jpg)](/assets/stick-we-drachenkurve-ombre.jpg)
 
 Jiska hat sich auf einen Polo das Logo des diesjährigen CC-Camps gestickt:
 
