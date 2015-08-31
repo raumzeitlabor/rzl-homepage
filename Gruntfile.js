@@ -386,18 +386,6 @@ module.exports = function (grunt) {
                     src: ['**/*.html', '**./*.md', 'feed.xml', 'sitemap.xml']
                 }, {
                     expand: true,
-                    dot: false,
-                    cwd: '.tmp/jekyll',
-                    dest: '<%= config.dist %>/blog',
-                    src: 'index.html'
-                }, {
-                    expand: true,
-                    dot: false,
-                    cwd: '.tmp/jekyll',
-                    dest: '<%= config.dist %>/blog/page/1',
-                    src: 'index.html'
-                }, {
-                    expand: true,
                     flatten: true,
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>/fonts',
