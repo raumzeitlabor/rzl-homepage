@@ -21,41 +21,61 @@ user:
   silsha:
     function: 'Social Media Expert'
     avatar:   'silsha.jpeg'
+    wikiusername:   'Silsha'
   abrock:
     function: 'Abrock School of Engineering'
     avatar:   'abrock.jpeg'
+    wikiusername:   'Alexander_Brock'
   tabascoeye:
+    function: 'FaZzZ0r Operator'
     avatar:   'tabascoeye.jpeg'
+    wikiusername:   'TabascoEye'
   else:
     avatar:   'else.png'
+    wikiusername:   'Else'
   zwetschgo:
     avatar:   'zwetschgo.jpeg'
+    wikiusername:   'Zwetschgo'
   rami:
     avatar:   'rami.jpeg'
+    wikiusername:   'Rami'
   xandy:
     avatar:   'xandy.jpeg'
+    wikiusername:   'XAndy'
   inte:
     avatar:   'inte.png'
+    wikiusername:   'Inte'
   don:
     avatar:   'don.png'
+    wikiusername:   'Don'
   thinkjd:
     avatar:   'jd.png'
+    wikiusername:   'ThinkJD'
   cheatha:
     avatar:   'cheatha.jpeg'
+    wikiusername:   'Cheatha'
   jiska:
     avatar:   'jiska.jpeg'
+    wikiusername:   'Jiska'
   secure:
     avatar:   'secure.jpeg'
+    wikiusername:   'SEC'
   blabber:
     avatar:   'blabber.jpeg'
+    wikiusername:   'Blabber'
   unicorn:
     avatar:   'unicorn.jpeg'
+    wikiusername:   'Unicorn'
   tiefpunkt:
     avatar:   'tiefpunkt.jpeg'
+    wikiusername:   'Tiefpunkt'
   hax404:
     function: 'Chief Technology Futurist'
     avatar:   'hax404.png'
+    wikiusername:   'Hax404'
   felicitus:
     avatar:   'felicitus.jpg'
+    wikiusername:   'Felicitus'
   pfeyffer:
     avatar:   'pfeyffer.png'
+    wikiusername:   'Zero_dtime'
