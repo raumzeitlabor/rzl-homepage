@@ -68,6 +68,10 @@ Wenn ihr Amazon über diesen Link besucht, erhalten wir eine kleine Provision f�
 ### betterplace
 Auf unserer betterplace-Seite könnt ihr für einen konkreten Bedarf spenden. Außerdem erhaltet ihr am Ende des Jahres automatisch eine Spendenquittung.
 
+<!-- build:js(app) /scripts/betterplace.js -->
+<script src="/scripts/betterplace.js"></script>
+<!-- endbuild -->
+
 <script type="text/javascript">
   var _bp_iframe        = _bp_iframe || {};
   _bp_iframe.project_id = 24351; /* REQUIRED */
@@ -79,11 +83,10 @@ Auf unserer betterplace-Seite könnt ihr für einen konkreten Bedarf spenden. Au
   // _bp_iframe.default_amount = 50; /* Donation-amount, integer 1-99 */
   // _bp_iframe.recurring_interval = 'single'; /* Interval for recurring donations, string out of ["single", "monthly", "quarter_yearly", "half_yearly", "yearly"] */
   (function() {
-    var bp = document.createElement('script'); bp.type = 'text/javascript'; bp.async = true;
-    bp.src = '/scripts/betterplace.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(bp, s);
   })();
 </script>
+
 <div id="betterplace_donation_iframe" style="background: transparent url('/assets/new_spinner.gif') 275px 20px no-repeat;text-align: center;"><strong><a href="https://www.betterplace.org/de/projects/24351-raumzeitlabor-e-v/donations/new">Jetzt Spenden für „RaumZeitLabor e.V.“ bei unserem Partner betterplace.org</a></strong></div>
 
 
