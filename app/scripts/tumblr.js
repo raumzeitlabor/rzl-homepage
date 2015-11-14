@@ -6,9 +6,9 @@ $(document).ready(function() {
     var offset = 0;
     var buffer = [];
     var numberOfImages = 20;
-    var totalWidth = 0.90 * $('#tumblr').innerWidth();
 
     function process(photos) {
+        var totalWidth = 0.90 * $('#tumblr').innerWidth();
         var dest = $('#tumblr');
 
         var border = 2;
@@ -19,12 +19,14 @@ $(document).ready(function() {
         var rowPics = [];
         var rowHeights = [];
 
-        $.each(photos, function(i, v) {
+        for (var i = 0; i < photos.length; i++) {
+            var v = photos[i];
             var rowHeight = 300;
-            var w = v.width;
             var h = v.height;
-            if (h !== rowHeight) {
+            var w = v.width;
+            if (h >= rowHeight) {
                 w = Math.floor(w * rowHeight / h);
+                h = rowHeight;
             }
 
             if (! Array.isArray(rowPics[rowIndex])) {
@@ -34,31 +36,33 @@ $(document).ready(function() {
             rowPics[rowIndex].push(photos[i]);
             currWidth += w + 2 * border;
 
-            if (currWidth > totalWidth || i === photos.length - 1) {
+            console.log("totalwidth=", totalWidth, ", currWidth=", currWidth);
+            if (currWidth >= totalWidth || i === photos.length - 1) {
+                console.log("i=", i, ", new row: ", rowIndex);
                 // now arrange to fit width
-                while (currWidth > totalWidth) {
+                while (currWidth >= totalWidth * 0.90) {
                     rowHeight--;
                     currWidth = 0;
                     var numPics = rowPics[rowIndex].length;
                     for (var j = 0; j < numPics; j++) {
                         v = photos[i - (numPics - 1) + j];
-                        w = v.width;
-                        h = v.height;
-                        if (h !== rowHeight) {
-                            w = Math.floor(w * rowHeight / h);
-                        }
-                        currWidth += w;
+                        h = rowHeight;
+                        w = Math.floor(v.width * rowHeight / v.height);
+                        currWidth += w + 2 * border;
                     }
                 }
+                console.log("totalwidth=", totalWidth, ", newWidth=", currWidth, ", rowHeight=", rowHeight, ", numImages=", i+1);
                 rowHeights.push(rowHeight);
                 currWidth = 0;
                 rowIndex++;
             }
-        });
+        }
 
-        $.each(rowHeights, function(rowIndex, rowHeight) {
+        for (var rowIndex = 0; rowIndex < rowHeights.length; rowIndex++) {
+            var rowHeight = rowHeights[rowIndex];
             var rowDiv = $('<div>', { class: 'tumblr-row' });
-            $.each(rowPics[rowIndex], function(imgIndex, p) {
+            for (var imgIndex = 0; imgIndex < rowPics[rowIndex].length; imgIndex++) {
+                var p = rowPics[rowIndex][imgIndex];
                 var newWidth = Math.floor(p.width * rowHeight / p.height);
                 var newHeight = rowHeight;
                 var img = $('<img/>', {
@@ -70,25 +74,20 @@ $(document).ready(function() {
                 .css('padding', border)
                 .fadeIn();
                 rowDiv.css('height', newHeight).append(img.parent()).appendTo(dest);
-            });
+            }
             $.waypoints('refresh');
-        });
-
-        $.waypoints('refresh');
+        }
     }
 
     function getImages() {
         $('#loading').show();
+        var totalWidth = 0.90 * $('#tumblr').innerWidth();
         $.getJSON('//api.tumblr.com/v2/blog/log.raumzeitlabor.org/posts/photo?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&callback=?&limit=' + numberOfImages + '&offset=' + offset)
             .fail(function() {
                 $('#tumblr p').empty().html(lsErr).addClass('bg-danger').show();
             })
             .done(function(data) {
                 data = $.map(data.response.posts, function(p) {
-                    if (p.tags.indexOf('mlp') !== -1) {
-                        return;
-                    }
-
                     return p.photos.map(function(d) {
                         /* jshint camelcase: false */
                         return {

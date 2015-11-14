@@ -25,3 +25,6 @@ env:
   global:
     - ENCRYPTION_LABEL="906c0d008fb2"
     - DEPLOY_BRANCH="master"
+ 
+notifications:
+  slack: raumzeitlabor:jIH6Dhzf4KKG28wUcgV0mwcO
