@@ -25,7 +25,7 @@ own environment. Choose as you like.
 
 ##### Debian
 
-    sudo apt-get install nodejs npm bundler
+    sudo apt-get install nodejs nodejs-legacy npm bundler
     sudo npm install -g grunt-cli bower
 
 ##### Arch Linux
