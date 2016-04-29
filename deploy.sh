@@ -47,7 +47,7 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
 fi
 
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
-    ssh deploy@rzl-homepage.docker.raumzeitlabor.de "mkdir -p $TARGET_DIR && cp -falr $ORIG_TARGET_DIR/* $TARGET_DIR"
+    ssh -p 4322 deploy@citizenfour.raumzeitlabor.de "mkdir -p $TARGET_DIR && cp -falr $ORIG_TARGET_DIR/* $TARGET_DIR"
 fi
 
-rsync -zvrt --omit-dir-times --delete --checksum -e ssh $SOURCE_DIR/ deploy@rzl-homepage.docker.raumzeitlabor.de:$TARGET_DIR
+rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -p 4322" --progress $SOURCE_DIR/ deploy@citizenfour.raumzeitlabor.de:$TARGET_DIR
