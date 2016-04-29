@@ -10,7 +10,7 @@ script: node_modules/.bin/grunt build
 
 addons:
   ssh_known_hosts:
-    - rzl-homepage.docker.raumzeitlabor.de
+    - citizenfour.raumzeitlabor.de:4322
 after_success:
   - ./deploy.sh
 
