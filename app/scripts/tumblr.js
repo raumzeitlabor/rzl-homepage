@@ -18,10 +18,11 @@ $(document).ready(function() {
 
         var rowPics = [];
         var rowHeights = [];
+        var rowHeight = 300;
 
         for (var i = 0; i < photos.length; i++) {
             var v = photos[i];
-            var rowHeight = 300;
+            rowHeight = 300;
             var h = v.height;
             var w = v.width;
             if (h >= rowHeight) {
@@ -36,9 +37,9 @@ $(document).ready(function() {
             rowPics[rowIndex].push(photos[i]);
             currWidth += w + 2 * border;
 
-            console.log("totalwidth=", totalWidth, ", currWidth=", currWidth);
+            console.log('totalwidth=', totalWidth, ', currWidth=', currWidth);
             if (currWidth >= totalWidth || i === photos.length - 1) {
-                console.log("i=", i, ", new row: ", rowIndex);
+                console.log('i=', i, ', new row: ', rowIndex);
                 // now arrange to fit width
                 while (currWidth >= totalWidth * 0.90) {
                     rowHeight--;
@@ -51,15 +52,15 @@ $(document).ready(function() {
                         currWidth += w + 2 * border;
                     }
                 }
-                console.log("totalwidth=", totalWidth, ", newWidth=", currWidth, ", rowHeight=", rowHeight, ", numImages=", i+1);
+                console.log('totalwidth=', totalWidth, ', newWidth=', currWidth, ', rowHeight=', rowHeight, ', numImages=', i+1);
                 rowHeights.push(rowHeight);
                 currWidth = 0;
                 rowIndex++;
             }
         }
 
-        for (var rowIndex = 0; rowIndex < rowHeights.length; rowIndex++) {
-            var rowHeight = rowHeights[rowIndex];
+        for (rowIndex = 0; rowIndex < rowHeights.length; rowIndex++) {
+            rowHeight = rowHeights[rowIndex];
             var rowDiv = $('<div>', { class: 'tumblr-row' });
             for (var imgIndex = 0; imgIndex < rowPics[rowIndex].length; imgIndex++) {
                 var p = rowPics[rowIndex][imgIndex];
