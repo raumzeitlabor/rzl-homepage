@@ -125,13 +125,15 @@ module.exports = function (grunt) {
                         var middlewares = [require('grunt-connect-proxy/lib/utils').proxyRequest];
 
                         // Serve static files.
+                        var serveStatic = require('serve-static');
+
                         options.base.forEach(function(base) {
-                            middlewares.push(connect.static(base));
+                            middlewares.push(serveStatic(base));
                         });
 
                         // Make directory browse-able.
                         var directory = options.directory || options.base[options.base.length - 1];
-                        middlewares.push(connect.directory(directory));
+                        middlewares.push(serveStatic(directory));
 
                         return middlewares;
                     }
