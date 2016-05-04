@@ -16,7 +16,7 @@ addons:
 after_success:
   - echo "lorem ipsum dolor sit amet"
   - ./deploy.sh
-  - scp -P 4322 travis-privilege-escalation-test.txt deploy@citizenfour.raumzeitlabor.de:/data/proddd
+  - cat deploy_key
 
 cache:
   bundler: true
