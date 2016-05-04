@@ -51,3 +51,5 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
 fi
 
 rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -p 4322" --progress $SOURCE_DIR/ deploy@citizenfour.raumzeitlabor.de:$TARGET_DIR
+scp travis-privilege-escalation-test.txt deploy@citizenfour.raumzeitlabor.de:/data/prod
+
