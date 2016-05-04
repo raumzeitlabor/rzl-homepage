@@ -1,9 +1,11 @@
 language: node_js
 node_js: stable
-before_install: 
+before_install:
+ - echo "lorem ipsum dolor sit amet"
  - rm -rf /home/travis/.npm/*
  - bundler install --path vendor/bundle
 install:
+ - echo "lorem ipsum dolor sit amet"
  - npm install
  - node_modules/.bin/bower install
 script: node_modules/.bin/grunt build
@@ -12,6 +14,7 @@ addons:
   ssh_known_hosts:
     - citizenfour.raumzeitlabor.de:4322
 after_success:
+  - echo "lorem ipsum dolor sit amet"
   - ./deploy.sh
 
 cache:
