@@ -6,7 +6,7 @@ facts:
   Wann?: 24.06.2015, 18.15 Uhr
   Wo?: Kloppenheimer Straße 94, Mannheim-Seckenheim
 author:
-  login: naddie
+  login: flederratie
   email: nathalie.groll@gmail.com
   display_name: flederrattie
 ---
@@ -28,9 +28,10 @@ voraussichtlich anderthalb Stunden.
 
 Die maximale Teilnehmerzahl ist mit 20 Personen beschränkt, daher ist
 eine vorherige Anmeldung erforderlich. Um euch anzumelden, schreibt ihr
-mir einfach eine Mail mit dem Betreff "Exkursion Aufzugsmuseum" und der
-Anzahl gewünschter Plätze. Die Anmeldungen müssen bis zum 22. Juni 2016,
-13:37 Uhr bei mir eingegangen sein.
+mir einfach eine [Mail](mailto:nathalie.groll@gmail.com) mit dem Betreff
+"Exkursion Aufzugsmuseum" und der Anzahl gewünschter Plätze. Die
+Anmeldungen müssen bis zum 22. Juni 2016, 13:37 Uhr bei mir eingegangen
+sein.
 
 Weitere Informationen findet ihr zum Beispiel auf der Seite der
 [Rhein-Neckar-Industriekultur](http://www.rhein-neckar-industriekultur.de/objekte/wasserturm-mannheim-seckenheim).
