@@ -13,7 +13,8 @@ author:
 
 ![KaesusLiebtDich](/assets/KaesusNeu.jpg)
 
-
+<br>
+<br>
 Es ist an der Zeit, unserem Freund Käsus Christus zu gedenken!
 
 Wir wollen Halloumi-teinander bei einem Abendmahl das Brot brechen, denn mit Freunden zu essen, das ist gut für die Seele.
@@ -24,5 +25,5 @@ Brie-de sei mit euch. Amen.
 
 
 
-[†] Keine ![Mail](mailto:nathalie.groll@gmail.com), kein Käse!
+[†] Keine [Mail](mailto:nathalie.groll@gmail.com), kein Käse!
 
