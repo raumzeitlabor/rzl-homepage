@@ -11,7 +11,7 @@ author:
 ---
 
 
-![KaesusLiebtDich](/assets/kaesusliebtdich.jpg)
+![KaesusLiebtDich](/assets/Kaesusliebtdich.jpg)
 
 
 Es ist an der Zeit, unserem Freund Käsus Christus zu gedenken!
