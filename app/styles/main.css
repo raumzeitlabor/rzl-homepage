@@ -67,20 +67,24 @@ color: #fff;
 
 .jumbotron .container { position:relative; }
 
-.agendabutton
-{ 
-  background: #ff0000 none repeat scroll 0 0;
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 1.2;
-  padding: 5px 10px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 50%;
+.agendabutton {
+    background: #ff0000 none repeat scroll 0 0;
+    border-radius: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-shadow: 1px 1px 3px #666666;
+    top: 0;
 }
-.agendabutton:hover{ color:#FFFFFF; }
 
+.agendabutton:hover {
+    background: #cc0000 none repeat scroll 0 0;
+    color: #ffffff;
+}
 
 #rzl-logo {
 height: 39px;
