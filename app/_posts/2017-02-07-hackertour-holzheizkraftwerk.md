@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hackertour Holheizkraftwerk Heidelberg'
+title: 'Hackertour Holzheizkraftwerk Heidelberg'
 facts:
   Was?: Exkursion
   Wann?: 22. Februar 2017
