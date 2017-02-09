@@ -29,4 +29,4 @@ genießen.
 Alles in allem ein gelungener Ausflug: Das Prädikatssiegel »Außenstelle des
 RaumZeitLabors« wurde selbstverständlich erteilt.
 
-![Aufzugmuseum](/assets/Aufzugmuseum.jpg)
+![Aufzugsmuseum](/assets/Aufzugsmuseum.jpg)
