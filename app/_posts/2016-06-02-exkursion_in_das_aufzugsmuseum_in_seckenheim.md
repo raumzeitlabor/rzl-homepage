@@ -13,6 +13,8 @@ author:
   display_name: flederrattie
 ---
 
+![Aufzugmuseum](/assets/wasserturm_seckenheim.jpg)
+
 Endlich ist es mal wieder soweit: Ausflugszeit! Oder vielmehr:
 Aufzugszeit! Gemeinsam werden wir das Aufzugsmuseum in Seckenheim
 besichtigen.
