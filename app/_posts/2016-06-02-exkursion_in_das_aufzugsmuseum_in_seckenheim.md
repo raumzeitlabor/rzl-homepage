@@ -13,6 +13,8 @@ author:
   display_name: flederrattie
 ---
 
+![Aufzugmuseum](/assets/wasserturm_seckenheim.jpg)
+
 Endlich ist es mal wieder soweit: Ausflugszeit! Oder vielmehr:
 Aufzugszeit! Gemeinsam werden wir das Aufzugsmuseum in Seckenheim
 besichtigen.
@@ -37,3 +39,5 @@ sein.
 
 Weitere Informationen findet ihr zum Beispiel auf der Seite der
 [Rhein-Neckar-Industriekultur](http://www.rhein-neckar-industriekultur.de/objekte/wasserturm-mannheim-seckenheim).
+
+
