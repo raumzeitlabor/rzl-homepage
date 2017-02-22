@@ -11,7 +11,7 @@ author:
 
 Seit einigen Jahren ist es guter Brauch, dass sich die Besten unter den Hackerspaces zu Weihnachten gegenseitig beschenken. In der Manier des Wichtelns (manchmal auch des Schrott-Wichtelns) werden also am Jahresende Pakete verschickt. Organisiert wird die gesamte Aktion über das Wiki des Hackerspaces [Frack](https://frack.nl/wiki/2k16_interhackerspaces_xmas_swap) aus den Niederlanden.
 
-Dieses Jahr sind wir mit einer kompletten Eigentwicklung an den Start gegeangen und haben als "Leading Hackerspace in Box-Making-Technology" verschlossene Holzboxen verschickt, die sich erst nach dem Lösen mehrerer Rätsel elektronisch öffnet und den begehrten mannheimer Schoko-Wasserturm freigibt.
+Dieses Jahr sind wir mit einer kompletten Eigenentwicklung an den Start gegangen und haben als "Leading Hackerspace in Box-Making-Technology" verschlossene Holz-Boxen verschickt, die sich erst nach dem Lösen mehrerer Rätsel elektronisch öffnet und den begehrten mannheimer Schoko-Wasserturm freigibt.
 
 Mit der artgerechten Gestaltung der Boxen haben wir externe, befreundete Künstlerinnen beauftragt und wir glauben, dass sich das Ergebnis durchaus sehen lassen kann:
 
