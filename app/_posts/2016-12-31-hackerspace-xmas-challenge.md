@@ -15,6 +15,11 @@ Dieses Jahr sind wir mit einer kompletten Eigentwicklung an den Start gegeangen 
 
 Mit der artgerechten Gestaltung der Boxen haben wir externe, befreundete Künstlerinnen beauftragt und wir glauben, dass sich das Ergebnis durchaus sehen lassen kann:
 
-`Bilder`
+![xmas 2k16](/assets/xmas2k16_1.jpg)
+![xmas 2k16](/assets/xmas2k16_2.jpg)
+![xmas 2k16](/assets/xmas2k16_3.jpg)
+![xmas 2k16](/assets/xmas2k16_4.jpg)
+![xmas 2k16](/assets/xmas2k16_5.jpg)
+![xmas 2k16](/assets/xmas2k16_6.jpg)
 
 Die Nerds des Hacklabor haben eine solche Box von uns erhalten und Das ganze Projekt in Aktion kannst Du also [hier auf youtube](https://www.youtube.com/watch?v=EOgjyAO_JxI) begutachten.
