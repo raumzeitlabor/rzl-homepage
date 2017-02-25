@@ -18,4 +18,4 @@ Mit der artgerechten Gestaltung der Boxen haben wir externe, befreundete Künstl
 Die Nerds des Hacklabor haben eine solche Box von uns erhalten und das ganze Projekt in Aktion kannst Du also [hier auf youtube](https://www.youtube.com/watch?v=EOgjyAO_JxI) begutachten.
 Auf eine Videobotschaft der anderen mit Boxen beglückten Hackerspaces warten wir übrigens noch…
 
-![xmas 2k16](/assets/xmas2k16_unified.jpg)
+![xmas 2k16](/assets/xmas.jpg)
