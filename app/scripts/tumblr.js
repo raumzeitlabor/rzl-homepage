@@ -132,17 +132,4 @@ $(document).ready(function() {
     }, {
         offset: '95%',
     });
-
-    var renderRelaxer = null;
-    $(window).resize(function() {
-        if (! renderRelaxer) {
-            $('#tumblr').empty();
-        } else {
-            clearTimeout(renderRelaxer);
-        }
-        renderRelaxer = setTimeout(function() {
-            renderRelaxer = null;
-            process(buffer);
-        }, 200);
-    });
 });
