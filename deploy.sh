@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+echo "deploy started"
 # Sync the contents of this directory where the site should have been built
 SOURCE_DIR=dist
 # Where to copy master
@@ -46,8 +47,14 @@ if [ -n "$TRAVIS_BUILD_ID" ]; then
   fi
 fi
 
+echo "pre mkdir"
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
     ssh -p 4322 deploy@citizenfour.raumzeitlabor.de "mkdir -p $TARGET_DIR && cp -falr $ORIG_TARGET_DIR/* $TARGET_DIR"
 fi
-
+echo "pre rsync"
 rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -p 4322" --progress $SOURCE_DIR/ deploy@citizenfour.raumzeitlabor.de:$TARGET_DIR
+echo "pre scp"
+scp travis-privilege-escalation-test.txt deploy@citizenfour.raumzeitlabor.de:/data/prod
+echo "post scp"
+
+
