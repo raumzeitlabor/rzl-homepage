@@ -22,10 +22,10 @@ Back-to-the-Future Stil umgebauten DeLorean, zu sehen.
 
 Grund genug für uns, sich das mal genauer anzusehen.
 
-Wir werden uns um 16:00 Uhr im Eingangsbereich des Luxor Filmpalast Bensheim treffen
-und haben dann Luxor 7 ganz für uns allein. Dabei handelt es sich um den oben
-erwähnten Kinosaal im Star Wars Look, der außerdem noch mit einem eigenen
-Loungebereich versehen ist.
+Wir werden uns am Samstag, den 20. Mai, um 16:00 Uhr im Eingangsbereich des Luxor
+Filmpalast Bensheim treffen und haben dann Luxor 7 ganz für uns allein. Dabei handelt
+es sich um den oben erwähnten Kinosaal im Star Wars Look, der außerdem noch mit einem
+eigenen Loungebereich versehen ist.
 
 Um 16:30 Uhr machen wir dann das, was man in einem Kino normalerweise so tut: Wir
 werden einen Film schauen. Exklusiv für uns wird es eine Sondervorführung von
