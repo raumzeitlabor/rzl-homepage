@@ -29,7 +29,7 @@ Loungebereich versehen ist.
 
 Um 16:30 Uhr machen wir dann das, was man in einem Kino normalerweise so tut: Wir
 werden einen Film schauen. Exklusiv für uns wird es eine Sondervorführung von
-"Hackers", dem Meisterwerk aus dem Jahr 1995, geben. HACK THE PLANET!
+„Hackers“, dem Meisterwerk aus dem Jahr 1995, geben. HACK THE PLANET!
 
 Nach dem Film bekommen wir von einem technisch versierten Mitarbeiter eine Führung
 hinter die Kulissen des Kinos und haben, als besonderes Extra, die Gelegenheit das
@@ -45,7 +45,7 @@ teilnehmen zu können.
 
 Die maximale Teilnehmerzahl ist beschränkt, daher ist eine verbindliche Anmeldung
 erforderlich. Um euch anzumelden schreibt mir eine
-[Mail](mailto:tobias.rehbein@web.de) mit dem Betreff "Kino Exkursion".
+[Mail](mailto:tobias.rehbein@web.de) mit dem Betreff „Kino Exkursion“.
 
 Die Teilnehmer an der Exkursion sollten sich, wie immer, untereinander abstimmen und
 möglichst Fahrgemeinschaften bilden. Weitere Informationen zur Exkursion gehen zu
