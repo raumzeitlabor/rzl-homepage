@@ -10,7 +10,7 @@ author:
   display_name: flederrattie
 ---
 
-Am vergangenen Donnerstag hatten wir die Gelegenheit, das ![Stadtarchiv
+Am vergangenen Donnerstag hatten wir die Gelegenheit, das [Stadtarchiv
 Mannheim](https://stadtarchiv.mannheim.de/) etwas genauer unter die Lupe zu
 nehmen.
 
@@ -34,6 +34,6 @@ Fritz-Cahn-Garnier-Lesesaal endete unsere Tour vor der Informationswand zum
 bevorstehenden Umzug in den Ochsenpferchbunker.
 
 Unser Dank gilt Herrn Dr. Stockert und Herrn Dr. Schenk für die tolle und
-informative Tour - wir freuen uns aufs neue ![„Marchivum“](http://marchivum.de/) in der Neckarstadt!
+informative Tour - wir freuen uns aufs neue [„Marchivum“](http://marchivum.de/) in der Neckarstadt!
 
 ![Stadtarchiv Impressionen](/assets/Stadtarchiv_klein.jpg)
