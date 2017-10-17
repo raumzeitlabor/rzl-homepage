@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 user:
   default:
     function: 'Laborant'
-    avatar:   'bernd.png'
+    avatar:   'rzl-logo.png'
   abrock:
     function: 'Abrock School of Engineering'
     avatar:   'abrock.jpeg'
