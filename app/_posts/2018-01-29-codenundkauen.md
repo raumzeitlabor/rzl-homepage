@@ -11,7 +11,7 @@ author:
   display_name: flederrattie
 ---
 
-![Coden-und-Kauen](/assets/frystyck.jpg)
+![Coden-und-Kauen](/assets/frystyk.jpg)
 
 Wertes RaumZeitLabor, werte Freunde des gepflegten Spätstücks,
 
