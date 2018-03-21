@@ -1,3 +1,17 @@
+---
+layout: post
+title: Exkursion ins Technoseum Mannheim
+facts:
+  Was?: Exkursion
+  Wann?: 28. April 2018, 12:00 Uhr
+  Wo?: Technoseum Mannheim
+  Anmeldung: erforderlich
+author:
+  login: flederrattie
+  email: nathalie.groll@gmail.com
+  display_name: flederrattie
+---
+
 Hallo liebe RaumZeitLaborierende, liebe Museumsfans und
 Technikinteressierte!
 
@@ -19,7 +33,7 @@ Maschine?“
 
 Ihr wollt dabei sein und Wasserrad und Dampfmaschine aus nächster Nähe
 anschauen? Kein Problem! Da die Plätze allerdings begrenzt sind, bitte ich
-bis spätestens zum 21.04.2018 um Rückmeldung per Mail.
+bis spätestens zum 21.04.2018 um Rückmeldung per [Mail](mailto:nathalie.groll@gmail.com).
 
 
 Für Mitglieder des Vereins ist diese Tour kostenlos. Nichtmitglieder bitten
