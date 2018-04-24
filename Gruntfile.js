@@ -299,7 +299,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>',
+                    cwd: '<%= config.dist %>',
                     src: ['**/*.html', '!bower_components/marked/**/*.html'],
                     dest: '<%= config.dist %>'
                 }]
