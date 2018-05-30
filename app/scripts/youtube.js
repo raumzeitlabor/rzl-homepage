@@ -14,7 +14,7 @@ $(document).ready(function() {
         var lsTime = moment(v[0].snippet.publishedAt).format('LL');
         $('<h3 style="margin-top:0">' + v[0].snippet.title + '</h3><p><i class="glyphicon glyphicon-time"></i><span style="font-style: italic; color: #8e8e8e"> hochgeladen: ' + lsTime + '</span><p>' + v[0].snippet.description + '</p><p><em>weiter zu <a href="https://youtu.be/' + v[0].snippet.resourceId.videoId + '">Youtube</a></em></p>')
             .appendTo('#youtube-main-descr');
-        $('<iframe width="560" height="315" src="//www.youtube.com/embed/' + v[0].snippet.resourceId.videoId + '?hd=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>')
+        $('<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/' + v[0].snippet.resourceId.videoId + '?hd=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>')
             .appendTo('#youtube-main');
 
         if (v.length < 2) {
