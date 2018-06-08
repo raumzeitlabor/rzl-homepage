@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exkursion ins Technoseum Mannheim
+title: Bericht aus dem Technoseum Mannheim
 facts:
   Was?: Exkursion
   Wann?: 28. April 2018, 12:00 Uhr
