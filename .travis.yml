@@ -1,3 +1,5 @@
+sudo: false
+dist: trusty
 language: node_js
 node_js: stable
 before_install: 
@@ -28,5 +30,4 @@ env:
  
 notifications:
   slack: raumzeitlabor:jIH6Dhzf4KKG28wUcgV0mwcO
-
-group: deprecated-2017Q4
+  
