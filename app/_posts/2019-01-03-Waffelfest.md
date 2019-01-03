@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crêpiphanie-Fest // Jahresanfangs-Kickoff-Motivations-Heilige-Drei-Waffel-Frühstück
+title: Crêpiphanie-Fest – Jahresanfangs-Kickoff-Motivations-Heilige-Drei-Waffel-Frühstück
 facts:
   Was?: Essen und Hacken
   Wann?: 6. Januar 2019, 11:00 Uhr
