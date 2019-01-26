@@ -4,7 +4,6 @@ email: info@raumzeitlabor.de
 baseurl: ""
 url: "https://raumzeitlabor.de"
 
-plugins: [jekyll-paginate]
 paginate: 5
 
 exclude: ['node_modules']
