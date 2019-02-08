@@ -88,7 +88,6 @@
                     c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
                     if (currDate == moment(new Date()).format('YYYY-MM-DD')){
                         c.find('.rzl-event-date').addClass('rzl-event-date-today');
-                        c.find('.rzl-event-date').removeClass('rzl-event-date');
                     }
                 } else {
                     c.find('.rzl-event-date').remove();
