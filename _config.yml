@@ -14,7 +14,7 @@ pagination:
 
 exclude: ['node_modules']
 paginate_path: /blog/page/:num
-permalink: /blog/:title
+permalink: /blog/:title/
 
 markdown: kramdown
 
