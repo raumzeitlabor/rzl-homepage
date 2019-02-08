@@ -305,6 +305,10 @@ text-align:center;
 text-transform:uppercase;
 }
 
+.rzl-event-date.rzl-event-date-today {
+background-color: #5cb85c;
+}
+
 @media(max-width:980px) {
 .rzl-event-wrap {
 margin-bottom:55px;
