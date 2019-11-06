@@ -21,7 +21,7 @@ Falls euch interessiert, was ein Reiseruf ist, ihr alte Telefonzellen bewundern,
 Im Anschluss werden wir nach aktuellem Planungsstand auch die Funkstation auf dem Museumsdach besuchen können.
 
 Für RaumZeitLaborierende ist diese Führung kostenlos, Nicht-Mitglieder bitten wir um 5 Euro für die RZL-Tourenkasse.
-Da diese Führung auf 15 Plätze beschränkt ist, bitte ich bis zum 24. November 2019 um Rückmeldung per elektronischem Briefchen.
+Da diese Führung auf 15 Plätze beschränkt ist, bitte ich bis zum 24. November 2019 um Rückmeldung per [elektronischem Briefchen](mailto:nathalie.groll@gmail.com).
 
 Goldgelbe Grüße <br/>
 FlederrattY
