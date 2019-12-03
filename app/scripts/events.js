@@ -54,8 +54,9 @@
 
             // see https://tools.ietf.org/html/draft-ietf-jcardcal-jcal-10
             var orderMap = {};
-            var ev = {};
+            var ev;
             for (var i = 0; i < vevents.length; i++) {
+                ev = {};
                 var evdata = vevents[i];
 
                 if (evdata[0] !== 'vevent') {
