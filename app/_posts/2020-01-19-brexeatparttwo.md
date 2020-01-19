@@ -28,4 +28,4 @@ Damit es auch in Zukunft noch "Keep calm and culinary on" heißt und wir weiter 
 Drool, Britannia!<br />
 Eure Chai Spice Girls
 
-![SirMadamCorgi](/assets/siranmadamcorgi.jpg)
+![SirMadamCorgi](/assets/sirandmadamcorgi.jpg)
