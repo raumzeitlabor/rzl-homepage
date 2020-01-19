@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Ausflugszeit] Atomschutzbunkertour
+title: Atomschutzbunkertour
 facts:
   Was?: Exkursion
   Wann?: 8. Februar 2020, 15.30 Uhr
