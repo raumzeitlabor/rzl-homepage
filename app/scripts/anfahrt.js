@@ -17,78 +17,29 @@
         maxZoom: 17,
     }).addTo(map);
 
-    var marker = L.marker([49.50804546389515, 8.499341011047363]).addTo(map);
-    marker.bindPopup('<b>RaumZeitLabor</b><br>Boveristraße 22-24<br>68309 Mannheim').openPopup();
+    var marker = L.marker([49.507476979789026, 8.520809412002563]).addTo(map);
+    marker.bindPopup('<b>RaumZeitLabor</b><br>Weinheimer Strasse 58-60<br>68309 Mannheim').openPopup();
     var polyline = L.polyline([ ], {color: 'red'}).addTo(map);
     $(window).on('hashchange', function() {
         var stepHash = location.hash.replace('#', '');
         switch (stepHash) {
             default:
             case 'step1':
-                marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
-                marker.bindPopup('<b>RaumZeitLabor</b><br>Boveristraße 22-24<br>68309 Mannheim').openPopup();
+                marker.setLatLng([49.507476979789026, 8.520809412002563]).update();
+                marker.bindPopup('<b>RaumZeitLabor</b><br>Weinheimer Strasse 58-60<br>68309 Mannheim').openPopup();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 15);
                 break;
             case 'step2':
-                marker.setLatLng([49.505370187170236, 8.50215196609497]).update();
-                marker.bindPopup('Haltestelle Boveristraße').openPopup();
+                marker.setLatLng([49.5097829219898, 8.518245220184326]).update();
+                marker.bindPopup('Haltestelle Käfertal Bahnhof').openPopup();
                 polyline.setLatLngs([
-                    [49.505370187170236, 8.50215196609497],
-                    [49.505121, 8.501657],
-                    [49.50734182456017, 8.499072790145874]
-                ]);
-                map.fitBounds(polyline.getBounds());
-                break;
-            case 'step3':
-                marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
-                marker.bindPopup('Tor der Spedition Kübler<br>RaumZeitlabor Briefkasten').openPopup();
-                polyline.setLatLngs([ ]);
-                map.setView(marker.getLatLng(), 17);
-                $('#step7-prev').attr('href', '#step3');
-                break;
-            case 'step4':
-                marker.setLatLng([49.50734182456017, 8.499072790145874]).update();
-                polyline.setLatLngs([ ]);
-                map.setView(marker.getLatLng(), 17);
-                $('#step7-prev').attr('href', '#step4');
-                break;
-            case 'step5':
-                marker.setLatLng([49.50810816393884, 8.500746488571167]).update();
-                marker.bindPopup('Alternativer Zugang Spedition Kübler').openPopup();
-                polyline.setLatLngs([
-                    [49.50734182456017, 8.499072790145874],
-                    [49.511656, 8.494045],
-                    [49.513347, 8.498068],
-                    [49.511678, 8.500096],
-                    [49.510723, 8.498264],
-                    [49.508361, 8.501246],
-                    [49.50810816393884, 8.500746488571167]
-                ]);
-                map.fitBounds(polyline.getBounds());
-                break;
-            case 'step6':
-                marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
-                marker.bindPopup('RaumZeitLabor').openPopup();
-                polyline.setLatLngs([
-                    [49.50810816393884, 8.500746488571167],
-                    [49.507293, 8.499185],
-                    [49.508028, 8.498257],
-                    [49.508349, 8.498873],
-                    [49.508018, 8.499297],
-                    [49.50804546389515, 8.499341011047363]
-                ]);
-                map.fitBounds(polyline.getBounds());
-                break;
-            case 'step7':
-                marker.setLatLng([49.50804546389515, 8.499341011047363]).update();
-                marker.bindPopup('RaumZeitLabor').openPopup();
-                polyline.setLatLngs([
-                    [49.507293, 8.499185],
-                    [49.508028, 8.498257],
-                    [49.508349, 8.498873],
-                    [49.508018, 8.499297],
-                    [49.50804546389515, 8.499341011047363]
+                    [49.5097829219898, 8.518245220184326],
+                    [49.508884244450805, 8.51716160774231],
+                    [49.50773474911683, 8.517043590545654],
+                    [49.50735157800333, 8.517011404037476],
+                    [49.507525747063326, 8.520305156707764]
+                    [49.507476979789026, 8.520777225494385]
                 ]);
                 map.fitBounds(polyline.getBounds());
                 break;
