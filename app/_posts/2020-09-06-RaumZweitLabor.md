@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Käfertal bleibt Käfertal bleibt Käfertal –
-Tschüss Boveristraße, hallo Weinheimer Straße!
+title: Käfertal bleibt Käfertal bleibt Käfertal
 facts:
   Was?: RZL Umzug
 author:
