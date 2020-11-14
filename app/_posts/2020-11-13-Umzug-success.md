@@ -10,7 +10,7 @@ author:
 ---
 
 Einen Tag vor Ablauf unserer Umzugsfrist haben wir die allerletzten Reste aus den alten Räumlichkeiten rausgekehrt und die Schlüssel unserem ehemaligen Vermieter übergeben.
-Die Ära Boveristraße ist somit entgültig Geschichte.
+Die Ära Boveristraße ist somit endgültig Geschichte.
 
 Unser Elektroniklabor, die Holzwerkstatt, das FabLab und unsere Küche haben in der Weinheimer Straße ein neues Zuhause gefunden haben.
 Auch unser Olymp wird in anderer Form bei den Heidelberger Breidenbach Studios weiterleben.
