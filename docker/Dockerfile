@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.16
+FROM phusion/baseimage:0.10.2
 MAINTAINER Simon Elsbrock <simon@iodev.org>
 
 ENV LANG en_US.UTF-8
