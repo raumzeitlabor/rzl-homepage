@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Achievement unlocked: Umzug geglückt
+title: Achievement unlocked: Umzug geglueckt
 facts:
   Was?: RZL Umzug
 author:
