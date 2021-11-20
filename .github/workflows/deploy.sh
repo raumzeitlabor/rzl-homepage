@@ -24,7 +24,7 @@ if [ -z "$pull_number" ]; then
   echo rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
 else
   echo ssh ssh -4 -p 36270 deploy@premium-ng.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
-  echo rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
+  echo rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
 fi
 
 
