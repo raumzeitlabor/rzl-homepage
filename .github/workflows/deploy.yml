@@ -3,9 +3,8 @@ name: Build and deploy homepage
 on:
   push:
     branches: [ master ]
-  #pull_request:
-  #  branches: [ master ]
-  workflow_dispatch:
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -14,19 +13,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6 # Not needed with a .ruby-version file
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
-    # disabled in travis -> github-Actions migration
-    # Because the paths on github-Actions are different
-    #- run: rm -rf /home/travis/.npm/* 
-
-    - run: bundler install --path vendor/bundle
-    - run: npm install
-    - run: node_modules/.bin/bower install
-    - run: node_modules/.bin/grunt build
+#    - uses: ruby/setup-ruby@v1
+#      with:
+#        ruby-version: 2.6 # Not needed with a .ruby-version file
+#        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+#
+#    # disabled in travis -> github-Actions migration
+#    # Because the paths on github-Actions are different
+#    #- run: rm -rf /home/travis/.npm/* 
+#
+#    - run: bundler install --path vendor/bundle
+#    - run: npm install
+#    - run: node_modules/.bin/bower install
+#    - run: node_modules/.bin/grunt build
 
     - run: .github/workflows/deploy.sh
       env: 
