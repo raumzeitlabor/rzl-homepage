@@ -21,10 +21,13 @@ pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 
 echo "Copying data..."
 if [ -z "$pull_number" ]; then
-  echo rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
+  echo "Deploying to https://raumzeitlabor.de/ ..."
+  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
 else
-  echo ssh ssh -4 -p 36270 deploy@premium-ng.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
-  echo rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  echo "Deploying to https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/ ..."
+  ssh ssh -4 -p 36270 deploy@premium-ng.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  echo "You can now see your build at https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/"
 fi
 
 
