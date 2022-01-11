@@ -11,6 +11,7 @@
     }
 
     var firstRun = true;
+    var notCurrentmonth = false;
     var loadEvents; loadEvents = function() {
         if (firstRun) {
             firstRun = !firstRun;
@@ -25,9 +26,14 @@
             if (trymonth.isValid()) {
                 month = trymonth.startOf('month');
             }
+            notCurrentmonth = true;
         }
 
-        var monthStart = month.startOf('month').format('X');
+        if (notCurrentmonth) {
+            var monthStart = month.startOf('month').format('X');
+        } else {
+            var monthStart = month.startOf('day').format('X');
+        }
         var monthEnd = month.endOf('month').format('X');
         var prevMonth = month.subtract(1, 'months').format('YYYY-MM');
         var nextMonth = month.add(2, 'months').format('YYYY-MM');
