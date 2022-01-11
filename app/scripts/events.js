@@ -32,7 +32,7 @@
         if (notCurrentmonth) {
             var monthStart = month.startOf('month').format('X');
         } else {
-            var monthStart = month.startOf('day').format('X');
+            var monthStart = moment().startOf('day').format('X');
         }
         var monthEnd = month.endOf('month').format('X');
         var prevMonth = month.subtract(1, 'months').format('YYYY-MM');
