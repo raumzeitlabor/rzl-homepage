@@ -157,6 +157,10 @@
 
                 prevDate = currDate;
             }
+            
+            if (sortedEvs.length < 1) {
+                $('#rzl-events').empty().append('<p> keine weiteren Events in diesem Monat</p>');
+            }
 
             $($('#rzl-events-pager-tmpl').html()).appendTo('#rzl-events');
             $('.pager .previous a').attr('href', '#' + prevMonth);
