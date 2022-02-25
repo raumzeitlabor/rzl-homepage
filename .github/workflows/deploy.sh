@@ -22,11 +22,11 @@ pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 echo "Copying data..."
 if [ -z "$pull_number" -o "$pull_number" = "null" ]; then
   echo "Deploying to https://raumzeitlabor.de/ ..."
-  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
+  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -o VerifyHostKeyDNS=yes" --progress dist/ deploy@apfelkirsch.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
 else
   echo "Deploying to https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/ ..."
-  ssh ssh -4 -p 36270 deploy@premium-ng.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
-  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -4 -p 36270" --progress dist/ deploy@premium-ng.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  ssh -o VerifyHostKeyDNS=yes deploy@apfelkirsch.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -o VerifyHostKeyDNS=yes" --progress dist/ deploy@apfelkirsch.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
   echo "You can now see your build at https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/"
 fi
 
