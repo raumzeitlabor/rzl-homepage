@@ -19,10 +19,10 @@ Falls ihr seit Anbeginn der Zeit Art-Attack-Anbetende oder World of Woolcrafter:
 
 Faltet mir bitte bis zum 23.07. einen elektronischen Origami-Anmeldegruß, wenn ihr dabei sein möchtet. Die Vereinskasse freut sich über einen Material-Unkostenbeitrag von mindestens 5 Euro pro Bastelnase.
 
-Künstlerische Grüße
+Künstlerische Grüße<br />
 eure flederARTie
 
-P.S.: Dies ist eine öffentliche Veranstaltung. 
+P.S.: Dies ist eine öffentliche Veranstaltung.<br />
 Bitte beachtet das [Hygienekonzept](https://wiki.raumzeitlabor.de/wiki/Hygienekonzept)!
 
 ![RZLBastel](/assets/RZLabasteln.jpg)
