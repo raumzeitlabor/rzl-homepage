@@ -24,4 +24,4 @@ eure flederARTie
 
 P.S.: Dies ist eine öffentliche Veranstaltung. Bitte beachtet das [Hygienekonzept](https://wiki.raumzeitlabor.de/wiki/Hygienekonzept)!
 
-![RZLBastel](/assets/RZLbasteln.jpg)
+![RZLBastel](/assets/RZLabasteln.jpg)
