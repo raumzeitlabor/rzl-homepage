@@ -22,6 +22,7 @@ Faltet mir bitte bis zum 23.07. einen elektronischen Origami-Anmeldegruß, wenn 
 Künstlerische Grüße
 eure flederARTie
 
-P.S.: Dies ist eine öffentliche Veranstaltung. Bitte beachtet das [Hygienekonzept](https://wiki.raumzeitlabor.de/wiki/Hygienekonzept)!
+P.S.: Dies ist eine öffentliche Veranstaltung. 
+Bitte beachtet das [Hygienekonzept](https://wiki.raumzeitlabor.de/wiki/Hygienekonzept)!
 
 ![RZLBastel](/assets/RZLabasteln.jpg)
