@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RZL 
+title: RaumZeitLabastel-Nachmittabend
 facts:
   Was?: Knoblauch futtern
   Wann?: 30. Juli 2022, 15.00 Uhr
