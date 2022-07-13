@@ -17,7 +17,7 @@ Am Samstag, den 30.07. wollen wir ab 15 Uhr die digitalen Hilfsmittel möglichst
 
 Falls ihr seit Anbeginn der Zeit Art-Attack-Anbetende oder World of Woolcrafter:innen seid, ihr mal kultigen Kartoffeldruck und verschiedene Malware auf Mischpapier testen oder euch beim Swing Scrapbooking gegenseitig die Schreibhefte bekleben wollt – lasst eurem Einfallsreichtum an diesem Nachmittabend freien Lauf! Bringt also auf jeden Fall auch eure Materialien und niemals fertig werdenden Offline-Projekte von daheim mit. Für Einfallslose und Kreativblockierte wird es ein mit Ideen gefülltes "Inspirations-Glas" geben.
 
-Faltet mir bitte bis zum 23.07. einen elektronischen Origami-Anmeldegruß, wenn ihr dabei sein möchtet. Die Vereinskasse freut sich über einen Material-Unkostenbeitrag von mindestens 5 Euro pro Bastelnase.
+Faltet mir bitte bis zum 23.07. einen [elektronischen Origami-Anmeldegruß](mailto:nathalie.groll@gmail.com), wenn ihr dabei sein möchtet. Die Vereinskasse freut sich über einen Material-Unkostenbeitrag von mindestens 5 Euro pro Bastelnase.
 
 Künstlerische Grüße<br />
 eure flederARTie
