@@ -2,7 +2,7 @@
 layout: post
 title: RaumZeitLabastel-Nachmittabend
 facts:
-  Was?: Knoblauch futtern
+  Was?: Basteln
   Wann?: 30. Juli 2022, 15.00 Uhr
   Wo?: RZL Hauptraum
 author:
