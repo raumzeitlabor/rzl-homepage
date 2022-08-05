@@ -11,7 +11,7 @@ author:
   display_name: flederrattie
 ---
 
-Am Samstag, den 27. August 2022, lädt der Chaos Computer Club zum ersten Tag des offenen Hackerspaces ein. Zusammen mit über [50 Hackerspaces](https://umap.openstreetmap.fr/de/map/tag-der-offenen-hackspaces_786704#5/51.760/10.942)in Deutschland, der Schweiz, Luxemburg und weiteren Ländern werden wir an diesem Tag einen Einblick in unsere Räumlichkeiten und unsere Arbeit geben.
+Am Samstag, den 27. August 2022, lädt der Chaos Computer Club zum ersten Tag des offenen Hackerspaces ein. Zusammen mit über [50 Hackerspaces](https://umap.openstreetmap.fr/de/map/tag-der-offenen-hackspaces_786704#5/51.760/10.942) in Deutschland, der Schweiz, Luxemburg und weiteren Ländern werden wir an diesem Tag einen Einblick in unsere Räumlichkeiten und unsere Arbeit geben.
 
 Ab 16 Uhr ist das RZL offiziell für interessierte Erst- oder auch Wieder-Besuchende geöffnet. Lasst euch unsere Holzwerkstatt, unsere 3D-Drucker, die Lasercutter, Stick- und andere Maschinen zeigen, oder legt direkt selbst Hand an. Ihr könnt Stofftaschen und Shirts mit Hilfe unseres Schneidplotters aufhübschen oder kleine Bausätze in unserer Elektronik-Ecke zusammenlöten.
 Für das leibliche Wohl wird selbstverständlich auch gesorgt sein – kühle Mate, heiße Waffeln und diverses anderes Herzhaftes und Süßes gibt’s in unserer Küche. 
