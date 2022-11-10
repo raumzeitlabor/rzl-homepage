@@ -375,7 +375,7 @@ module.exports = function (grunt) {
                     src: [
                         'styles/fonts/{,*/}*.*',
                         'bower_components/bootstrap/dist/fonts/*.*',
-                        'bower_components/font-awesome/fonts/*.*',
+                        'bower_components/font-awesome/webfonts/*.*',
                     ]
                 }]
             },
@@ -394,7 +394,7 @@ module.exports = function (grunt) {
                     src: [
                         'styles/fonts/{,*/}*.*',
                         'bower_components/bootstrap/dist/fonts/*.*',
-                        'bower_components/font-awesome/fonts/*.*',
+                        'bower_components/font-awesome/webfonts/*.*',
                     ]
                 }, {
                     expand: true,
