@@ -29,10 +29,11 @@
             notCurrentmonth = true;
         }
 
+        var monthStart;
         if (notCurrentmonth) {
-            var monthStart = month.startOf('month').format('X');
+            monthStart = month.startOf('month').format('X');
         } else {
-            var monthStart = moment().startOf('day').format('X');
+            monthStart = moment().startOf('day').format('X');
         }
         var monthEnd = month.endOf('month').format('X');
         var prevMonth = month.subtract(1, 'months').format('YYYY-MM');
@@ -93,7 +94,7 @@
                 var c = $($('#rzl-event-tmpl').html());
                 if (currDate !== prevDate){
                     c.find('.rzl-event-date time').append(moment(ev.dtstart).format('[<span>]DD[</span><span>]dd[</span>]'));
-                    if (currDate == moment(new Date()).format('YYYY-MM-DD')){
+                    if (currDate === moment(new Date()).format('YYYY-MM-DD')){
                         c.find('.rzl-event-date').addClass('rzl-event-date-today');
                     }
                 } else {
@@ -157,7 +158,7 @@
 
                 prevDate = currDate;
             }
-            
+
             if (sortedEvs.length < 1) {
                 $('#rzl-events').empty().append('<p> keine weiteren Events in diesem Monat</p>');
             }

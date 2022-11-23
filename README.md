@@ -26,18 +26,18 @@ own environment. Choose as you like.
 ##### Debian
 
     sudo apt-get install nodejs nodejs-legacy npm bundler ruby-dev
-    sudo npm install -g grunt-cli bower
+    sudo npm install -g grunt-cli
 
 ##### Arch Linux
 
     sudo pacman -S nodejs npm
     gem install bundler
-    sudo npm install -g grunt-cli bower
+    sudo npm install -g grunt-cli
 
 ##### FreeBSD
 
     sudo pkg install node npm rubygem-bundler nasm
-    sudo npm install -g grunt-cli bower
+    sudo npm install -g grunt-cli
 
 *Note: nasm(1) is needed to compile some node packages from source.*
 
@@ -45,16 +45,14 @@ own environment. Choose as you like.
 
 Needs [Homebrew](http://brew.sh/).
 
-    brew install node ruby
+    brew install node ruby 
     sudo gem install bundler
-    sudo npm install -g grunt-cli bower
+    sudo npm install -g grunt-cli
 
 #### Dependencies
 
-    npm install
-    export PATH=$PATH:$(npm bin)
-    bundler install --path vendor/bundle
-    bower install
+    yarn install
+    bundler install
 
 #### Hacking
 

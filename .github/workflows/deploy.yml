@@ -21,13 +21,12 @@ jobs:
 
     # disabled in travis -> github-Actions migration
     # Because the paths on github-Actions are different
-    #- run: rm -rf /home/travis/.npm/* 
+    #- run: rm -rf /home/travis/.npm/*
 
     - run: bundler install --path vendor/bundle
-    - run: npm install
-    - run: node_modules/.bin/bower install
+    - run: yarn install
     - run: node_modules/.bin/grunt build
 
     - run: .github/workflows/deploy.sh
-      env: 
+      env:
         DEPLOY_OPENSSH_PRIVATE_KEY: ${{ secrets.DEPLOY_OPENSSH_PRIVATE_KEY }}
