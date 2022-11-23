@@ -13,3 +13,5 @@ Gemfile.lock
 vendor/
 
 deploy_key
+yarn-error.log
+yarn.lock
