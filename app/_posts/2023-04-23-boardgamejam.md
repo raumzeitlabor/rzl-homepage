@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boardgamejam
+title: Board Game Jam
 facts:
   Was?: Game Jam für Brettspiele
   Wann?: 13. April 2023, ab 18 Uhr
@@ -20,11 +20,11 @@ Wir freuen uns, euch hiermit zur ersten Board Game Jam am Pfingstwochenende, vom
 
 Los geht’s am Freitagabend, um 18 Uhr mit einem Brainstorming bei einem gemeinsamen Abendessen. Die Jam selbst startet am Samstagmittag mit der Team-Findung und läuft bis zur Präsentation am Montagmittag.
 
-Falls ihr dabei sein wollt, freuen wir uns auf eure Anmeldung per Mail an events@raumzeitlabor.de.
+Falls ihr dabei sein wollt, freuen wir uns auf eure [Anmeldung per Mail](mailto:events@raumzeitlabor.de).
 
 Alle Teilnehmenden bitten wir um einen Unkostenbeitrag in Höhe von 20 Euro pro Kopf, von dem Snacks für mittags und die Abendessen am Freitag, Samstag und Sonntag bezahlt werden.
 
 Einige Materialien für den Spiele-Bau werden wir vorhalten. Falls ihr spezielles Acryl oder bereits vorgefertigte Spielfiguren und Würfel benötigt, würden wir euch bitten, sie mitzubringen.
 
-Es grüßen euch
+Es grüßen euch <br/>
 eure RaumZeitMeeple
