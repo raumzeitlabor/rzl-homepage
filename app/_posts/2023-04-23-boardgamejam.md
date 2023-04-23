@@ -3,7 +3,7 @@ layout: post
 title: Board Game Jam
 facts:
   Was?: Game Jam für Brettspiele
-  Wann?: 13. April 2023, ab 18 Uhr
+  Wann?: 26.-29. Mai 2023
   Wo?: RaumZeitLabor
 author:
   login: default
