@@ -17,21 +17,19 @@ Mit den RaumZeitInvasionDays wollen wir das Problem in unserer Community und ins
 
 Durch dieses Treffen wollen wir uns einmal im Monat einen Raum nehmen, in dem das definitiv nicht so ist.
 
-Die RaumZeitInvasionDays sollen, bis auf Weiteres, ein mal im Monat stattfinden, und zwar am zweiten Donnerstag im Monat ab 18 Uhr bis zum Ende des Tages. Eingeladen sind alle Menschen, die sich nicht als [dya](https://queer-lexikon.net/2017/06/15/dyadik/) [cis](https://queer-lexikon.net/2017/06/15/cis/) Männer identifizieren, diese sind in der Zeit des Treffens explizit gebeten, sich in den gewählten Räumlichkeiten nicht aufzuhalten.
+Der RaumZeitInvasionDay findet monatlich statt, und zwar am zweiten Donnerstag im Monat ab 18 Uhr bis zum Ende des Tages. Eingeladen sind alle Menschen, die sich nicht als [dya](https://queer-lexikon.net/2017/06/15/dyadik/) [cis](https://queer-lexikon.net/2017/06/15/cis/) Männer identifizieren, diese sind in der Zeit des Treffens explizit gebeten, sich in den Räumlichkeiten nicht aufzuhalten.
 
 Wir verstehen uns als Gruppe, in der alle Menschen, mit der erwähnten Einschränkung, mit Interesse an Technik willkommen sind. **Selbstdefinitionen werden von uns nicht angezweifelt.**
 
-Unabhängig davon bitten wir alle Teilnehmenden, sich an den Code of Coduct für dieses Treffen zu halten. Dabei orientieren wir uns vorerst an dem [CoC](https://wiki.muc.ccc.de/fuck-muc:coc) den das ähnliche Treffen beim CCC München verwendet.  Sollte es Verstöße geben, wird die Einhaltung mit allen notwendigen Mitteln durchgesetzt.
+Unabhängig davon bitten wir alle Teilnehmenden, sich an den Code of Coduct für dieses Treffen zu halten. Dabei orientieren wir uns vorerst an dem [CoC](https://wiki.muc.ccc.de/fuck-muc:coc) den das ähnliche Treffen beim CCC München verwendet. Sollte es Verstöße geben, wird die Einhaltung mit allen notwendigen Mitteln durchgesetzt.
 
 ----
-
-Unser erstes Treffen wird am Donnerstag, dem 13.04. ab 18 Uhr stattfinden und du bist herzlich eingeladen.
 
 (Aufgrund der noch immer hohen Infektionszahlen und um unsere Treffen auch für vulnerable Gruppen zugänglich zu machen, bitten wir dich beim Aufenthalt im Raum durchgängig eine FFP2-Maske zu tragen und nur zu kommen, wenn du dich gesund fühlst.)
 
 Du musst dir keine Gedanken darüber machen, wie viel du weißt, welche Fähigkeiten du hast oder ob du „hacken“ kannst.  Dein Interesse am kreativen Umgang mit Technik reicht vollkommen aus!
 
-An diesem ersten Termin werden wir das ganze RaumZeitLabor für uns in Anspruch nehmen und bitten alle dya cis Männer, das RaumZeitLabor an einem anderen Abend zu besuchen. Wir wollen es so allen Teilnehmenden ermöglichen, den gesamten Raum kennenzulernen. Für zukünftige Treffen werden wir je nach Anzahl der Personen und Entwicklung vermutlich nur einen der zwei großen Räume belegen.
+An diesem Termin werden wir das ganze RaumZeitLabor für uns in Anspruch nehmen und bitten alle dya cis Männer, das RaumZeitLabor an einem anderen Abend zu besuchen. Wir wollen es so allen Teilnehmenden ermöglichen, den gesamten Raum kennenzulernen.
 
 Für alle, die das RaumZeitLabor noch nicht kennen, gibt es immer um 19 Uhr eine Führung durch den Raum. Am Anfang bei Bedarf auch öfter.
 
