@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
 
 echo "Preparing ~/.ssh..."
 mkdir ~/.ssh
@@ -11,8 +13,9 @@ ssh-agent > ~/.ssh/env
 . ~/.ssh/env
 echo "$DEPLOY_OPENSSH_PRIVATE_KEY" | ssh-add -
 unset DEPLOY_OPENSSH_PRIVATE_KEY
+
 ssh-add -l
-if [ $(ssh-add -l | wc -l) -lt 1 ]; then
+if [ $(ssh-add -l | wc -l) -lt 1 ] || ssh-add -l | grep -qF "The agent has no identities."; then
   echo "No ssh key loaded. Stopping deploy."
   exit
 fi
