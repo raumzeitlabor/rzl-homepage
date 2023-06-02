@@ -28,5 +28,9 @@ jobs:
     - run: node_modules/.bin/grunt build
 
     - run: .github/workflows/deploy.sh
+      if: ${{ env.BASE_REPO != env.PR_HEAD_REPO }}
       env:
         DEPLOY_OPENSSH_PRIVATE_KEY: ${{ secrets.DEPLOY_OPENSSH_PRIVATE_KEY }}
+
+    - run: echo "PR is not from base repo https://github.com/raumzeitlabor/rzl-homepage/ => skipping deploy"
+      if: ${{ env.BASE_REPO == env.PR_HEAD_REPO }}
