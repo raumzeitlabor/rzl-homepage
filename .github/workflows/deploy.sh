@@ -33,7 +33,7 @@ if [ -z "$pull_number" -o "$pull_number" = "null" ]; then
   rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -o VerifyHostKeyDNS=yes" --progress dist/ deploy@apfelkirsch.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de
 else
   echo "Deploying to https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/ ..."
-  ssh -o VerifyHostKeyDNS=yes deploy@apfelkirsch.raumzeitlabor.de mkdir /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
+  ssh -o VerifyHostKeyDNS=yes deploy@apfelkirsch.raumzeitlabor.de mkdir -p /var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
   rsync -zvrt --omit-dir-times --delete --checksum -e "ssh -o VerifyHostKeyDNS=yes" --progress dist/ deploy@apfelkirsch.raumzeitlabor.de:/var/lib/www/www.raumzeitlabor.de-preview/pr-$pull_number
   echo "You can now see your build at https://pr-$pull_number.rzl-homepage.raumzeitlabor.org/"
 fi
