@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
 
 echo "Preparing ~/.ssh..."
 mkdir ~/.ssh
@@ -9,11 +11,17 @@ echo "Preparing ssh agent..."
 umask 0077
 ssh-agent > ~/.ssh/env
 . ~/.ssh/env
+
+set +e
 echo "$DEPLOY_OPENSSH_PRIVATE_KEY" | ssh-add -
+result=$?
+set -e
 unset DEPLOY_OPENSSH_PRIVATE_KEY
-ssh-add -l
-if [ $(ssh-add -l | wc -l) -lt 1 ]; then
+
+ssh-add -l || true
+if [ "$result" -ne 0 -o  $(ssh-add -l | wc -l) -lt 1 ] || ssh-add -l | grep -qF "The agent has no identities."; then
   echo "No ssh key loaded. Stopping deploy."
+  echo "Only commits from https://github.com/raumzeitlabor/rzl-homepage/ have access to the keys."
   exit
 fi
 
