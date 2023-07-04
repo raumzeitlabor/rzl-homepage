@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Demotivationstraining im Europäischen Parlament Straßburg
+title: Demotivationstraining im EP Strassburg 
   Was?: Exkursion
   Wann?: 4. Oktober 2023, ab 10.30 Uhr
-  Wo?: Europäisches Parlament Straßburg
+  Wo?: Europaparlament Strassburg
 author:
   login: flederrattie
   email: vorstand@raumzeitlabor.de
