@@ -21,7 +21,7 @@ pagination:
         </li>
         <li><span class="page_number" style="border:0;">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span></li>
         <li class="next {% unless paginator.next_page %}disabled{% endunless %}">
-            <a href="{% if paginator.next_page %}/blog/page/{{ paginator.next_page }}{% else %}#paginator{% endif %}">älter &rarr;</a>
+            <a href="{% if paginator.next_page %}/blog/page/{{ paginator.next_page }}/{% else %}#paginator{% endif %}">älter &rarr;</a>
         </li>
     </ul>
     </div>
