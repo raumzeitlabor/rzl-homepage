@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pfälzylvanischer Deitscher Owed
+title: Pfälzylvanisch Deitscher Owed
 facts:
   Was?: Game Jam für Brettspiele
   Wann?: 16. September 2023
