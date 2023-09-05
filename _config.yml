@@ -13,7 +13,7 @@ pagination:
   title: ':title'
 
 exclude: ['node_modules']
-paginate_path: /blog/page/:num
+paginate_path: /blog/page/:num/
 permalink: /blog/:title/
 
 markdown: kramdown
