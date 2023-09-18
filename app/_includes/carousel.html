@@ -209,7 +209,7 @@
   {% if include.duration %}
   setInterval(function(){
     var j=0;
-    var elements = document.querySelectorAll('#carousel{{ number}}.carousel__control--forward');
+    var elements = document.querySelectorAll('#carousel{{ number }} .carousel__control--forward');
     for(i=(elements.length - 1);i>-1;i--) {
       if(isVisible(elements[i])) j=i;
     }
