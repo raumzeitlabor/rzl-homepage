@@ -7,7 +7,8 @@ facts:
   Wo?: RaumZeitLabor
 author:
   login: flederrattie
-  email: nathalie.groll@gmail.com
+  email: vorstand@raumzeitlabor.de
+  display_name: flederrattie
 ---
 
 Wenn die Tage mit Frühnebel starten, gelb-rotes Blätterballett in den Straßen tanzt und die Vorfreude auf ’s Kürbisfest steigt, weht der kühle Wind des Oktobers die Art und Hack Challenges zu uns.
