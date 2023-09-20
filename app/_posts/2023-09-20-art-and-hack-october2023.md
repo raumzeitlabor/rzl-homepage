@@ -6,8 +6,8 @@ facts:
   Wann?: Jeden Montag im Oktober 2023
   Wo?: RaumZeitLabor
 author:
-  login: default
-  email: info@raumzeitlabor.de
+  login: flederrattie
+  email: nathalie.groll@gmail.com
 ---
 
 Wenn die Tage mit Frühnebel starten, gelb-rotes Blätterballett in den Straßen tanzt und die Vorfreude auf ’s Kürbisfest steigt, weht der kühle Wind des Oktobers die Art und Hack Challenges zu uns.
