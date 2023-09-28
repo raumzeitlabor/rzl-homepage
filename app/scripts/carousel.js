@@ -1,4 +1,4 @@
-function isVisible(el) {
+(function isVisible(el) {
       while (el) {
           if (el === document) {
               return true;
@@ -23,7 +23,7 @@ function isVisible(el) {
               return $style.position === 'fixed' || isVisible(el.parentNode);
           }
       }
-}
+})
 {% if include.duration %}
 setInterval(function(){
   var j=0;
