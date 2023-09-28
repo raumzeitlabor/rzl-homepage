@@ -1,8 +1,8 @@
-  function isVisible(el) {
-        while (el) {
-            if (el === document) {
-                return true;
-            }
+function isVisible(el) {
+      while (el) {
+          if (el === document) {
+              return true;
+          }
 
             var $style = window.getComputedStyle(el, null);
 
