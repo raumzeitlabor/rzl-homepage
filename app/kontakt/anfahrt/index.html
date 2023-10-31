@@ -4,7 +4,10 @@ title: Anfahrt
 notitle: true
 htmlheader: <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
 ---
-
+<script src="/bower_components/leaflet/dist/leaflet.js"></script>
+<!-- build:js(app) /scripts/anfahrt.js -->
+<script src="/scripts/anfahrt.js"></script>
+<!-- endbuild -->
 <div class="row">
     <div class="col-lg-3 col-md-2 col-sm-12 col-sx-12">
         <div style="text-align:center;">
@@ -36,7 +39,3 @@ htmlheader: <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.
         <div id="rzl-map" style="height:600px"></div>
     </div>
 </div>
-<script src="/bower_components/leaflet/dist/leaflet.js"></script>
-<!-- build:js(app) /scripts/anfahrt.js -->
-<script src="/scripts/anfahrt.js"></script>
-<!-- endbuild -->
