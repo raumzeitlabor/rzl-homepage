@@ -16,6 +16,9 @@
     var marker = L.marker([49.507476979789026, 8.520809412002563]).addTo(map);
     marker.bindPopup('<b>RaumZeitLabor</b><br>Weinheimer Strasse 58-60<br>68309 Mannheim').openPopup();
     var polyline = L.polyline([ ], {color: 'red'}).addTo(map);
+    polyline.setLatLngs([ ]);
+    map.setView(marker.getLatLng(), 15);
+    map.invalidateSize();
     $(window).on('hashchange', function() {
         var stepHash = location.hash.replace('#', '');
         switch (stepHash) {
