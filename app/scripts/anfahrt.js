@@ -7,12 +7,6 @@
         zoom: 17
     });
 
-    map.on('load', function() {
-        setTimeout(() => {
-            map.invalidateSize();
-        }, 1); });
-    });
-
     var osmAttr = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
     L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: osmAttr,
@@ -31,6 +25,7 @@
                 marker.bindPopup('<b>RaumZeitLabor</b><br>Weinheimer Strasse 58-60<br>68309 Mannheim').openPopup();
                 polyline.setLatLngs([ ]);
                 map.setView(marker.getLatLng(), 15);
+                map.invalidateSize();
                 break;
             case 'step2':
                 marker.setLatLng([49.5097829219898, 8.518245220184326]).update();
