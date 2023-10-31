@@ -7,8 +7,10 @@
         zoom: 17
     });
 
-    map.on('click', function(e) {
-        console.log('Lat, Lon: ' + e.latlng.lat + ', ' + e.latlng.lng);
+    map.on('load', function() {
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 1); });
     });
 
     var osmAttr = '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
