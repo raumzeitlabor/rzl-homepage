@@ -29,7 +29,7 @@ Ablauf:
 * 10 min Pause
 * Best of 3 mit 50 min
 * 10 min Pause
-…
+* usw…
 
 
 Solltet ihr Interesse haben, meldet euch bitte bis spätestens 3. April um 22:00 Uhr bei [mir](mailto:soe.holzwarth@t-online.de), damit wir euch einplanen können. Auch ob ihr eventuelle Unverträglichkeiten auf gewisse Lebensmittel habt, damit wir das entsprechend berücksichtigen können.
