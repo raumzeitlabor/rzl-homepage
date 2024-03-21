@@ -32,7 +32,7 @@ Ablauf:
 * usw…
 
 
-Solltet ihr Interesse haben, meldet euch bitte bis spätestens 3. April um 22:00 Uhr bei [mir](mailto:soe.holzwarth@t-online.de), damit wir euch einplanen können. Auch ob ihr eventuelle Unverträglichkeiten auf gewisse Lebensmittel habt, damit wir das entsprechend berücksichtigen können.
+Solltet ihr Interesse haben, meldet euch bitte bis spätestens 3. April um 22:00 Uhr [hier an](https://anmeldung.raumzeitlabor.de/Lorcana/turnier24/), damit wir euch einplanen können. Auch ob ihr eventuelle Unverträglichkeiten auf gewisse Lebensmittel habt, damit wir das entsprechend berücksichtigen können.
 
 Die Anmeldung ist selbstverständlich auch für Nicht-Mitglieder offen.
 
