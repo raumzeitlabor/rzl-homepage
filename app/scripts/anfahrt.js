@@ -4,7 +4,7 @@
     L.Icon.Default.imagePath = '/bower_components/leaflet/dist/images';
     var map = L.map('rzl-map', {
         center: [49.507979, 8.499822],
-        zoom: 17
+        zoom: 1
     });
 
     map.on('click', function(e) {
