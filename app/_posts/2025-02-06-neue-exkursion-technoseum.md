@@ -6,6 +6,7 @@ facts:
   Wann?: 22. Februar 2025, 11 Uhr
   Wo?: Technoseum
 author:
+  login: flederrattie
   display_name: flederrattie
 ---
 
