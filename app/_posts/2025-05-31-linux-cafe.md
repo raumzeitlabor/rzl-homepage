@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows adé - hallo Linux! Das Linux-Café!
+title: Windows adé - hallo Linux!
 facts:
   Was?: Linux Café
   Wann?: 14.06.2025
@@ -11,7 +11,7 @@ author:
   display_name: Cheatha
 ---
 
-## Windows adé, hallo Linux! – Das Linux-Café lädt zum Umstieg ein
+## Das Linux-Café lädt zum Umstieg ein
 
 Ab Oktober 2025 gibt es für Windows 10 keine Updates mehr. Computer, die nicht die Hardware-Anforderungen für Windows 11 erfüllen, werden dann zu einem großen Sicherheitsrisiko – obwohl sie technisch oft noch einwandfrei funktionieren. Ohne Sicherheitsupdates ist ein System jedoch anfällig für bekannte Schwachstellen und damit ein leichtes Ziel für Angriffe und Schadsoftware.
 
@@ -24,5 +24,5 @@ Viele Menschen fühlen sich von Windows abhängig und kaufen nun neue Computer. 
 Um besser planen zu können bitten wir um **eine kostenlose Anmeldung** unter [anmeldung.raumzeitlabor.de/rzl/linux/](https://anmeldung.raumzeitlabor.de/rzl/linux/).
 
 
-![Linux-Cafe](2025-05-30-linux-cafe.jpg)
+![Linux-Cafe](/assets/2025-05-30-linux-cafe.jpg)
 
