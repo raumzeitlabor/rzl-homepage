@@ -24,5 +24,5 @@ Viele Menschen fühlen sich von Windows abhängig und kaufen nun neue Computer. 
 Um besser planen zu können bitten wir um **eine kostenlose Anmeldung** unter [anmeldung.raumzeitlabor.de/rzl/linux-cafe/](https://anmeldung.raumzeitlabor.de/rzl/linux-cafe/).
 
 
-![Linux-Cafe](/assets/2025-05-30-linux-cafe.jpg)
+![Linux-Cafe](/assets/2025-17-09-linux-cafe.jpg)
 
