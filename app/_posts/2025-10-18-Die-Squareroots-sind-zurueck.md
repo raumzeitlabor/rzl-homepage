@@ -8,7 +8,7 @@ facts:
 author:
   login: default
   email: public@lists.squareroots.de
-  display_name: hax404, itronik
+  display_name: "hax404, itronik"
 ---
 
 Das CTF-Hacking-Team **Squareroots**, das sich 2006 an der Universität Mannheim gegründet hat, hat sich mithilfe des RaumZeitLabors und des [Chaos Computer Clubs Mannheim](www.mannheim.ccc.de) neu aufgestellt und mit neuen CTF-Spielern eine weitere Generation begeisterter Hacker gewonnen. Nach einer längeren Pause ohne aktives Team haben sich alte und neue Squareroots für ihr erstes gemeinsames Attack/Defense-Capture-the-Flag, das [**FaustCTF 2025**](https://2025.faustctf.net/), angemeldet.
